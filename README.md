@@ -1,24 +1,40 @@
-**Topic Modeling Insights on lmsys-chat-1m Dataset Using BERTopic**
+# Topic Modeling Insights on lmsys-chat-1m Dataset Using BERTopic
 
 [Notebook Link](https://colab.research.google.com/drive/1V_vJt-1qsvT-ZPgdl0_ll21ZrPrWR1oA?usp=sharing)
 
-**Task at hand and Why?**
+## Task at hand and Why?
 
-- This Notebook provides a comprehensive analysis using **BERTopic**, a state-of-the-art topic modeling technique, applied to the [lmsys-chat-1m](https://huggingface.co/datasets/lmsys/lmsys-chat-1m) dataset on Hugging Face.
-- The primary goal of this analysis is to delve into the dataset to **uncover and understand the prevalent topics** discussed in user interactions.
-- This insight is **crucial for training new models and finetuning older models** on most sought after topics.
+- This Notebook provides a comprehensive analysis using **BERTopic**, a state-of-the-art topic modeling technique, applied to the [lmsys-chat-1m](https://huggingface.co/datasets/lmsys/lmsys-chat-1m) dataset on Hugging Face.
+- The primary goal of this analysis is to delve into the dataset to **uncover and understand the prevalent topics** discussed in user interactions.
+- This insight is **crucial for training new models and finetuning older models** on most sought after topics.
 
-**Dataset Overview**
+## Dataset Overview
 
-- The [**lmsys-chat-1m**](https://huggingface.co/datasets/lmsys/lmsys-chat-1m) dataset comprises over one million user interaction entries, making it a rich source for understanding natural language processing in **conversational AI**.
-- As the dataset is **request access** and not completely open, The notebook needs to have a basic authentication token, It can be done using **Google Colab Secrets** for safety reasons. ![Notebook Image](Aspose.Words.4c485b4a-55b9-455e-a378-b330bd15a71f.001.jpeg)
-- Following are the columns of the dataset -> **Columns/Dataset Features:** **conversation\_id, model, conversation, turn, language, openai\_moderation, redacted** **Rows/Number of Datapoints:** **1,000,000**
+- The [**lmsys-chat-1m**](https://huggingface.co/datasets/lmsys/lmsys-chat-1m) dataset comprises over one million user interaction entries, making it a rich source for understanding natural language processing in **conversational AI**.
+- As the dataset is **request access** and not completely open, The notebook needs to have a basic authentication token, It can be done using **Google Colab Secrets** for safety reasons.
+![Notebook Image](https://i.imgur.com/DW7Okuq.jpeg)
+- Following are the columns of the dataset ->
+**Columns/Dataset Features:** **`conversation_id, model, conversation, turn, language, openai_moderation, redacted`**
+**Rows/Number of Datapoints:** **`1,000,000`**
 
-![Dataset Image](Aspose.Words.4c485b4a-55b9-455e-a378-b330bd15a71f.002.png)
+![Dataset Image](https://i.imgur.com/qscD8vB.png)
 
-- Each entry in the "conversation" represents an **array of dictionaries** of both user prompts and assistant responses.
-- General structure of the conversation looks like  à
-- Although due to resource constraints of Google Colab, I have used only ***10%*** subset of the original dataset.
+- Each entry in the "conversation" represents an **array of dictionaries** of both user prompts and assistant responses.
+- General structure of the conversation looks like ->
+
+$$\begin{array}{l}
+\text{[} \\
+\quad \{ \text{"content": "User Prompt 1", "role": "user"} \}, \\
+\quad \{ \text{"content": "Chatbot Response 1", "role": "assistant"} \}, \\
+\quad \{ \text{"content": "User Prompt 2", "role": "user"} \}, \\
+\quad \{ \text{"content": "Chatbot Response 2", "role": "assistant"} \}, \\
+\quad \ldots, \\
+\quad \{ \text{"content": "User Prompt n", "role": "user"} \}, \\
+\quad \{ \text{"content": "Chatbot Response n", "role": "assistant"} \} \\
+\text{]}
+\end{array}$$
+
+- Although due to resource constraints of Google Colab, I have used only ***10%*** subset of the original dataset.
 
 **Loading the Data ->**
 
@@ -133,7 +149,9 @@ BERTopic is a cutting-edge topic modeling technique that uses transformer-based 
 - **Purpose:** Identifies the most representative terms for each topic.
 - **Result:** Enhances interpretability of discovered topics.
 -----
-**Workflow Diagram![gmisharch2]![](Aspose.Words.4c485b4a-55b9-455e-a378-b330bd15a71f.004.jpeg)**
+**Workflow Diagram**
+![gmisharch2](https://github.com/user-attachments/assets/ff956df9-953e-4356-8c2f-9a869c68ccfa)
+
 
 Below is a visual representation of BERTopic’s workflow:
 
@@ -241,16 +259,19 @@ One surprising insight: gpt-3.5-turbo-0314 showed the highest win rate (68.53%
 **Visualizations Provided**
 
 - **Dendrogram**: Clearly illustrates topic relationships. 
+![topic_hierarchy](https://github.com/user-attachments/assets/e0315ae8-84f9-42ed-b1ee-8d005ec4e2bc)
 
-  ![](Aspose.Words.4c485b4a-55b9-455e-a378-b330bd15a71f.005.png)
 
 - **Bar Graph**: Cumulative topic coverage. 
+![barchart](https://github.com/user-attachments/assets/e08889af-761b-45d2-9404-df6b3c58f846)
 
-  ![](Aspose.Words.4c485b4a-55b9-455e-a378-b330bd15a71f.006.png)
 
-- **Heatmap**: Topic distribution and model strengths. ![image][gmisharch2]\
-  ![](Aspose.Words.4c485b4a-55b9-455e-a378-b330bd15a71f.007.png)
-- **Bar Chart**: Balanced model win rate per appearance. ![](Aspose.Words.4c485b4a-55b9-455e-a378-b330bd15a71f.008.png)
+- **Heatmap**: Topic distribution and model strengths. 
+![heatmap](https://github.com/user-attachments/assets/c9d6057b-610d-47ce-9394-e13880051534)
+
+- **Bar Chart**: Balanced model win rate per appearance.
+![balancedmodel](https://github.com/user-attachments/assets/6321533a-baa0-4f70-a803-81ac9d0472e9)
+
 
 **Conclusions and Practical Implications**
 
@@ -303,4 +324,4 @@ The methodologies demonstrated here highlight the power of modern NLP techniques
 - [lmsys-chat-1m](https://huggingface.co/datasets/lmsys/lmsys-chat-1m) - A dataset of user interactions with an AI chatbots.
 - [BERTopic](https://github.com/MaartenGr/BERTopic) - A state-of-the-art topic modeling technique.
 
-[gmisharch2]: Aspose.Words.4c485b4a-55b9-455e-a378-b330bd15a71f.003.png
+
