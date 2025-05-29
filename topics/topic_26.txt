@@ -1,0 +1,1576 @@
+<form action="\/my\/leaves\/new" method="post" enctype="multipart\/form-data">
+
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <div class="header-btns">
+                                    <button role="btn" class="btn btn-small btn-primary mr4" type="submit" t-if="not is_readonly">Confirm Request<\/button>
+                                    <a role="btn" class="btn btn-small btn-warning mr4" t-attf-href="\/leaves\/{{leave.id}}\/refuse" t-if="is_readonly and can_refuse">Refuse Request<\/a>
+                                    <a role="btn" class="btn btn-small btn-primary mr4" t-attf-href="\/leaves\/{{leave.id}}\/approve" t-if="is_readonly and can_approve">Approve Request<\/a>
+                                <\/div>
+                                <div class="header-right">
+                                    <span t-if="leave.state == 'confirm'" class="px-4 py-2 badge rounded-pill text-bg-info">
+                                        Status: <span t-field="leave.state"\/>
+                                    <\/span>
+                                    <span t-if="leave.state in ['validate', 'validate1']" class="px-4 py-2 badge rounded-pill text-bg-success">
+                                        Status: <span t-field="leave.state"\/>
+                                    <\/span>
+                                    <span t-if="leave.state == 'to_approve'" class="px-4 py-2 badge rounded-pill text-bg-info">
+                                        Status: <span t-field="leave.state"\/>
+                                    <\/span>
+                                    <span t-if="leave.state == 'refuse'" class="px-4 py-2 badge rounded-pill text-bg-warning">
+                                        Status: <span t-field="leave.state"\/>
+                                    <\/span>
+                                <\/div>
+                            <\/div>
+
+                            <div class="card-body">
+                                <div class="row">
+                            
+                                    <div class="form-group col-6">
+                                        <label for="date_from">Date From<\/label>
+                                        <input type="date" class="form-control" id="date_from" name="date_from" aria-describedby="date_from" placeholder="Date From" t-att-value="leave.request_date_from" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" required="1"\/>
+                                    <\/div>
+                                    
+                                    
+                                    
+
+<!--
+                                <div class="form-group col-6" id="date_to_group">
+                                <label for="date_to">Date To<\/label>
+                                <input type="date" class="form-control" id="date_to" name="date_to" aria-describedby="date_to" placeholder="Date To" t-att-value="leave.request_date_from"\/>
+                            <\/div>
+                            -->
+                             
+                             
+                             <div class="form-group col-6" id="date_to_group">
+                                <label for="date_to">Date To<\/label>
+                                <input type="date" class="form-control" id="date_to" name="date_to" aria-describedby="date_to" placeholder="Date To" t-att-value="leave.request_date_from" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" required="1"\/>
+                             <\/div>
+                                    
+                                   <div class="form-group col-md-6 mt8" required="1">
+                                        <label for="holiday_status_id">Leave Type<\/label>
+                                        <select id="holiday_status_id" name="holiday_status_id" class="form-control" aria-describedby="holiday_status_id" t-att-value="leave.holiday_status_id" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};">
+                                
+                                            <t t-foreach="leave_types" t-as="leave_type">
+                                                <option t-att-value="leave_type[3]" t-att-selected="leave_type[3] == leave.holiday_status_id.id">
+                                                    <t t-esc="leave_type[0]" \/>
+                                                <\/option>
+                                            <\/t>
+                                        <\/select>
+                                    <\/div>
+
+
+ <!-- 
+                              <div class="form-group form-check col-sm-3 mt16 d-flex justify-content-center align-items-center">
+                                <input class="form-check-input mr-2" type="checkbox" id="request_unit_half" name="request_unit_half" t-att-checked="leave.request_unit_half == True"\/>
+                                <label class="form-check-label ml8" for="request_unit_half">
+                                        Half Day
+                                <\/label>
+                            <\/div>
+                            
+                            -->
+
+
+
+                                    <div class="form-group form-check col-sm-3 mt16 d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input mr-2" type="checkbox" id="request_unit_half" name="request_unit_half" t-att-checked="leave.request_unit_half == True" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"\/>
+                                        <label class="form-check-label ml8" for="request_unit_half">
+                                                Half Day
+                                        <\/label>
+                                    <\/div>
+
+
+
+
+
+                                    
+                                    <div class="form-group col-sm-3 mt8">
+                                        <label for="duration_display">Duration<\/label>
+                                        <input type="text" class="form-control" id="duration_display" aria-describedby="duration_display" placeholder="Duration" t-att-value="leave.duration_display" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"\/>
+                                    <\/div>
+                                    
+                                    
+                                    
+                                    <div class="form-group col-12 mt8">
+                                        <label for="name">Description<\/label>
+                                        <textarea class="form-control" rows="3" name="name" aria-describedby="description" t-raw="leave.name or ''" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"\/>
+                                    <\/div>
+                                           
+                
+ 
+
+
+
+
+                                        
+                                <\/div>
+                            <\/div>
+                        <\/form>
+                        
+                        
+                        I need to add a file upload field call supported_attachment_ids to above form
+<form action="\/my\/leaves\/new">
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <div class="header-btns">
+                                    <button role="btn" class="btn btn-small btn-primary mr4" type="submit" t-if="not is_readonly">Confirm Request<\/button>
+                                    <a role="btn" class="btn btn-small btn-warning mr4" t-attf-href="\/leaves\/{{leave.id}}\/refuse" t-if="is_readonly and can_refuse">Refuse Request<\/a>
+                                    <a role="btn" class="btn btn-small btn-primary mr4" t-attf-href="\/leaves\/{{leave.id}}\/approve" t-if="is_readonly and can_approve">Approve Request<\/a>
+                                <\/div>
+                                <div class="header-right">
+                                    <span t-if="leave.state == 'confirm'" class="px-4 py-2 badge rounded-pill text-bg-info">
+                                        Status: <span t-field="leave.state"\/>
+                                    <\/span>
+                                    <span t-if="leave.state in ['validate', 'validate1']" class="px-4 py-2 badge rounded-pill text-bg-success">
+                                        Status: <span t-field="leave.state"\/>
+                                    <\/span>
+                                    <span t-if="leave.state == 'to_approve'" class="px-4 py-2 badge rounded-pill text-bg-info">
+                                        Status: <span t-field="leave.state"\/>
+                                    <\/span>
+                                    <span t-if="leave.state == 'refuse'" class="px-4 py-2 badge rounded-pill text-bg-warning">
+                                        Status: <span t-field="leave.state"\/>
+                                    <\/span>
+                                <\/div>
+                            <\/div>
+
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="form-group col-6">
+                                        <label for="date_from">Date From<\/label>
+                                        <input type="date" class="form-control" id="date_from" name="date_from" aria-describedby="date_from" placeholder="Date From" t-att-value="leave.request_date_from" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" required="1"\/>
+                                    <\/div>
+                                    <div class="form-group col-6">
+                                        <label for="date_to">Date To<\/label>
+                                        <input type="date" class="form-control" id="date_to" name="date_to" aria-describedby="date_to" placeholder="Date To" t-att-value="leave.request_date_from" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" required="1"\/>
+                                    <\/div>
+                                    <div class="form-group col-md-6 mt8" required="1">
+                                        <label for="holiday_status_id">Leave Type<\/label>
+                                        <select id="holiday_status_id" name="holiday_status_id" class="form-control" aria-describedby="holiday_status_id" t-att-value="leave.holiday_status_id" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};">
+                                            <option value="false" selected="1">
+                                            Choose...
+                                            <\/option>
+                                            <t t-foreach="leave_types" t-as="leave_type">
+                                                <option t-att-value="leave_type[3]" t-att-selected="leave_type[3] == leave.holiday_status_id.id">
+                                                    <t t-esc="leave_type[0]" \/>
+                                                <\/option>
+                                            <\/t>
+                                        <\/select>
+                                    <\/div>
+
+
+                                    <div class="form-group form-check col-sm-3 mt16 d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input mr-2" type="checkbox" id="request_unit_half" name="request_unit_half" t-att-checked="leave.request_unit_half == True" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"\/>
+                                        <label class="form-check-label ml8" for="request_unit_half">
+                                                Half Day
+                                        <\/label>
+                                    <\/div>
+<!-- 
+                                    <div class="form-group col-sm-3 mt8">
+                                        <label for="duration_display">Duration<\/label>
+                                        <input type="text" class="form-control" id="duration_display" aria-describedby="duration_display" placeholder="Duration" t-att-value="leave.duration_display" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"\/>
+                                    <\/div> -->
+
+                                    <div class="form-group col-sm-3 mt8">
+                                        <label for="duration_display">Duration<\/label>
+                                        <input type="text" class="form-control" id="duration_display" aria-describedby="duration_display" placeholder="Duration" t-att-value="leave.duration_display" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" readonly="readonly"\/>
+                                           <\/div>
+
+                                    
+                                    <div class="form-group col-12 mt8">
+                                        <label for="naame">Description<\/label>
+                                        <textarea class="form-control" rows="3" name="name" aria-describedby="description" t-raw="leave.name or ''" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"\/>
+                                    <\/div>
+                                <\/div>
+                            <\/div>
+                        <\/form>
+
+i need the date to  hide when i select half  day
+ <form action="\/my\/leaves\/new">
+                            <div
+                                class="card-header d-flex align-items-center justify-content-between">
+                                <div class="header-btns">
+                                    <button role="btn" class="btn btn-small btn-primary mr4"
+                                        type="submit" t-if="not is_readonly">Confirm Request<\/button>
+                                    <a role="btn" class="btn btn-small btn-warning mr4"
+                                        t-attf-href="\/leaves\/{{leave.id}}\/refuse"
+                                        t-if="is_readonly and can_refuse">Refuse Request<\/a>
+                                    <a role="btn" class="btn btn-small btn-primary mr4"
+                                        t-attf-href="\/leaves\/{{leave.id}}\/approve"
+                                        t-if="is_readonly and can_approve">Approve Request<\/a>
+                                <\/div>
+                                <div class="header-right">
+                                    <span t-if="leave.state == 'confirm'"
+                                        class="px-4 py-2 badge rounded-pill text-bg-info"> Status: <span
+                                            t-field="leave.state" \/>
+                                    <\/span>
+                                    <span t-if="leave.state in ['validate', 'validate1']"
+                                        class="px-4 py-2 badge rounded-pill text-bg-success">
+                                        Status: <span t-field="leave.state" \/>
+                                    <\/span>
+                                    <span t-if="leave.state == 'to_approve'"
+                                        class="px-4 py-2 badge rounded-pill text-bg-info"> Status: <span
+                                            t-field="leave.state" \/>
+                                    <\/span>
+                                    <span t-if="leave.state == 'refuse'"
+                                        class="px-4 py-2 badge rounded-pill text-bg-warning">
+                                        Status: <span t-field="leave.state" \/>
+                                    <\/span>
+                                <\/div>
+                            <\/div>
+
+                            <div class="card-body">
+                                <div class="row">
+
+                                    <div class="form-group col-6">
+                                        <label for="date_from">Date From<\/label>
+                                        <input type="date" class="form-control" id="date_from"
+                                            name="date_from" aria-describedby="date_from"
+                                            placeholder="Date From"
+                                            t-att-value="leave.request_date_from"
+                                            t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"
+                                            required="1" \/>
+                                    <\/div>
+
+
+                                    <div class="form-group col-6" id="date_to_group">
+                                        <label for="date_to">Date To<\/label>
+                                        <input type="date" class="form-control" id="date_to"
+                                            name="date_to" aria-describedby="date_to"
+                                            placeholder="Date To"
+                                            t-att-value="leave.request_date_from"
+                                            t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"
+                                            required="1" \/>
+                                    <\/div>
+
+                                    <div class="form-group col-md-6 mt8" required="1">
+                                        <label for="holiday_status_id">Leave Type<\/label>
+                                        <select id="holiday_status_id" name="holiday_status_id"
+                                            class="form-control"
+                                            aria-describedby="holiday_status_id"
+                                            t-att-value="leave.holiday_status_id"
+                                            t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};">
+
+                                            <t t-foreach="leave_types" t-as="leave_type">
+                                                <option t-att-value="leave_type[3]"
+                                                    t-att-selected="leave_type[3] == leave.holiday_status_id.id">
+                                                    <t t-esc="leave_type[0]" \/>
+                                                <\/option>
+                                            <\/t>
+                                        <\/select>
+                                    <\/div>
+
+
+                                    <div
+                                        class="form-group form-check col-sm-3 mt16 d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input mr-2" type="checkbox"
+                                            id="request_unit_half" name="request_unit_half"
+                                            t-att-checked="leave.request_unit_half == True"
+                                            t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" \/>
+                                        <label class="form-check-label ml8" for="request_unit_half">
+                                            Half Day
+                                        <\/label>
+                                    <\/div>
+
+
+                                     <div class="form-group col-sm-3 mt8">
+                                        <label for="duration_display">Duration<\/label>
+                                        <input type="text" class="form-control"
+                                            id="duration_display"
+                                            aria-describedby="duration_display"
+                                            placeholder="Duration"
+                                            t-att-value="leave.duration_display"
+                                            t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" \/>
+                                    <\/div> 
+
+
+       
+
+                                    <div class="form-group col-12 mt8">
+                                        <label for="name">Description<\/label>
+                                        <textarea class="form-control" rows="3" name="name"
+                                            aria-describedby="description" t-raw="leave.name or ''"
+                                            t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" \/>
+                                    <\/div>
+
+                                    <div class="form-group col-md-6 mt8" id="file_upload_group"
+                                        style="display: none;">
+                                        <label for="supported_attachment_ids">Supporting Attachment<\/label>
+                                        <input type="file" id="supported_attachment_ids"
+                                            class="form-control"
+                                            aria-describedby="supported_attachment_ids"
+                                            style="pointer-events: all;" multiple="true" \/>
+                                    <\/div>
+
+                                <\/div>
+                            <\/div>
+                        <\/form>
+                    <\/div>
+
+                    <!-- chatter -->
+                    <div id="leaves_communication" class="mt-4" t-if="is_readonly">
+                        <h2>History<\/h2>
+                        <t t-call="portal.message_thread">
+                            <t t-set="object" t-value="leave" \/>
+                        <\/t>
+                    <\/div>
+                <\/t>
+            <\/t>
+            
+>
+          <script type="text\/javascript">
+
+                document.addEventListener('DOMContentLoaded', function() {
+                var halfDayCheckbox = document.getElementById('request_unit_half');
+                var dateToGroup = document.getElementById('date_to_group');
+                var dateToInput = document.getElementById('date_to');
+                var dateFromInput = document.getElementById('date_from'); \/\/ Get the date_from input
+                var leaveTypeSelect = document.getElementById('holiday_status_id');
+
+                var fileUploadGroup = document.getElementById('file_upload_group');
+                var fileUploadInput = document.getElementById('supported_attachment_ids');
+
+                \/\/ Function to toggle the requirement and visibility of "Date To" and set its value
+                function toggleDateTo() {
+                var isHalfDay = halfDayCheckbox.checked;
+                \/\/ Toggle the visibility of the "Date To" input
+                dateToGroup.style.display = isHalfDay ? 'none' : 'block';
+                \/\/ Toggle the requirement of the "Date To" input and set its value
+                if (isHalfDay) {
+                dateToInput.removeAttribute('required');
+                dateToInput.value = dateFromInput.value; \/\/ Set date_to value to date_from
+                } else {
+                dateToInput.setAttribute('required', 'required');
+                dateToInput.value = ''; \/\/ Optional: Clear the value if half day is not selected
+                }
+                }
+
+                \/\/ Function to show\/hide the file upload field based on leave type
+                function toggleFileUpload() {
+                var selectedLeaveType = leaveTypeSelect.value;
+                if (selectedLeaveType === "2") {
+                fileUploadGroup.style.display = 'block';
+                fileUploadInput.setAttribute('required', 'required');
+                } else {
+                fileUploadGroup.style.display = 'none';
+                fileUploadInput.removeAttribute('required');
+                }
+                }
+
+                \/\/ Add change event listener to the "Half Day" checkbox
+                leaveTypeSelect.addEventListener('change', toggleFileUpload);
+                halfDayCheckbox.addEventListener('change', toggleDateTo);
+
+                \/\/ Call the toggle function on initial page load to set the correct state
+                toggleDateTo();
+                });
+<\/script> 
+
+        <\/xpath>
+    <\/template>
+
+
+
+
+modify the code such that once the halfday is selected also duration diseppear and morning and afternoon choice appear.Keep the rest of functionalities the same
+    <template id="portal_leave_page" name="My Leave" inherit_id="portal.portal_sidebar" primary="True">
+        <xpath expr="\/\/div[hasclass('o_portal_sidebar')]" position="inside">
+            <t t-call="portal.portal_record_layout">
+                <t t-set="card_body">
+                    <div class="card">
+                        <form action="\/my\/leaves\/new">
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <div class="header-btns">
+                                    <button role="btn" class="btn btn-small btn-primary mr4" type="submit" t-if="not is_readonly">Confirm Request<\/button>
+                                    <a role="btn" class="btn btn-small btn-warning mr4" t-attf-href="\/leaves\/{{leave.id}}\/refuse" t-if="is_readonly and can_refuse">Refuse Request<\/a>
+                                    <a role="btn" class="btn btn-small btn-primary mr4" t-attf-href="\/leaves\/{{leave.id}}\/approve" t-if="is_readonly and can_approve">Approve Request<\/a>
+                                <\/div>
+                                <div class="header-right">
+                                    <span t-if="leave.state == 'confirm'" class="px-4 py-2 badge rounded-pill text-bg-info">
+                                        Status: <span t-field="leave.state"\/>
+                                    <\/span>
+                                    <span t-if="leave.state in ['validate', 'validate1']" class="px-4 py-2 badge rounded-pill text-bg-success">
+                                        Status: <span t-field="leave.state"\/>
+                                    <\/span>
+                                    <span t-if="leave.state == 'to_approve'" class="px-4 py-2 badge rounded-pill text-bg-info">
+                                        Status: <span t-field="leave.state"\/>
+                                    <\/span>
+                                    <span t-if="leave.state == 'refuse'" class="px-4 py-2 badge rounded-pill text-bg-warning">
+                                        Status: <span t-field="leave.state"\/>
+                                    <\/span>
+                                <\/div>
+                            <\/div>
+
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="form-group col-6">
+                                        <label for="date_from">Date From<\/label>
+                                        <input type="date" class="form-control" id="date_from" name="date_from" aria-describedby="date_from" placeholder="Date From" t-att-value="leave.request_date_from" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" required="1"\/>
+                                    <\/div>
+                                    <!-- <div class="form-group col-6">
+                                        <label for="date_to">Date To<\/label>
+                                        <input type="date" class="form-control" id="date_to" name="date_to" aria-describedby="date_to" placeholder="Date To" t-att-value="leave.request_date_from" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" required="1"\/>
+                                    <\/div> -->
+
+                             <div class="form-group col-6" id="date_to_group">
+                                <label for="date_to">Date To<\/label>
+                                <input type="date" class="form-control" id="date_to" name="date_to" aria-describedby="date_to" placeholder="Date To" t-att-value="leave.request_date_to"\/>
+                            <\/div>
+
+
+                                    <div class="form-group col-md-6 mt8" required="1">
+                                        <label for="holiday_status_id">Leave Type<\/label>
+                                        <select id="holiday_status_id" name="holiday_status_id" class="form-control" aria-describedby="holiday_status_id" t-att-value="leave.holiday_status_id" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};">
+                                            <option value="false" selected="1">
+                                            Choose...
+                                            <\/option>
+                                            <t t-foreach="leave_types" t-as="leave_type">
+                                                <option t-att-value="leave_type[3]" t-att-selected="leave_type[3] == leave.holiday_status_id.id">
+                                                    <t t-esc="leave_type[0]" \/>
+                                                <\/option>
+                                            <\/t>
+                                        <\/select>
+                                    <\/div>
+
+
+                                    <!-- <div class="form-group form-check col-sm-3 mt16 d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input mr-2" type="checkbox" id="request_unit_half" name="request_unit_half" t-att-checked="leave.request_unit_half == True" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"\/>
+                                        <label class="form-check-label ml8" for="request_unit_half">
+                                                Half Day
+                                        <\/label>
+                                    <\/div> -->
+
+                                                                <div class="form-group form-check col-sm-3 mt16 d-flex justify-content-center align-items-center">
+                                <input class="form-check-input mr-2" type="checkbox" id="request_unit_half" name="request_unit_half" t-att-checked="leave.request_unit_half == True"\/>
+                                <label class="form-check-label ml8" for="request_unit_half">
+                                        Half Day
+                                <\/label>
+                            <\/div>
+
+                                    <div class="form-group col-sm-3 mt8">
+                                        <label for="duration_display">Duration<\/label>
+                                        <input type="text" class="form-control" id="duration_display" aria-describedby="duration_display" placeholder="Duration" t-att-value="leave.duration_display" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"\/>
+                                    <\/div>
+                                    <div class="form-group col-12 mt8">
+                                        <label for="name">Description<\/label>
+                                        <textarea class="form-control" rows="3" name="name" aria-describedby="description" t-raw="leave.name or ''" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"\/>
+                                    <\/div>
+                                <\/div>
+                            <\/div>
+                        <\/form>
+                    <\/div>
+
+                    <!-- chatter -->
+                    <div id="leaves_communication" class="mt-4" t-if="is_readonly">
+                        <h2>History<\/h2>
+                        <t t-call="portal.message_thread">
+                            <t t-set="object" t-value="leave"\/>
+                        <\/t>
+                    <\/div>
+                <\/t>
+            <\/t>
+
+
+            <script type="text\/javascript">
+                document.addEventListener('DOMContentLoaded', function() {
+                    var halfDayCheckbox = document.getElementById('request_unit_half');
+                    var dateToGroup = document.getElementById('date_to_group');
+                    var dateToInput = document.getElementById('date_to');
+
+                    \/\/ Function to toggle the requirement and visibility of "Date To"
+                    function toggleDateTo() {
+                        var isHalfDay = halfDayCheckbox.checked;
+                        \/\/ Toggle the visibility of the "Date To" input
+                        dateToGroup.style.display = isHalfDay ? 'none' : 'block';
+                        \/\/ Toggle the requirement of the "Date To" input
+                        if (isHalfDay) {
+                            dateToInput.removeAttribute('required');
+                            dateToInput.value = ''; \/\/ Clear the value if half day is selected
+                        } else {
+                            dateToInput.setAttribute('required', 'required');
+                        }
+                    }
+
+                    \/\/ Add change event listener to the "Half Day" checkbox
+                    halfDayCheckbox.addEventListener('change', toggleDateTo);
+
+                    \/\/ Call the toggle function on initial page load to set the correct state
+                    toggleDateTo();
+                });
+            <\/script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        <\/xpath>
+    <\/template>
+
+
+i need to populate date to with value from date fro when half day is selected.
+ <form action="\/my\/leaves\/new">
+                            <div
+                                class="card-header d-flex align-items-center justify-content-between">
+                                <div class="header-btns">
+                                    <button role="btn" class="btn btn-small btn-primary mr4"
+                                        type="submit" t-if="not is_readonly">Confirm Request<\/button>
+                                    <a role="btn" class="btn btn-small btn-warning mr4"
+                                        t-attf-href="\/leaves\/{{leave.id}}\/refuse"
+                                        t-if="is_readonly and can_refuse">Refuse Request<\/a>
+                                    <a role="btn" class="btn btn-small btn-primary mr4"
+                                        t-attf-href="\/leaves\/{{leave.id}}\/approve"
+                                        t-if="is_readonly and can_approve">Approve Request<\/a>
+                                <\/div>
+                                <div class="header-right">
+                                    <span t-if="leave.state == 'confirm'"
+                                        class="px-4 py-2 badge rounded-pill text-bg-info"> Status: <span
+                                            t-field="leave.state" \/>
+                                    <\/span>
+                                    <span t-if="leave.state in ['validate', 'validate1']"
+                                        class="px-4 py-2 badge rounded-pill text-bg-success">
+                                        Status: <span t-field="leave.state" \/>
+                                    <\/span>
+                                    <span t-if="leave.state == 'to_approve'"
+                                        class="px-4 py-2 badge rounded-pill text-bg-info"> Status: <span
+                                            t-field="leave.state" \/>
+                                    <\/span>
+                                    <span t-if="leave.state == 'refuse'"
+                                        class="px-4 py-2 badge rounded-pill text-bg-warning">
+                                        Status: <span t-field="leave.state" \/>
+                                    <\/span>
+                                <\/div>
+                            <\/div>
+
+                            <div class="card-body">
+                                <div class="row">
+
+                                    <div class="form-group col-6">
+                                        <label for="date_from">Date From<\/label>
+                                        <input type="date" class="form-control" id="date_from"
+                                            name="date_from" aria-describedby="date_from"
+                                            placeholder="Date From"
+                                            t-att-value="leave.request_date_from"
+                                            t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"
+                                            required="1" \/>
+                                    <\/div>
+
+
+                                    <div class="form-group col-6" id="date_to_group">
+                                        <label for="date_to">Date To<\/label>
+                                        <input type="date" class="form-control" id="date_to"
+                                            name="date_to" aria-describedby="date_to"
+                                            placeholder="Date To"
+                                            t-att-value="leave.request_date_from"
+                                            t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"
+                                            required="1" \/>
+                                    <\/div>
+
+                                    <div class="form-group col-md-6 mt8" required="1">
+                                        <label for="holiday_status_id">Leave Type<\/label>
+                                        <select id="holiday_status_id" name="holiday_status_id"
+                                            class="form-control"
+                                            aria-describedby="holiday_status_id"
+                                            t-att-value="leave.holiday_status_id"
+                                            t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};">
+
+                                            <t t-foreach="leave_types" t-as="leave_type">
+                                                <option t-att-value="leave_type[3]"
+                                                    t-att-selected="leave_type[3] == leave.holiday_status_id.id">
+                                                    <t t-esc="leave_type[0]" \/>
+                                                <\/option>
+                                            <\/t>
+                                        <\/select>
+                                    <\/div>
+
+
+                                    <div
+                                        class="form-group form-check col-sm-3 mt16 d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input mr-2" type="checkbox"
+                                            id="request_unit_half" name="request_unit_half"
+                                            t-att-checked="leave.request_unit_half == True"
+                                            t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" \/>
+                                        <label class="form-check-label ml8" for="request_unit_half">
+                                            Half Day
+                                        <\/label>
+                                    <\/div>
+
+
+                                     <div class="form-group col-sm-3 mt8">
+                                        <label for="duration_display">Duration<\/label>
+                                        <input type="text" class="form-control"
+                                            id="duration_display"
+                                            aria-describedby="duration_display"
+                                            placeholder="Duration"
+                                            t-att-value="leave.duration_display"
+                                            t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" \/>
+                                    <\/div> 
+
+
+       
+
+                                    <div class="form-group col-12 mt8">
+                                        <label for="name">Description<\/label>
+                                        <textarea class="form-control" rows="3" name="name"
+                                            aria-describedby="description" t-raw="leave.name or ''"
+                                            t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" \/>
+                                    <\/div>
+
+                                    <div class="form-group col-md-6 mt8" id="file_upload_group"
+                                        style="display: none;">
+                                        <label for="supported_attachment_ids">Supporting Attachment<\/label>
+                                        <input type="file" id="supported_attachment_ids"
+                                            class="form-control"
+                                            aria-describedby="supported_attachment_ids"
+                                            style="pointer-events: all;" multiple="true" \/>
+                                    <\/div>
+
+                                <\/div>
+                            <\/div>
+                        <\/form>
+                    <\/div>
+
+                    <!-- chatter -->
+                    <div id="leaves_communication" class="mt-4" t-if="is_readonly">
+                        <h2>History<\/h2>
+                        <t t-call="portal.message_thread">
+                            <t t-set="object" t-value="leave" \/>
+                        <\/t>
+                    <\/div>
+                <\/t>
+            <\/t>
+            
+>
+          <script type="text\/javascript">
+
+                document.addEventListener('DOMContentLoaded', function() {
+                var halfDayCheckbox = document.getElementById('request_unit_half');
+                var dateToGroup = document.getElementById('date_to_group');
+                var dateToInput = document.getElementById('date_to');
+                var dateFromInput = document.getElementById('date_from'); \/\/ Get the date_from input
+                var leaveTypeSelect = document.getElementById('holiday_status_id');
+
+                var fileUploadGroup = document.getElementById('file_upload_group');
+                var fileUploadInput = document.getElementById('supported_attachment_ids');
+
+                \/\/ Function to toggle the requirement and visibility of "Date To" and set its value
+                function toggleDateTo() {
+                var isHalfDay = halfDayCheckbox.checked;
+                \/\/ Toggle the visibility of the "Date To" input
+                dateToGroup.style.display = isHalfDay ? 'none' : 'block';
+                \/\/ Toggle the requirement of the "Date To" input and set its value
+                if (isHalfDay) {
+                dateToInput.removeAttribute('required');
+                dateToInput.value = dateFromInput.value; \/\/ Set date_to value to date_from
+                } else {
+                dateToInput.setAttribute('required', 'required');
+                dateToInput.value = ''; \/\/ Optional: Clear the value if half day is not selected
+                }
+                }
+
+                \/\/ Function to show\/hide the file upload field based on leave type
+                function toggleFileUpload() {
+                var selectedLeaveType = leaveTypeSelect.value;
+                if (selectedLeaveType === "2") {
+                fileUploadGroup.style.display = 'block';
+                fileUploadInput.setAttribute('required', 'required');
+                } else {
+                fileUploadGroup.style.display = 'none';
+                fileUploadInput.removeAttribute('required');
+                }
+                }
+
+                \/\/ Add change event listener to the "Half Day" checkbox
+                leaveTypeSelect.addEventListener('change', toggleFileUpload);
+                halfDayCheckbox.addEventListener('change', toggleDateTo);
+
+                \/\/ Call the toggle function on initial page load to set the correct state
+                toggleDateTo();
+                });
+<\/script> 
+
+        <\/xpath>
+    <\/template>
+
+
+
+
+modify the code such that once the halfday is selected also duration diseppear and morning and afternoon choice appear.Keep the rest of functionalities the same
+<form action="\/my\/leaves\/new" method="post" enctype="multipart\/form-data">
+
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <div class="header-btns">
+                                    <button role="btn" class="btn btn-small btn-primary mr4" type="submit" t-if="not is_readonly">Confirm Request<\/button>
+                                    <a role="btn" class="btn btn-small btn-warning mr4" t-attf-href="\/leaves\/{{leave.id}}\/refuse" t-if="is_readonly and can_refuse">Refuse Request<\/a>
+                                    <a role="btn" class="btn btn-small btn-primary mr4" t-attf-href="\/leaves\/{{leave.id}}\/approve" t-if="is_readonly and can_approve">Approve Request<\/a>
+                                <\/div>
+                                <div class="header-right">
+                                    <span t-if="leave.state == 'confirm'" class="px-4 py-2 badge rounded-pill text-bg-info">
+                                        Status: <span t-field="leave.state"\/>
+                                    <\/span>
+                                    <span t-if="leave.state in ['validate', 'validate1']" class="px-4 py-2 badge rounded-pill text-bg-success">
+                                        Status: <span t-field="leave.state"\/>
+                                    <\/span>
+                                    <span t-if="leave.state == 'to_approve'" class="px-4 py-2 badge rounded-pill text-bg-info">
+                                        Status: <span t-field="leave.state"\/>
+                                    <\/span>
+                                    <span t-if="leave.state == 'refuse'" class="px-4 py-2 badge rounded-pill text-bg-warning">
+                                        Status: <span t-field="leave.state"\/>
+                                    <\/span>
+                                <\/div>
+                            <\/div>
+
+                            <div class="card-body">
+                                <div class="row">
+                            
+                                    <div class="form-group col-6">
+                                        <label for="date_from">Date From<\/label>
+                                        <input type="date" class="form-control" id="date_from" name="date_from" aria-describedby="date_from" placeholder="Date From" t-att-value="leave.request_date_from" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" required="1"\/>
+                                    <\/div>
+                                    
+                                    
+                                    
+
+<!--
+                                <div class="form-group col-6" id="date_to_group">
+                                <label for="date_to">Date To<\/label>
+                                <input type="date" class="form-control" id="date_to" name="date_to" aria-describedby="date_to" placeholder="Date To" t-att-value="leave.request_date_from"\/>
+                            <\/div>
+                            -->
+                             
+                             
+                             <div class="form-group col-6" id="date_to_group">
+                                <label for="date_to">Date To<\/label>
+                                <input type="date" class="form-control" id="date_to" name="date_to" aria-describedby="date_to" placeholder="Date To" t-att-value="leave.request_date_from" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" required="1"\/>
+                             <\/div>
+                                    
+                                   <div class="form-group col-md-6 mt8" required="1">
+                                        <label for="holiday_status_id">Leave Type<\/label>
+                                        <select id="holiday_status_id" name="holiday_status_id" class="form-control" aria-describedby="holiday_status_id" t-att-value="leave.holiday_status_id" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};">
+                                
+                                            <t t-foreach="leave_types" t-as="leave_type">
+                                                <option t-att-value="leave_type[3]" t-att-selected="leave_type[3] == leave.holiday_status_id.id">
+                                                    <t t-esc="leave_type[0]" \/>
+                                                <\/option>
+                                            <\/t>
+                                        <\/select>
+                                    <\/div>
+
+
+ <!-- 
+                              <div class="form-group form-check col-sm-3 mt16 d-flex justify-content-center align-items-center">
+                                <input class="form-check-input mr-2" type="checkbox" id="request_unit_half" name="request_unit_half" t-att-checked="leave.request_unit_half == True"\/>
+                                <label class="form-check-label ml8" for="request_unit_half">
+                                        Half Day
+                                <\/label>
+                            <\/div>
+                            
+                            -->
+
+
+
+                                    <div class="form-group form-check col-sm-3 mt16 d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input mr-2" type="checkbox" id="request_unit_half" name="request_unit_half" t-att-checked="leave.request_unit_half == True" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"\/>
+                                        <label class="form-check-label ml8" for="request_unit_half">
+                                                Half Day
+                                        <\/label>
+                                    <\/div>
+
+
+
+
+
+                                    
+                                    <div class="form-group col-sm-3 mt8">
+                                        <label for="duration_display">Duration<\/label>
+                                        <input type="text" class="form-control" id="duration_display" aria-describedby="duration_display" placeholder="Duration" t-att-value="leave.duration_display" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"\/>
+                                    <\/div>
+                                    
+                                    
+                                    
+                                    <div class="form-group col-12 mt8">
+                                        <label for="name">Description<\/label>
+                                        <textarea class="form-control" rows="3" name="name" aria-describedby="description" t-raw="leave.name or ''" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"\/>
+                                    <\/div>
+                                           
+                
+ 
+
+
+
+
+                                        
+                                <\/div>
+                            <\/div>
+                        <\/form>
+                        
+                        
+                        I need to add a file upload field call supported_attachment_ids to above form
+<form action="\/my\/leaves\/new">
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <div class="header-btns">
+                                    <button role="btn" class="btn btn-small btn-primary mr4" type="submit" t-if="not is_readonly">Confirm Request<\/button>
+                                    <a role="btn" class="btn btn-small btn-warning mr4" t-attf-href="\/leaves\/{{leave.id}}\/refuse" t-if="is_readonly and can_refuse">Refuse Request<\/a>
+                                    <a role="btn" class="btn btn-small btn-primary mr4" t-attf-href="\/leaves\/{{leave.id}}\/approve" t-if="is_readonly and can_approve">Approve Request<\/a>
+                                <\/div>
+                                <div class="header-right">
+                                    <span t-if="leave.state == 'confirm'" class="px-4 py-2 badge rounded-pill text-bg-info">
+                                        Status: <span t-field="leave.state"\/>
+                                    <\/span>
+                                    <span t-if="leave.state in ['validate', 'validate1']" class="px-4 py-2 badge rounded-pill text-bg-success">
+                                        Status: <span t-field="leave.state"\/>
+                                    <\/span>
+                                    <span t-if="leave.state == 'to_approve'" class="px-4 py-2 badge rounded-pill text-bg-info">
+                                        Status: <span t-field="leave.state"\/>
+                                    <\/span>
+                                    <span t-if="leave.state == 'refuse'" class="px-4 py-2 badge rounded-pill text-bg-warning">
+                                        Status: <span t-field="leave.state"\/>
+                                    <\/span>
+                                <\/div>
+                            <\/div>
+
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="form-group col-6">
+                                        <label for="date_from">Date From<\/label>
+                                        <input type="date" class="form-control" id="date_from" name="date_from" aria-describedby="date_from" placeholder="Date From" t-att-value="leave.request_date_from" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" required="1"\/>
+                                    <\/div>
+                                    <div class="form-group col-6">
+                                        <label for="date_to">Date To<\/label>
+                                        <input type="date" class="form-control" id="date_to" name="date_to" aria-describedby="date_to" placeholder="Date To" t-att-value="leave.request_date_from" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" required="1"\/>
+                                    <\/div>
+                                    <div class="form-group col-md-6 mt8" required="1">
+                                        <label for="holiday_status_id">Leave Type<\/label>
+                                        <select id="holiday_status_id" name="holiday_status_id" class="form-control" aria-describedby="holiday_status_id" t-att-value="leave.holiday_status_id" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};">
+                                            <option value="false" selected="1">
+                                            Choose...
+                                            <\/option>
+                                            <t t-foreach="leave_types" t-as="leave_type">
+                                                <option t-att-value="leave_type[3]" t-att-selected="leave_type[3] == leave.holiday_status_id.id">
+                                                    <t t-esc="leave_type[0]" \/>
+                                                <\/option>
+                                            <\/t>
+                                        <\/select>
+                                    <\/div>
+
+
+                                    <div class="form-group form-check col-sm-3 mt16 d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input mr-2" type="checkbox" id="request_unit_half" name="request_unit_half" t-att-checked="leave.request_unit_half == True" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"\/>
+                                        <label class="form-check-label ml8" for="request_unit_half">
+                                                Half Day
+                                        <\/label>
+                                    <\/div>
+<!-- 
+                                    <div class="form-group col-sm-3 mt8">
+                                        <label for="duration_display">Duration<\/label>
+                                        <input type="text" class="form-control" id="duration_display" aria-describedby="duration_display" placeholder="Duration" t-att-value="leave.duration_display" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"\/>
+                                    <\/div> -->
+
+                                    <div class="form-group col-sm-3 mt8">
+                                        <label for="duration_display">Duration<\/label>
+                                        <input type="text" class="form-control" id="duration_display" aria-describedby="duration_display" placeholder="Duration" t-att-value="leave.duration_display" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" readonly="readonly"\/>
+                                           <\/div>
+
+                                    
+                                    <div class="form-group col-12 mt8">
+                                        <label for="naame">Description<\/label>
+                                        <textarea class="form-control" rows="3" name="name" aria-describedby="description" t-raw="leave.name or ''" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"\/>
+                                    <\/div>
+                                <\/div>
+                            <\/div>
+                        <\/form>
+
+i need the date to  hide when i select half  day
+add twitter bootstrap css to this code <h2>Edit URL<\/h2>
+<form action="\/update\/<%= @url[:id] %>" method="post">
+  <label for="display_name">Display Name:<\/label>
+  <input type="text" name="display_name" value="<%= @url[:display_name] %>" required>
+  <label for="category">Category:<\/label>
+  <input type="text" name="category" value="<%= @url[:category] %>" required>
+  <label for="url">URL:<\/label>
+  <input type="text" name="url" value="<%= @url[:url] %>" required>
+  <input type="submit" value="Update URL">
+<\/form>
+
+ <form action="\/my\/leaves\/new">
+                            <div
+                                class="card-header d-flex align-items-center justify-content-between">
+                                <div class="header-btns">
+                                    <button role="btn" class="btn btn-small btn-primary mr4"
+                                        type="submit" t-if="not is_readonly">Confirm Request<\/button>
+                                    <a role="btn" class="btn btn-small btn-warning mr4"
+                                        t-attf-href="\/leaves\/{{leave.id}}\/refuse"
+                                        t-if="is_readonly and can_refuse">Refuse Request<\/a>
+                                    <a role="btn" class="btn btn-small btn-primary mr4"
+                                        t-attf-href="\/leaves\/{{leave.id}}\/approve"
+                                        t-if="is_readonly and can_approve">Approve Request<\/a>
+                                <\/div>
+                                <div class="header-right">
+                                    <span t-if="leave.state == 'confirm'"
+                                        class="px-4 py-2 badge rounded-pill text-bg-info"> Status: <span
+                                            t-field="leave.state" \/>
+                                    <\/span>
+                                    <span t-if="leave.state in ['validate', 'validate1']"
+                                        class="px-4 py-2 badge rounded-pill text-bg-success">
+                                        Status: <span t-field="leave.state" \/>
+                                    <\/span>
+                                    <span t-if="leave.state == 'to_approve'"
+                                        class="px-4 py-2 badge rounded-pill text-bg-info"> Status: <span
+                                            t-field="leave.state" \/>
+                                    <\/span>
+                                    <span t-if="leave.state == 'refuse'"
+                                        class="px-4 py-2 badge rounded-pill text-bg-warning">
+                                        Status: <span t-field="leave.state" \/>
+                                    <\/span>
+                                <\/div>
+                            <\/div>
+
+                            <div class="card-body">
+                                <div class="row">
+
+                                    <div class="form-group col-6">
+                                        <label for="date_from">Date From<\/label>
+                                        <input type="date" class="form-control" id="date_from"
+                                            name="date_from" aria-describedby="date_from"
+                                            placeholder="Date From"
+                                            t-att-value="leave.request_date_from"
+                                            t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"
+                                            required="1" \/>
+                                    <\/div>
+
+
+                                    <div class="form-group col-6" id="date_to_group">
+                                        <label for="date_to">Date To<\/label>
+                                        <input type="date" class="form-control" id="date_to"
+                                            name="date_to" aria-describedby="date_to"
+                                            placeholder="Date To"
+                                            t-att-value="leave.request_date_from"
+                                            t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"
+                                            required="1" \/>
+                                    <\/div>
+
+                                    <div class="form-group col-md-6 mt8" required="1">
+                                        <label for="holiday_status_id">Leave Type<\/label>
+                                        <select id="holiday_status_id" name="holiday_status_id"
+                                            class="form-control"
+                                            aria-describedby="holiday_status_id"
+                                            t-att-value="leave.holiday_status_id"
+                                            t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};">
+
+                                            <t t-foreach="leave_types" t-as="leave_type">
+                                                <option t-att-value="leave_type[3]"
+                                                    t-att-selected="leave_type[3] == leave.holiday_status_id.id">
+                                                    <t t-esc="leave_type[0]" \/>
+                                                <\/option>
+                                            <\/t>
+                                        <\/select>
+                                    <\/div>
+
+
+                                    <div
+                                        class="form-group form-check col-sm-3 mt16 d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input mr-2" type="checkbox"
+                                            id="request_unit_half" name="request_unit_half"
+                                            t-att-checked="leave.request_unit_half == True"
+                                            t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" \/>
+                                        <label class="form-check-label ml8" for="request_unit_half">
+                                            Half Day
+                                        <\/label>
+                                    <\/div>
+
+
+                                     <div class="form-group col-sm-3 mt8">
+                                        <label for="duration_display">Duration<\/label>
+                                        <input type="text" class="form-control"
+                                            id="duration_display"
+                                            aria-describedby="duration_display"
+                                            placeholder="Duration"
+                                            t-att-value="leave.duration_display"
+                                            t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" \/>
+                                    <\/div> 
+
+
+       
+
+                                    <div class="form-group col-12 mt8">
+                                        <label for="name">Description<\/label>
+                                        <textarea class="form-control" rows="3" name="name"
+                                            aria-describedby="description" t-raw="leave.name or ''"
+                                            t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" \/>
+                                    <\/div>
+
+                                    <div class="form-group col-md-6 mt8" id="file_upload_group"
+                                        style="display: none;">
+                                        <label for="supported_attachment_ids">Supporting Attachment<\/label>
+                                        <input type="file" id="supported_attachment_ids"
+                                            class="form-control"
+                                            aria-describedby="supported_attachment_ids"
+                                            style="pointer-events: all;" multiple="true" \/>
+                                    <\/div>
+
+                                <\/div>
+                            <\/div>
+                        <\/form>
+                    <\/div>
+
+                    <!-- chatter -->
+                    <div id="leaves_communication" class="mt-4" t-if="is_readonly">
+                        <h2>History<\/h2>
+                        <t t-call="portal.message_thread">
+                            <t t-set="object" t-value="leave" \/>
+                        <\/t>
+                    <\/div>
+                <\/t>
+            <\/t>
+            
+>
+          <script type="text\/javascript">
+
+                document.addEventListener('DOMContentLoaded', function() {
+                var halfDayCheckbox = document.getElementById('request_unit_half');
+                var dateToGroup = document.getElementById('date_to_group');
+                var dateToInput = document.getElementById('date_to');
+                var dateFromInput = document.getElementById('date_from'); \/\/ Get the date_from input
+                var leaveTypeSelect = document.getElementById('holiday_status_id');
+
+                var fileUploadGroup = document.getElementById('file_upload_group');
+                var fileUploadInput = document.getElementById('supported_attachment_ids');
+
+                \/\/ Function to toggle the requirement and visibility of "Date To" and set its value
+                function toggleDateTo() {
+                var isHalfDay = halfDayCheckbox.checked;
+                \/\/ Toggle the visibility of the "Date To" input
+                dateToGroup.style.display = isHalfDay ? 'none' : 'block';
+                \/\/ Toggle the requirement of the "Date To" input and set its value
+                if (isHalfDay) {
+                dateToInput.removeAttribute('required');
+                dateToInput.value = dateFromInput.value; \/\/ Set date_to value to date_from
+                } else {
+                dateToInput.setAttribute('required', 'required');
+                dateToInput.value = ''; \/\/ Optional: Clear the value if half day is not selected
+                }
+                }
+
+                \/\/ Function to show\/hide the file upload field based on leave type
+                function toggleFileUpload() {
+                var selectedLeaveType = leaveTypeSelect.value;
+                if (selectedLeaveType === "2") {
+                fileUploadGroup.style.display = 'block';
+                fileUploadInput.setAttribute('required', 'required');
+                } else {
+                fileUploadGroup.style.display = 'none';
+                fileUploadInput.removeAttribute('required');
+                }
+                }
+
+                \/\/ Add change event listener to the "Half Day" checkbox
+                leaveTypeSelect.addEventListener('change', toggleFileUpload);
+                halfDayCheckbox.addEventListener('change', toggleDateTo);
+
+                \/\/ Call the toggle function on initial page load to set the correct state
+                toggleDateTo();
+                });
+<\/script> 
+
+        <\/xpath>
+    <\/template>
+
+
+
+
+modify the code such that once the halfday is selected also duration diseppear and morning and afternoon choice appear.Keep the rest of functionalities the same
+
+    @http.route(['\/leaves\/<int:leave_id>\/approve'], type='http', auth="user", website=True)
+    def portal_leave_approve(self, leave_id=None, access_token=None, **kw):
+        leave_sudo = self._check_access_rights(leave_id, access_token)
+        if not leave_sudo.can_approve:
+            raise ValidationError("You're not allowed to perform this action.")
+        leave_sudo.with_user(2).action_approve()
+        return request.redirect('my\/leaves')
+    
+    # @http.route(['\/my\/leaves\/new'], type='http', auth="user", website=True)
+    # def portal_leave_new(self, **kw):
+    #     leave_model = request.env['hr.leave'].with_user(2)
+    #     employee = request.env['hr.employee'].with_user(2).search([('user_partner_id', '=', request.env.user.partner_id.id)], limit=1)
+    #     if not employee:
+    #         raise ValidationError('Missing required employee for this user.')
+   
+    #     if request.httprequest.method == 'POST':
+    #         # Handle file upload
+    #         attachment_data = []
+    #         for c_file in request.httprequest.files.getlist('supported_attachment_ids'):
+    #             # Ensure the file is saved with a secure filename
+    #             filename = secure_filename(c_file.filename)
+    #             # Read the file data in binary mode
+    #             file_content = base64.b64encode(c_file.read())
+    #             # Prepare attachment data for creation
+    #             attachment_data.append({
+    #                 'name': filename,
+    #                 'datas': file_content,
+    #                 'res_model': 'hr.leave',
+    #                 'res_id': 0,  # Placeholder, to be replaced by the ID of the leave record
+    #                 'type': 'binary',
+    #             })
+
+        
+    #     if not kw.get('date_to'):
+    #         if isinstance(kw['date_from'], str):
+    #             kw['date_from'] = datetime.strptime(kw['date_from'], '%Y-%m-%d').date()
+    #         kw['date_to'] = kw['date_from'] + timedelta(days=1)
+    #         kw['date_to'] = kw['date_to'].strftime('%Y-%m-%d')
+    #         kw['date_from'] = kw['date_from'].strftime('%Y-%m-%d')
+
+    
+    #     kw.update({
+    #         'holiday_type': 'employee',
+    #         'employee_id': employee.id,
+    #         'holiday_status_id': int(kw['holiday_status_id']),
+    #         'state': 'draft',
+    #         'request_unit_half': kw.get('request_unit_half', False),
+    #         'date_from': parse(kw['date_from']),
+    #         'request_date_from': parse(kw['date_from']),
+    #         'date_to': parse(kw['date_to']),
+    #         'request_date_to': parse(kw['date_to']),
+    #         # 'supported_attachment_ids': kw['supported_attachment_ids'],
+    #     })
+
+    #     if request.httprequest.files.getlist('supported_attachment_ids'):
+    #         attachments = request.env['ir.attachment'].with_user(2).create([{
+    #             'name': attachment.filename,
+    #             'datas': base64.b64encode(attachment.read()),
+    #             'res_model': 'hr.leave',
+    #             'res_id': leave.id,
+    #         } for attachment in request.httprequest.files.getlist('supported_attachment_ids')])
+    #         leave.supported_attachment_ids = [(6, 0, attachments.ids)]
+        
+
+        
+    #     _logger.info(f'creating new leave for employee {employee.name} with data {kw}')
+    #     leave = leave_model.with_context(leave_skip_date_check=True).create(kw)
+    #     leave.with_user(2).action_confirm()
+    
+    #     # Link the attachments to the newly created leave
+    #     for attachment in attachment_data:
+    #         attachment['res_id'] = leave.id
+    #         request.env['ir.attachment'].with_user(2).create(attachment)
+    
+    #     kw.clear()
+    #     return request.redirect('my\/leaves')
+
+
+    # @http.route(['\/my\/leaves\/new'], type='http', auth="user", website=True)
+    # def portal_leave_new(self, **kw):
+    #     leave_model = request.env['hr.leave'].with_user(2)
+    #     employee = request.env['hr.employee'].with_user(2).search([('user_partner_id', '=', request.env.user.partner_id.id)], limit=1)
+    #     if not employee:
+    #         raise ValidationError('Missing required employee for this user.')
+    #     if request.httprequest.files.getlist('supported_attachment_ids'):
+    #         if request.httprequest.method == 'POST':
+    #             # Handle file upload
+    #             attachment_data = []
+    #             for c_file in request.httprequest.files.getlist('supported_attachment_ids'):
+    #                 # Ensure the file is saved with a secure filename
+    #                 filename = secure_filename(c_file.filename)
+    #                 # Read the file data in binary mode
+    #                 file_content = base64.b64encode(c_file.read())
+    #                 # Prepare attachment data for creation
+    #                 attachment_data.append({
+    #                     'name': filename,
+    #                     'datas': file_content,
+    #                     'res_model': 'hr.leave',
+    #                     'res_id': 0,  # Placeholder, to be replaced by the ID of the leave record
+    #                     'type': 'binary',
+    #                 })
+
+    #     if not kw.get('date_to'):
+    #         if isinstance(kw['date_from'], str):
+    #             kw['date_from'] = datetime.strptime(kw['date_from'], '%Y-%m-%d').date()
+    #         kw['date_to'] = kw['date_from'] + timedelta(days=1)
+    #         kw['date_to'] = kw['date_to'].strftime('%Y-%m-%d')
+    #         kw['date_from'] = kw['date_from'].strftime('%Y-%m-%d')
+
+    #     kw.update({
+    #         'holiday_type': 'employee',
+    #         'employee_id': employee.id,
+    #         'holiday_status_id': int(kw['holiday_status_id']),
+    #         'state': 'draft',
+    #         'request_unit_half': kw.get('request_unit_half', False),
+    #         'date_from': parse(kw['date_from']),
+    #         'request_date_from': parse(kw['date_from']),
+    #         'date_to': parse(kw['date_to']),
+    #         'request_date_to': parse(kw['date_to']),
+    #         # 'supported_attachment_ids': kw['supported_attachment_ids'],
+    #     })
+
+    #     _logger.info(f'creating new leave for employee {employee.name} with data {kw}')
+    #     leave = leave_model.with_context(leave_skip_date_check=True).create(kw)
+    #     leave.with_user(2).action_confirm()
+
+    #     # Move the block here, after 'leave' is assigned
+    #     if request.httprequest.files.getlist('supported_attachment_ids'):
+    #         attachments = request.env['ir.attachment'].with_user(2).create([{
+    #             'name': attachment.filename,
+    #             'datas': base64.b64encode(attachment.read()),
+    #             'res_model': 'hr.leave',
+    #             'res_id': leave.id,
+    #         } for attachment in request.httprequest.files.getlist('supported_attachment_ids')])
+    #         leave.supported_attachment_ids = [(6, 0, attachments.ids)]
+
+    #     kw.clear()
+    #     return request.redirect('\/my\/leaves')
+
+
+    @http.route(['\/my\/leaves\/new'], type='http', auth="user", website=True)
+    def portal_leave_new(self, **kw):
+        leave_model = request.env['hr.leave'].with_user(2)
+        employee = request.env['hr.employee'].with_user(2).search([('user_partner_id', '=', request.env.user.partner_id.id)], limit=1)
+        if not employee:
+            raise ValidationError('Missing required employee for this user.')
+            
+        # # Handle file upload
+        # attachment_data = []
+        # for c_file in request.httprequest.files.getlist('attachment_ids'):
+        #     # Ensure the file is saved with a secure filename
+        #     filename = secure_filename(c_file.filename)
+        #     # Read the file data in binary mode
+        #     file_content = base64.b64encode(c_file.read())
+        #     # Prepare attachment data for creation
+        #     attachment_data.append({
+        #         'name': filename,
+        #         'datas': file_content,
+        #         'res_model': 'hr.leave',
+        #         'res_id': 0,  # Placeholder, to be replaced by the ID of the leave record
+        #         'type': 'binary',
+        #     })
+
+        if not kw.get('date_to'):
+            if isinstance(kw['date_from'], str):
+                kw['date_from'] = datetime.strptime(kw['date_from'], '%Y-%m-%d').date()
+            kw['date_to'] = kw['date_from'] + timedelta(days=1)
+            kw['date_to'] = kw['date_to'].strftime('%Y-%m-%d')
+            kw['date_from'] = kw['date_from'].strftime('%Y-%m-%d')
+
+        kw.update({
+            'holiday_type': 'employee',
+            'employee_id': employee.id,
+            'holiday_status_id': int(kw['holiday_status_id']),
+            'state': 'draft',
+            'request_unit_half': kw.get('request_unit_half', False),
+            'date_from': parse(kw['date_from']),
+            'request_date_from': parse(kw['date_from']),
+            'date_to': parse(kw['date_to']),
+            'request_date_to': parse(kw['date_to']),
+        })
+
+
+
+     # # Handle file upload
+     #    attachment = request.httprequest.files.get('supported_attachment_ids')
+     #    attachment_id = None
+     #    if attachment:
+     #        filename = secure_filename(attachment.filename)
+     #        file_content = base64.b64encode(attachment.read())
+     #        attachment_data = {
+     #            'name': filename,
+     #            'datas': file_content,
+     #            'res_model': 'hr.leave',
+     #            'type': 'binary',
+     #        }
+     #        attachment_record = request.env['ir.attachment'].with_user(2).create(attachment_data)
+     #        attachment_id = attachment_record.id
+
+        _logger.info(f'creating new leave for employee {employee.name} with data {kw}')
+        leave = leave_model.with_context(leave_skip_date_check=True).create(kw)
+        leave.with_user(2).action_confirm()
+        # Create the leave record
+        # leave = leave_model.create(leave_data)
+
+        # If there's an attachment, link it to the leave record
+        # if attachment_id:
+        #     leave.sudo().write({'attachment_ids': [(4, attachment_id)]})  # Link the attachment to the leave record
+
+        # Additional leave actions (e.g., confirm leave) could be performed here
+        # leave.sudo().action_confirm()  # Uncomment this line if you want to automatically confirm the
+        # Link the attachments to the newly created leave
+        # for attachment in attachment_data:
+        #     attachment['res_id'] = leave.id
+        #     request.env['ir.attachment'].with_user(2).create(attachment)
+
+        kw.clear()
+        return request.redirect('\/my\/leaves')
+
+ <form action="\/my\/leaves\/new">
+                            <div
+                                class="card-header d-flex align-items-center justify-content-between">
+                                <div class="header-btns">
+                                    <button role="btn" class="btn btn-small btn-primary mr4"
+                                        type="submit" t-if="not is_readonly">Confirm Request<\/button>
+                                    <a role="btn" class="btn btn-small btn-warning mr4"
+                                        t-attf-href="\/leaves\/{{leave.id}}\/refuse"
+                                        t-if="is_readonly and can_refuse">Refuse Request<\/a>
+                                    <a role="btn" class="btn btn-small btn-primary mr4"
+                                        t-attf-href="\/leaves\/{{leave.id}}\/approve"
+                                        t-if="is_readonly and can_approve">Approve Request<\/a>
+                                <\/div>
+                                <div class="header-right">
+                                    <span t-if="leave.state == 'confirm'"
+                                        class="px-4 py-2 badge rounded-pill text-bg-info"> Status: <span
+                                            t-field="leave.state" \/>
+                                    <\/span>
+                                    <span t-if="leave.state in ['validate', 'validate1']"
+                                        class="px-4 py-2 badge rounded-pill text-bg-success">
+                                        Status: <span t-field="leave.state" \/>
+                                    <\/span>
+                                    <span t-if="leave.state == 'to_approve'"
+                                        class="px-4 py-2 badge rounded-pill text-bg-info"> Status: <span
+                                            t-field="leave.state" \/>
+                                    <\/span>
+                                    <span t-if="leave.state == 'refuse'"
+                                        class="px-4 py-2 badge rounded-pill text-bg-warning">
+                                        Status: <span t-field="leave.state" \/>
+                                    <\/span>
+                                <\/div>
+                            <\/div>
+
+                            <div class="card-body">
+                                <div class="row">
+
+                                    <div class="form-group col-6">
+                                        <label for="date_from">Date From<\/label>
+                                        <input type="date" class="form-control" id="date_from"
+                                            name="date_from" aria-describedby="date_from"
+                                            placeholder="Date From"
+                                            t-att-value="leave.request_date_from"
+                                            t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"
+                                            required="1" \/>
+                                    <\/div>
+
+
+                                    <div class="form-group col-6" id="date_to_group">
+                                        <label for="date_to">Date To<\/label>
+                                        <input type="date" class="form-control" id="date_to"
+                                            name="date_to" aria-describedby="date_to"
+                                            placeholder="Date To"
+                                            t-att-value="leave.request_date_from"
+                                            t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"
+                                            required="1" \/>
+                                    <\/div>
+
+                                    <div class="form-group col-md-6 mt8" required="1">
+                                        <label for="holiday_status_id">Leave Type<\/label>
+                                        <select id="holiday_status_id" name="holiday_status_id"
+                                            class="form-control"
+                                            aria-describedby="holiday_status_id"
+                                            t-att-value="leave.holiday_status_id"
+                                            t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};">
+
+                                            <t t-foreach="leave_types" t-as="leave_type">
+                                                <option t-att-value="leave_type[3]"
+                                                    t-att-selected="leave_type[3] == leave.holiday_status_id.id">
+                                                    <t t-esc="leave_type[0]" \/>
+                                                <\/option>
+                                            <\/t>
+                                        <\/select>
+                                    <\/div>
+
+
+                                    <div
+                                        class="form-group form-check col-sm-3 mt16 d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input mr-2" type="checkbox"
+                                            id="request_unit_half" name="request_unit_half"
+                                            t-att-checked="leave.request_unit_half == True"
+                                            t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" \/>
+                                        <label class="form-check-label ml8" for="request_unit_half">
+                                            Half Day
+                                        <\/label>
+                                    <\/div>
+
+
+                                     <div class="form-group col-sm-3 mt8">
+                                        <label for="duration_display">Duration<\/label>
+                                        <input type="text" class="form-control"
+                                            id="duration_display"
+                                            aria-describedby="duration_display"
+                                            placeholder="Duration"
+                                            t-att-value="leave.duration_display"
+                                            t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" \/>
+                                    <\/div> 
+
+
+       
+
+                                    <div class="form-group col-12 mt8">
+                                        <label for="name">Description<\/label>
+                                        <textarea class="form-control" rows="3" name="name"
+                                            aria-describedby="description" t-raw="leave.name or ''"
+                                            t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" \/>
+                                    <\/div>
+
+                                    <div class="form-group col-md-6 mt8" id="file_upload_group"
+                                        style="display: none;">
+                                        <label for="supported_attachment_ids">Supporting Attachment<\/label>
+                                        <input type="file" id="supported_attachment_ids"
+                                            class="form-control"
+                                            aria-describedby="supported_attachment_ids"
+                                            style="pointer-events: all;" multiple="true" \/>
+                                    <\/div>
+
+                                <\/div>
+                            <\/div>
+                        <\/form>
+                    <\/div>
+
+                    <!-- chatter -->
+                    <div id="leaves_communication" class="mt-4" t-if="is_readonly">
+                        <h2>History<\/h2>
+                        <t t-call="portal.message_thread">
+                            <t t-set="object" t-value="leave" \/>
+                        <\/t>
+                    <\/div>
+                <\/t>
+            <\/t>
+            
+>
+          <script type="text\/javascript">
+
+                document.addEventListener('DOMContentLoaded', function() {
+                var halfDayCheckbox = document.getElementById('request_unit_half');
+                var dateToGroup = document.getElementById('date_to_group');
+                var dateToInput = document.getElementById('date_to');
+                var dateFromInput = document.getElementById('date_from'); \/\/ Get the date_from input
+                var leaveTypeSelect = document.getElementById('holiday_status_id');
+
+                var fileUploadGroup = document.getElementById('file_upload_group');
+                var fileUploadInput = document.getElementById('supported_attachment_ids');
+
+                \/\/ Function to toggle the requirement and visibility of "Date To" and set its value
+                function toggleDateTo() {
+                var isHalfDay = halfDayCheckbox.checked;
+                \/\/ Toggle the visibility of the "Date To" input
+                dateToGroup.style.display = isHalfDay ? 'none' : 'block';
+                \/\/ Toggle the requirement of the "Date To" input and set its value
+                if (isHalfDay) {
+                dateToInput.removeAttribute('required');
+                dateToInput.value = dateFromInput.value; \/\/ Set date_to value to date_from
+                } else {
+                dateToInput.setAttribute('required', 'required');
+                dateToInput.value = ''; \/\/ Optional: Clear the value if half day is not selected
+                }
+                }
+
+                \/\/ Function to show\/hide the file upload field based on leave type
+                function toggleFileUpload() {
+                var selectedLeaveType = leaveTypeSelect.value;
+                if (selectedLeaveType === "2") {
+                fileUploadGroup.style.display = 'block';
+                fileUploadInput.setAttribute('required', 'required');
+                } else {
+                fileUploadGroup.style.display = 'none';
+                fileUploadInput.removeAttribute('required');
+                }
+                }
+
+                \/\/ Add change event listener to the "Half Day" checkbox
+                leaveTypeSelect.addEventListener('change', toggleFileUpload);
+                halfDayCheckbox.addEventListener('change', toggleDateTo);
+
+                \/\/ Call the toggle function on initial page load to set the correct state
+                toggleDateTo();
+                });
+<\/script> 
+
+        <\/xpath>
+    <\/template>
+
+
+
+
+modify the code such that once the halfday is selected also duration diseppear and morning and afternoon choice appear.Keep the rest of functionalities the same
+<form action="\/my\/leaves\/new">
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <div class="header-btns">
+                                    <button role="btn" class="btn btn-small btn-primary mr4" type="submit" t-if="not is_readonly">Confirm Request<\/button>
+                                    <a role="btn" class="btn btn-small btn-warning mr4" t-attf-href="\/leaves\/{{leave.id}}\/refuse" t-if="is_readonly and can_refuse">Refuse Request<\/a>
+                                    <a role="btn" class="btn btn-small btn-primary mr4" t-attf-href="\/leaves\/{{leave.id}}\/approve" t-if="is_readonly and can_approve">Approve Request<\/a>
+                                <\/div>
+                                <div class="header-right">
+                                    <span t-if="leave.state == 'confirm'" class="px-4 py-2 badge rounded-pill text-bg-info">
+                                        Status: <span t-field="leave.state"\/>
+                                    <\/span>
+                                    <span t-if="leave.state in ['validate', 'validate1']" class="px-4 py-2 badge rounded-pill text-bg-success">
+                                        Status: <span t-field="leave.state"\/>
+                                    <\/span>
+                                    <span t-if="leave.state == 'to_approve'" class="px-4 py-2 badge rounded-pill text-bg-info">
+                                        Status: <span t-field="leave.state"\/>
+                                    <\/span>
+                                    <span t-if="leave.state == 'refuse'" class="px-4 py-2 badge rounded-pill text-bg-warning">
+                                        Status: <span t-field="leave.state"\/>
+                                    <\/span>
+                                <\/div>
+                            <\/div>
+
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="form-group col-6">
+                                        <label for="date_from">Date From<\/label>
+                                        <input type="date" class="form-control" id="date_from" name="date_from" aria-describedby="date_from" placeholder="Date From" t-att-value="leave.request_date_from" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" required="1"\/>
+                                    <\/div>
+                                    <div class="form-group col-6">
+                                        <label for="date_to">Date To<\/label>
+                                        <input type="date" class="form-control" id="date_to" name="date_to" aria-describedby="date_to" placeholder="Date To" t-att-value="leave.request_date_from" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" required="1"\/>
+                                    <\/div>
+                                    <div class="form-group col-md-6 mt8" required="1">
+                                        <label for="holiday_status_id">Leave Type<\/label>
+                                        <select id="holiday_status_id" name="holiday_status_id" class="form-control" aria-describedby="holiday_status_id" t-att-value="leave.holiday_status_id" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};">
+                                            <option value="false" selected="1">
+                                            Choose...
+                                            <\/option>
+                                            <t t-foreach="leave_types" t-as="leave_type">
+                                                <option t-att-value="leave_type[3]" t-att-selected="leave_type[3] == leave.holiday_status_id.id">
+                                                    <t t-esc="leave_type[0]" \/>
+                                                <\/option>
+                                            <\/t>
+                                        <\/select>
+                                    <\/div>
+
+
+                                    <div class="form-group form-check col-sm-3 mt16 d-flex justify-content-center align-items-center">
+                                        <input class="form-check-input mr-2" type="checkbox" id="request_unit_half" name="request_unit_half" t-att-checked="leave.request_unit_half == True" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"\/>
+                                        <label class="form-check-label ml8" for="request_unit_half">
+                                                Half Day
+                                        <\/label>
+                                    <\/div>
+<!-- 
+                                    <div class="form-group col-sm-3 mt8">
+                                        <label for="duration_display">Duration<\/label>
+                                        <input type="text" class="form-control" id="duration_display" aria-describedby="duration_display" placeholder="Duration" t-att-value="leave.duration_display" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"\/>
+                                    <\/div> -->
+
+                                    <div class="form-group col-sm-3 mt8">
+                                        <label for="duration_display">Duration<\/label>
+                                        <input type="text" class="form-control" id="duration_display" aria-describedby="duration_display" placeholder="Duration" t-att-value="leave.duration_display" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};" readonly="readonly"\/>
+                                           <\/div>
+
+                                    
+                                    <div class="form-group col-12 mt8">
+                                        <label for="name">Description<\/label>
+                                        <textarea class="form-control" rows="3" name="name" aria-describedby="description" t-raw="leave.name or ''" t-attf-style="pointer-events: #{'none' if is_readonly else 'all'};"\/>
+                                    <\/div>
+                                <\/div>
+                            <\/div>
+                        <\/form>
+
+I need this form to be such that when you select half day only date from appear in the form
+optimise my text
+, we've just updated "Accept and terms conditions" feature Luksusbaby where the setting is remembered when you tick the checkbox - it stays checked next time when you visit the site.
+Let me know whether you would like to have the same implemented on Morfars. Demo:
+{% csrf_token %}
+<div>
+    {{ form.as_p }}
+    <button type="submit">Submit<\/button>
+<\/div>

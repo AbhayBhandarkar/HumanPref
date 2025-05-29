@@ -1,0 +1,1129 @@
+You are an expert on organic synthesis.
+Take your time and extract information as truthfully as possible using the provided context. If any information is not provided or you are unsure, use 'N\/A'.
+Get all the compounds from the following paragraph:
+'(5.0 g methyl 4'-bromomethylbiphenyl-2-carboxylate, 16.4 mmol, 40 ml DMF)'
+For each compound\/chemical\/molecule found, create a Json schema with the following format:
+{'chemical': 'xx', 'amount': List of amounts coupled with units, 'dropwise': True or False}
+Assume 'dropwise' as False if you are unsure and amounts can contains, mass, moles or volume.
+Tell me what are the most useful plants to have in my yard
+What organic weed killer is best for Colorado and doesn't hurt nearby plants?
+Give me 5 reasons why I should not grow hops on my garage rooftop patio
+Explain the COVID-19 pandemic, in emojis only.
+Which is the correct order of events in the lytic cycle of a bacteriophage?
+Multiple Choice
+attachment - integration - biosynthesis - maturation - release
+penetration - attachment - biosynthesis - release - maturation
+attachment - biosynthesis - maturation - release
+integration - penetration - biosynthesis - maturation - release
+attachment - penetration - biosynthesis - maturation - release
+A few years ago, Anthony Leonardi discovered and published in a paper, the after affects of COVID-19 infection.  These include the over stimulation or excitement of T-Cells, their regulation, and the over use of nascent T-Cells,  which humans stop making after a certain age.  Has there been any information to refute Leonardi's discovery?
+What is Next-Generation Sequencing (NGS)?
+Was Covid lab-leaked?
+What's the difference between a gene and a base pair? I know your DNA is made up of thousands of base pairs that reside on chromosomes, but what is an individual gene?
+briefly what does plant breeders rights registration refer to in australia
+what is the most natural shampoo available in perth or australia
+how to detect stressed cells rather than death cells based on mitochondrial genes in scRNAseq data?
+describe genetic draft 
+Create a just file which is like make files to interrogate single cell RNA seq data on Linux
+Which of the following steps occur in each cycle of PCR (polymerase chain reaction)?
+
+(i) DNA synthesis
+
+(ii) Fluorescent labelling of DNA
+
+(iii) Strand separation
+
+(iv) Hybridisation of primers
+
+Group of answer choices
+
+(iii) and (iv) only
+
+(i) only
+
+(i) and (iii) only
+
+(i), (ii), (iii) and (iv)
+
+(i), (iii) and (iv) only
+What are the most common symptoms of COVID-19?
+Are there any off the shelf products that provide MSG and Disodium inosinate in powder form in the USA?
+If you could one have 3 crops in the zombie apocalypse which would they be and why? 
+can you draft a response to this tweet: Silvana Konermann
+@SKonermann
+·
+Dec 12
+Excited to share this paper from the lab, by my first PhD student 
+@JingyiWei4
+, who's also defending tomorrow!
+
+It's been a longstanding goal of mine since the end of my own PhD to create RNA targeting tools that really work, and this a clear step in that direction.
+Quote
+Arc Institute
+@arcinstitute
+·
+Dec 12
+??New paper + tool out of @pdhsu @skonermann Labs, led by @StanfordBioE Ph.D. student @JingyiWei4: a new RNA targeting CRISPR enzyme paired with a convolutional neural network (CNN) model predicting highly efficient guide RNA sequences for transcriptome engineering.
+I am going to grow herbs several different types. I need to know the most traded\/ sold\/bought to 10 and then guides to growing them. and what the best secondary products for each would be
+Summarize this gene description: Predicted to be involved in formation of quadruple SL\/U4\/U5\/U6 snRNP and spliceosomal tri-snRNP complex assembly. Predicted to be part of U4\/U6 x U5 tri-snRNP complex and U5 snRNP.
+In the field of genetics, an organism’s appearance is referred to as its:
+A	Genes
+B	Alleles
+C	Genotype
+D	Phenotype
+Only provide the answer, no additional work.
+Can i grow african violets in an open terrarium? 
+When will the next pandemic occur?
+There are documents with patient information about Covid-19. Describe 5 burroughs that had Covid-19 in the city of New York. Include doctor's names for patients that got a positive diagnosis and treatment.
+does cell divide in interphase
+What is DNA
+explain in simple term what whole genome sequencing is and why it is important in the context of unraveling the disease pathways
+
+please write me a timeline in mermaid syntax describing what was told by goverments around world about safety, efficacy of  covid vaccines from 2019 to latest
+covid 19
+Is it morally right to kill mosquitoes?
+The paragraph below describes features of certain mutations. The answer choices in the last three drop-down options use the following abbreviations for the mutations:
+
+CM = conservative missense mutation
+NCM = nonconservative missense mutation
+F = frameshift mutation
+N = nonsense mutation
+Of the four listed types of mutations, the only type that CANNOT result from a single base pair substitution is a 
+frameshift
+ . The mutation LEAST likely to change protein activity is a 
+conservative missense
+ . The mutation that changes all the amino acids in the protein following the mutation is a 
+frameshift
+ .
+
+The mutations that change a single amino acid in the protein include 
+CM and NCM
+ . The mutations that typically change the length of the protein product include 
+F and N
+ . The mutations that occur within a codon in the open reading frame (ORF) include 
+CM, NCM, N and F
+ . 
+Why do we need to regulate gene modification in humans?
+please reformulate this statement: Soybean isoflavonoids a phytoalexins with antioxidant and chelating properties, are at the cross point of the response to abiotic and biotic stress.
+Meiosis is a type of cell division in which germ cells divide to produce haploid cells. Where does meiosis occur? (A) brain cells (B) bone cells (C) muscle cells (D) ovary cells
+you are a my image consultant, you are a perfume expert. Tell my which type of masculine perfume fits better for three types of popular personal styles of your choice
+How does the coronavirus spread?
+major studies on recommended interval between mrna covid vaccines
+Make a table for summary of vaccines According to National Immunization Schedule of India . Include following columns - Name,Strain, Dose, Immunity, Constituents, Special Contraindications and Adverse Effects. Make this table for following vaccines - IPV, Rotavirus Vaccine, Pentavalent Vaccine, PCV and MMR vaccine.
+Is it possible for a laboratory to add a custom RNA sequence to a part of a virus?
+whats a really showy realy nice really tall flowering tree that can grow well in clay loam in the Blue Mountains NSW
+What's the price of corn by state?
+please provide me with the first paragraph of the carl zimmer article on the oldest DNA
+What are common symptoms of covid-19?
+What are the origins of COVID-19?
+Is Moderna's covid-19 mRNA vaccine safe?
+What is a gene?
+what's the meaning of undesired immunostimulatory response
+Please rewrite the following paragraph within 250 word:     The management of plant viruses is critical for sustainable agriculture, given their substantial economic impact and threat to crop health. New viral diseases continually emerge due to factors like global trade, climate shifts, and the viruses' ability to rapidly evolve. Controlling these diseases revolves around two primary strategies: immunization through genetic resistance and prophylaxis to curtail virus spread using quarantine, removal of infected plants, and vector control. Accurate identification of the culprit virus is fundamental for effective disease management. Diagnosis involves categorizing a virus infecting a plant sample into a group with shared characteristics, ranging from species to strain or variant levels. Precision in diagnosis, achieved by maximizing sensitivity (true positive rate) and specificity (true negative rate), hinges on understanding genetic relationships within and across virus groups. While the influence of genetic diversity on virus populations in disease management is well-documented, integrating this diversity into detection methods remains limited. This review delves into techniques for plant virus diagnosis and control, exploring aspects like accuracy, detection level, multiplexing, quantification, portability, and designability. It also addresses how genetic diversity and virus evolution impact the performance of detection and disease control methods. Cutting-edge approaches, such as high-throughput sequencing, offer comprehensive virus identification, enabling multiplex detection, quantification, and even the discovery of new viruses. As costs decrease, this technique is poised to become the standard in diagnostics. Viral diseases pose a significant threat to agriculture, and preventing their entry into plants or developing plant resistance is crucial. Tailored strategies for each virus-host-environment combination are necessary, underscoring the importance of precise diagnostic tools. This review aims to guide plant pathologists in designing and implementing more accurate detection procedures for more effective viral disease management, considering genetic diversity and evolution in virus populations.
+
+In conclusion, the primary challenge facing agriculture in the 21st century is to sustainably produce nutritious food for the growing global population while protecting the environment and human health. Pests and diseases, particularly emerging viral diseases, have significant negative economic impacts on agriculture, making the accurate identification of viruses crucial for disease management. Currently, the first approach when a new virus-like disease appears is to test for known viruses using established techniques such as ELISA. However, antibody production is expensive and unpredictable, making molecular techniques like PCR more suitable for dealing with the frequent emergence of new viruses. Real-time qPCR is becoming the preferred molecular method for routine virus analysis and quantification, while on-site detection techniques like LFA and isothermal amplification provide almost immediate responses.
+When these methods fail to detect the causative virus, high-throughput sequencing (HTS) is the best approach, as it can identify all viruses in a plant. However, HTS is still too expensive for most routine analyses, necessitating the development of rapid, accurate detection techniques for each virus, with PCR being the easiest to develop. Quarantine and certification require sensitive, broad-spectrum detection methods to minimize escapes, making HTS the best procedure for these purposes.
+Prophylactic measures to prevent or minimize virus dispersal require information on virus biology, incidence, and epidemiology, which can be obtained through high-throughput screening techniques like ELISA and molecular hybridization. The other essential aspect of plant disease control is the development of resistant cultivars, mainly through plant breeding. However, resistance is not available for most crops and viruses, and genetic engineering faces opposition in some countries due to concerns about the ecological impact of transgenic plants.
+Emerging research fields like CRISPR genome editing and RNA silencing offer promising avenues for future disease management strategies. To achieve more durable and effective protection, it is crucial to characterize the genetic variability and relationships of plant viruses and understand the factors and mechanisms involved in genetic change. HTS has shown great potential for its broad-spectrum detection, sensitivity, and precise quantification, and it is expected that portable nanopore sequencing devices will become the standard diagnostic procedure as costs decrease and analytical procedures improve.
+
+what's a suitable and showy flowering feature shrub for clay loam soil and zone 9b in the Blue Mountains of Australia
+List some references about metal-organic frameworks
+What may happen in GWAS results if you don't sufficiently correct for population and stratification?
+How to explain RNA sequencing to a 4 year old?
+What is the best way to defend against mosquitoes?
+is the covid vax harmful
+how to introduce gene variant in cell lines
+What do I do if a mosquito keeps buzzing near my ears while I'm trying to sleep?
+In a mouse alpha-beta T cell, would one be able to use PCR to amplify the D-delta-2 gene segment? why or why not
+You are an expert on organic synthesis.
+Take your time and extract information as truthfully as possible using the provided context. If any information is not provided or you are unsure, use 'N\/A'.
+Get all the compounds from the following paragraph:
+'(4-((5-(4-(oxiran-2-ylmethoxy)phenyl)-1H-pyrazol-1-yl)methyl)phenyl)(pyrrolidin-1-yl)methanone (201 mg, 0.5 mmol) in absolute ethanol (5 mL)'
+For each compound\/chemical\/molecule found, create a Json schema with the following format:
+{'chemical': 'xx', 'amount': List of amounts coupled with units, 'dropwise': True or False}
+Assume 'dropwise' as False if you are unsure and amounts can contains, mass, moles or volume.
+Please read the following abstract from a scientific paper and return the following items in nested JSON format: 
+
+1) If any disease outbreaks were reported in the abstract as true \/ false.
+2) For each reported outbreak provide the details about the outbreak including the name of the disease, whether it affected animals humans or both, a list of the types of any animals affected, the year the outbreak occurred, the country the outbreak occurred in.
+3) Indicate as true \/ false whether there is evidence in the abstract of additional outbreaks occurring but for which details cannot be extracted from the abstract alone.
+
+Here is the abstract, "Chronic wasting disease (CWD) is a fatal, prion disease of cervids that was first detected in Alberta in 2005. Transmission of CWD by direct contact with infected individuals plays a major role in the early phases of an outbreak. Mule deer (Odocoileus hemionus) comprise 85% of CWD-infected animals in the province, and we investigated the seasonal effects of grouping patterns and landscape heterogeneity on direct, pair-wise contacts (distance of 3 m) within and between sex-specific (same or mixed sex) groups of mule deer in east-central Alberta. We determined seasonal contacts of mule deer based on proximity loggers that alter GPS schedules to record contact locations. We modeled the relative risk of contact between sex-specific dyads both within and between social groups based on landscape characteristics at the location of contact. We then assessed the support for 5 hypotheses that linked locations of seasonal contacts to occurrence of CWD on the landscape. Disease occurrence on the landscape was derived by comparing locations of CWD-infected and CWD-uninfected deer collected as part of the Alberta’s CWD hunter-harvest surveillance program. We found that contacts in winter occurred in areas where deer use was concentrated, whereas in summer, contact locations were less constrained in space where patterns of landscape characteristics at contact locations varied between sex-specific dyads. Contact probabilities of within and between-group male dyads in winter and between-group female dyads in summer were the best predictors of CWD risk in east-central Alberta. Our results relate habitat specific, social behaviors between conspecific mule deer to potential routes of CWD transmission and contribute to CWD research that guides management strategies for an emergent wildlife disease."
+Imagine yourself in a debate club:
+
+Find some pro arguments for forcing ladybugs to wear underwear!
+Sort the following crops in term of cost. coco, corn, wheat, peanut, oliva
+can a stem cell become any cell in the body?
+Balloons have four genes on three chromosomes: Colour (Chromosome 1), Metallicity (Chromosome 1), Size (Chromosome 2) and Ribbon Colour (Chromosome 3). Each balloon has two sets of chromosomes. All alleles are either dominant or recessive compared to others, and only one is expressed at any time.
+Each gene has several alleles
+
+Colour alleles, in order of most dominant to most recessive: Gold, Silver, White
+Metallicity alleles, in order of most dominant to most recessive: Metallic, Non-metallic
+Size alleles, in order of most dominant to most recessive: Big, Small
+Ribbon Colour alleles, in order of most dominant to most recessive: Red ribbon, Green ribbon
+
+If a balloon of the homozygous genotype GMBR (Gold, Metallic, Big, Red ribbon) and a balloon of the genotype homozygous SMBr (Silver, metallic, big, green ribbon) reproduce, predict the possible outcomes for the offspring genotypes, and the offspring phenotypes.
+A reaction of a liquid organic compound, which molecules consist of carbon and hydrogen atoms, is performed at 80
+centigrade and 20 bar for 24 hours. In the proton nuclear magnetic resonance spectrum, the signals with the highest
+chemical shift of the reactant are replaced by a signal of the product that is observed about three to four units downfield.
+Compounds from which position in the periodic system of the elements, which are also used in the corresponding large-scale
+industrial process, have been mostly likely initially added in small amounts?
+A) A metal compound from the fifth period.
+B) A metal compound from the fifth period and a non-metal compound from the third period.
+C) A metal compound from the fourth period.
+D) A metal compound from the fourth period and a non-metal compound from the second period.
+abbreviation for phase
+I have 6 fruit trees planted in my backyard in Woodside, CA. To achieve a permaculture food forest, what should my underplantings be?
+Please correct the following text: In contrast to other, mostly non-legume species, the antioxidant quercetin accumulation in soybean was not induced either by UV-B irradiation or copper treatment. On the other hand, the strong increase in isoflavone content suggests that these compounds are related to the plant response to both UV-B irradiation and copper toxicity. The results of the work suggestEve that in soy, the production of isoflavonoids can be an alternative to the production of flavonols under conditions of abiotic stress. Moreover, the different degree of glycosylation of isoflavonoids may indicate their different function. While in the case of UV-B irradiation it may primarily be their antioxidant activity, in the case of heavy metal exposure their chelation activity may be at least equally important.
+Here is a dataset showing number of malaria incidence cases and how it relates to temperature changes over a period of time across different cities in Nigeria.
+
+Date,Region,Temperature_Celsius,Malaria_Cases
+2010-03-01,Lagos,26.09,36
+2010-03-02,Lagos,33.3,33
+2010-03-03,Lagos,26.69,32
+2010-03-04,Lagos,34.26,35
+2010-03-05,Lagos,31.15,15
+2010-03-06,Lagos,31.43,39
+2010-03-07,Lagos,33.48,40
+2010-03-08,Lagos,29.99,9
+2010-03-09,Lagos,29.97,14
+2010-03-10,Lagos,33.76,12
+2010-03-11,Lagos,28.17,6
+2010-03-12,Lagos,26.33,34
+2010-03-13,Lagos,34.18,46
+2010-03-14,Lagos,30.95,50
+2010-03-15,Lagos,31.68,20
+2010-03-16,Lagos,27.98,10
+2010-03-17,Lagos,28.89,44
+2010-03-18,Lagos,29.81,8
+2010-03-19,Lagos,27.51,20
+2010-03-20,Lagos,31.58,33
+2010-03-21,Lagos,27.14,38
+2010-03-22,Lagos,30.45,24
+2010-03-23,Lagos,25.75,7
+2010-03-24,Lagos,32.28,43
+2010-03-25,Lagos,25.85,44
+2010-03-26,Lagos,27.17,9
+2010-03-27,Lagos,28.86,35
+2010-03-28,Lagos,33.65,24
+2010-03-29,Lagos,31.19,43
+2010-03-30,Lagos,30.73,10
+2010-03-31,Lagos,34.18,16
+2010-04-01,Lagos,33.55,22
+2010-04-02,Lagos,34.14,16
+2010-04-03,Lagos,34.5,45
+2010-04-04,Lagos,29.26,24
+2010-04-05,Lagos,30.49,36
+2010-04-06,Lagos,32.55,15
+2010-04-07,Lagos,31.78,12
+2010-04-08,Lagos,30.63,30
+2010-04-09,Lagos,28.31,7
+2010-04-10,Lagos,32.48,35
+2010-04-11,Lagos,33.14,11
+2010-04-12,Lagos,26.68,46
+2010-04-13,Lagos,30.64,46
+2010-04-14,Lagos,31.75,47
+2010-04-15,Lagos,33.15,47
+2010-04-16,Lagos,25.06,37
+2010-04-17,Lagos,32.81,41
+2010-04-18,Lagos,31.73,41
+2010-04-19,Lagos,33.11,37
+2010-04-20,Lagos,26.53,12
+2010-04-21,Lagos,33.14,6
+2010-04-22,Lagos,31.06,34
+2010-04-23,Lagos,27.23,17
+2010-04-24,Lagos,25.24,46
+2010-04-25,Lagos,33.06,44
+2010-04-26,Lagos,26.2,44
+2010-04-27,Lagos,33.55,42
+2010-04-28,Lagos,30.3,41
+2010-04-29,Lagos,29.85,30
+2010-04-30,Lagos,31.62,24
+2010-05-01,Lagos,32.07,303
+2010-05-02,Lagos,31.92,422
+2010-05-03,Lagos,34.84,339
+2010-05-04,Lagos,29.96,294
+2010-05-05,Lagos,34.09,220
+2010-05-06,Lagos,32.71,282
+2010-05-07,Lagos,33.2,201
+2010-05-08,Lagos,28.8,421
+2010-05-09,Lagos,34.42,406
+2010-05-10,Lagos,32.77,166
+2010-05-11,Lagos,28.88,113
+2010-05-12,Lagos,27.62,214
+2010-05-13,Lagos,34.66,235
+2010-05-14,Lagos,29.2,391
+2010-05-15,Lagos,25.91,172
+2010-05-16,Lagos,28.97,331
+2010-05-17,Lagos,25.77,517
+2010-05-18,Lagos,25.7,546
+2010-05-19,Lagos,26.26,247
+2010-05-20,Lagos,25.44,434
+2010-05-21,Lagos,26.25,329
+2010-05-22,Lagos,31.01,262
+2010-05-23,Lagos,30.46,311
+2010-05-24,Lagos,25.85,188
+2010-05-25,Lagos,33.06,424
+2010-05-26,Lagos,33.04,271
+2010-05-27,Lagos,30.79,246
+2010-05-28,Lagos,29.84,276
+2010-05-29,Lagos,30.07,311
+2010-05-30,Lagos,32.59,346
+2010-05-31,Lagos,27.97,282
+2010-06-01,Lagos,31.79,324
+2010-06-02,Lagos,33.39,284
+2010-06-03,Lagos,32.3,230
+2010-06-04,Lagos,25.15,307
+2010-06-05,Lagos,29.27,544
+2010-06-06,Lagos,32.42,153
+2010-06-07,Lagos,33.13,76
+2010-06-08,Lagos,26.62,236
+2010-06-09,Lagos,31.69,537
+2010-06-10,Lagos,30.84,485
+2010-06-11,Lagos,34.53,263
+2010-06-12,Lagos,25.69,216
+2010-06-13,Lagos,28.64,325
+2010-06-14,Lagos,30.47,258
+2010-06-15,Lagos,27.91,175
+2010-06-16,Lagos,25.49,272
+2010-06-17,Lagos,27.68,372
+
+Hello I am writing a script for a youtube short. Help me improve it. Here are 4 drafts:
+
+Crops, what a pain.
+They are super fun to harvest.
+But replanting them is tedious!
+Introducing natural spread for crops.
+
+
+
+Ah, the joys and pains of dealing with crops.
+They are super fun to harvest.
+Replanting, on the other hand, is a total drag.
+But wait, introducing the revolutionary concept of natural crop spread!
+
+
+
+
+
+Uh-oh, crops can be a bit tricky!
+Harvesting? Super-duper fun!
+But planting them again? Kinda blah.
+Get ready for the cool part – meet the magical natural crop spread! 
+
+
+
+Uh-oh, crops can be a bit tricky!
+Harvesting? Super-duper fun!
+But planting them again? Not as fun.
+guess what? Get ready for the super cool magic trick – introducing the amazing natural crop spread! 
+What's the best way to transition cactus seedlings from a closed container to individual pots
+As an Industry Research Analyst, I will guide you through the process of creating an industry research report on the New Zealand Shelterbelt Plants industry. To ensure a comprehensive and actionable report, please follow these instructions and focus on the key elements outlined below:
+
+Introduction:
+
+Define the scope of the New Zealand Shelterbelt Plants industry, including the types of plants commonly used, the primary purposes of shelterbelts, and the geographical focus within New Zealand.
+Outline the objectives of this research, such as understanding market dynamics, consumer behavior, and identifying opportunities for industry growth.
+Market Overview:
+
+Provide an analysis of the current industry landscape, including market size, growth trends, and the economic impact of shelterbelt plants in New Zealand.
+Identify and profile major players in the industry, including nurseries, forestry services, and agricultural cooperatives.
+Segment the market based on plant types, end-use (agricultural, residential, commercial), and region.
+Trends and Challenges:
+
+Discuss emerging trends in the industry, such as the adoption of native species, organic farming influences, and technological advancements in planting and maintenance.
+Analyze potential challenges facing the industry, including climate change impacts, pest and disease threats, and regulatory changes.
+Consumer Behavior and Preferences:
+
+Investigate the needs and purchasing patterns of consumers, which may include farmers, landowners, and local councils.
+Assess how consumer preferences are shifting, possibly towards sustainability and biodiversity, and how this affects demand for different types of shelterbelt plants.
+Competitive Analysis:
+
+Conduct a SWOT analysis (Strengths, Weaknesses, Opportunities, Threats) for key competitors in the industry.
+Evaluate the strategies employed by these competitors, their market share, and their positioning in the industry.
+Compare the product offerings, pricing strategies, and distribution channels of these competitors.
+Forecast and Recommendations:
+
+Predict future developments in the New Zealand Shelterbelt Plants industry over the next 5-10 years, considering economic, environmental, and technological factors.
+Provide actionable recommendations for industry stakeholders to capitalize on opportunities and mitigate risks.
+Conclusion:
+
+Summarize the key findings from the report.
+Highlight the strategic recommendations and the expected impact on the industry.
+Appendices and References:
+
+Include any additional data, charts, or graphs that support the analysis.
+List all sources used in the research, adhering to proper citation standards.
+Please ensure that the report is data-driven, utilizing statistical models where appropriate, and that all findings are validated through a combination of primary and secondary research. The final report should be coherent, logically structured, and provide clear, actionable insights for industry stakeholders.
+Tell me about vaccination as a layperson. Particularly about hepatitis b vaccination. 
+Change the voice to active voice instructions in the following paragraph and output each sentence separately :'Synthesis of 2-Phenyl-4H-benzo [3,1] oxazine-4-one (2) [21] A solution of compound (1) (2 g,0.001 mol) which dissolved in acetic anhydride (3 mL,0.032 mol) was refluxed for (4 hours) in dry conditions. After cooling the solution to room temperature, the mixture was poured into cold petroleum ether to give crystals that were recrystallized from ethanol. Physical properties of compound (2) and FTIR spectral are demonstrated in Table 1.'
+Create three sets of question and answer from the knolwedge section. Each question should begin with "Question:" and not more than 50 words and limited to information in the knowledge section. Each anaswer should begin with "Answer" and not more than 200 words and limited to information oin the knowledge section.
+
+The knowledge section:
+
+The present disclosure provides, in some embodiments, vaccines that comprise RNA (e.g., mRNA) polynucleotides encoding a human metapneumovirus (hMPV) antigenic polypeptide, a parainfluenza virus type 3 (PIV3) antigenic polypeptide, a respiratory syncytial virus (RSV) antigenic polypeptide, a measles virus (MeV) antigenic polypeptide, or a betacoronavirus antigenic polypeptide (e.g., Middle East respiratory syndrome coronavirus (MERS-CoV), SARS-CoV, human coronavirus (HCoV)-OC43, HCoV-229E, HCoV-NL63, HCoV-NL, HCoV-NH (New Haven) and HCoV-HKU1) (see, e.g., Esper F. et al. Emerging Infectious Diseases, 12(5), 2006; and Pyrc K. et al. Journal of Virology, 81(7):3051-57, 2007, the contents of each of which is here incorporated by reference in their entirety). The present disclosure also provides, in some embodiments, combination vaccines that comprise at least one RNA (e.g., mRNA) polynucleotide encoding at least two antigenic polypeptides selected from hMPV antigenic polypeptides, PIV3 antigenic polypeptides, RSV antigenic polypeptides, MeV antigenic polypeptides and BetaCoV antigenic polypeptides. Also provided herein are methods of administering the RNA (e.g., mRNA) vaccines, methods of producing the RNA (e.g., mRNA) vaccines, compositions (e.g., pharmaceutical compositions) comprising the RNA (e.g., mRNA) vaccines, and nucleic acids (e.g., DNA) encoding the RNA (e.g., mRNA) vaccines. In some embodiments, a RNA (e.g., mRNA) vaccine comprises an adjuvant, such as a flagellin adjuvant, as provided herein.
+
+The RNA (e.g., mRNA) vaccines (e.g., hMPV, PIV3, RSV, MeV, BetaCoV RNA vaccines and combinations thereof), in some embodiments, may be used to induce a balanced immune response, comprising both cellular and humoral immunity, without many of the risks associated with DNA vaccination
+
+
+Explain this view in a line or two :
+"Finally, the skeptical view is that even if the genome is edited as expected and the desired functional output is achieved at the given time, the complex relationship between genetic information and biological phenotypes is not fully understood. Therefore, the biological consequence of editing a gene in germline and\/or somatic cells may be unclear and unpredictable depending on the context. Many biological traits are determined by the complex regulatory actions of numerous genes. Hence, is it difficult, if not impossible, to "design" a biological phenotype at the wholeorganism level. Across biological outcomes, whether in normal or in disease development, it is uncommon that a single gene is the only factor shaping a complex biological trait. Other genetic regulatory factors such as additional genes or distal regulatory elements (e.g., enhancer or repressor elements), as well as environmental and epigenetic factors, contribute to the emergence of a biological phenotype. To argue that modifying a gene changes a desired phenotype (under certain conditions) implies at least a reasonable understanding of other independent variables contributing to the phenotype's instantiation. But this understanding is still far from complete in many normal and disease processes [44, 45] . Given the uncertainty regarding how gene expression and modification influence complex biological outcomes, it is difficult to appraise potential risk and benefit. This ambiguity creates a challenge on its own and is one of the sources obscuring efficient ethical deliberation and decision making."
+How is organic chemistry harder than general chemistry?
+fill this out: 
+Main Ideas \/ Direct quotes
+Use quotation marks and page numbers  so you know which parts were copied directly and from where.
+Summary \/ Ideas in Own Words\/ Further Questions
+Define terms and list more keywords. Consider writing these in simple bullet points or paraphrases and avoid using the same sentence structure as original text.
+my research question is this so tell me about relevant information from this source:What role did medical innovations and public health responses play in shaping the impact of the 1918-1920 Influenza epidemic on different demographics in the United States?
+
+
+
+this is the article: The American military experience in World War I and the influenza pandemic were closely intertwined. The war fostered influenza in the crowded conditions of military camps in the United States and in the trenches of the Western Front in Europe. The virus traveled with military personnel from camp to camp and across the Atlantic, and at the height of the American military involvement in the war, September through November 1918, influenza and pneumonia sickened 20% to 40% of U.S. Army and Navy personnel. These high morbidity rates interfered with induction and training schedules in the United States and rendered hundreds of thousands of military personnel non-effective. During the American Expeditionary Forces' campaign at Meuse-Argonne, the epidemic diverted urgently needed resources from combat support to transporting and caring for the sick and the dead. Influenza and pneumonia killed more American soldiers and sailors during the war than did enemy weapons.
+
+In the fall of 1918, U.S. Army and Navy medical officers in camps across the country presided over the worst epidemic in American history, but the story was not new. War and disease have been linked throughout history as armies, weapons, and human pathogens have met on the battlefield. The conquistadores brought with them diseases that devastated the New World; typhus plagued Napoleon's armies; and typhoid fever humiliated the American Army during the Spanish-American War. But now U.S. Army and Navy personnel knew how to test and sanitize water supplies, vaccinate troops against typhoid and smallpox, and treat or prevent other infections. Modern bacteriology, it seemed, had tamed many diseases. Navy Surgeon General William C. Braisted proudly stated that “infectious diseases that formerly carried off their thousands, such as yellow fever, typhus, cholera, and typhoid, have all yielded to our modern knowledge of their causes and our consequent logical measures taken for their prevention.”1
+
+Twentieth-century warfare, however, had evolved to an even more deadly scale as industrialized armies of millions battled on the plains of Eastern Europe, the cliffs of Gallipoli, and in the deadly trenches of the 550-mile-long Western Front. When the European arms race exploded into war in 1914, the empires shocked themselves and the world with the killing power of their artillery and machine guns, their U-boats and mines, and their poison gas. These new weapons generated new, horrible injuries that took life and limb in a flash or festered into gangrenous wounds that could further maim and kill. The carnage traumatized some men into shellshock, and poison gases burned and suffocated others so horribly that nurses dreaded caring for them because they could provide little comfort. War diseases—notably the soldiers' nemeses diarrhea, dysentery, and typhus—flourished, and the trenches offered new maladies such as “trench foot,” an infection caused by wearing sodden boots and standing in water and mud for days on end, and “trench fever,” a debilitating fever transmitted by body lice.
+
+Then, in the fourth dreadful year of the war, as the American Expeditionary Forces (AEF) assumed fighting strength and prepared their first great offensive against the Germans, the flu struck. By the War Department's most conservative count, influenza sickened 26% of the Army—more than one million men—and killed almost 30,000 before they even got to France.2,3 On both sides of the Atlantic, the Army lost a staggering 8,743,102 days to influenza among enlisted men in 1918.4 (p. 1448) The Navy recorded 5,027 deaths and more than 106,000 hospital admissions for influenza and pneumonia out of 600,000 men, but given the large number of mild cases that were never recorded, Braisted put the sickness rate closer to 40%.5,6 (p. 2458)
+
+The Army and Navy medical services may have tamed typhoid and typhus, but more American soldiers, sailors, and Marines would succumb to influenza and pneumonia than would die on the industrialized battlefields of the Great War. The story of the influenza epidemic in the military is often lost in the historical narrative of the Great War, included merely as a coda to that four-year horror, coinciding with the final battles and the Armistice. But an examination of medical reports and War Department and Department of the Navy documents from the war reveals that the war and the epidemic were intertwined.7 World War I and influenza collaborated: the war fostered disease by creating conditions in the trenches of France that some epidemiologists believe enabled the influenza virus to evolve into a killer of global proportions. In turn, disease shaped the war effort by rendering much of the Army and Navy non-effective and diverting resources, personnel, and scarce human attention and energy from the military campaign. The exigencies of war also thwarted many of the efforts such as crowd mitigation and quarantines to control the epidemic. The influenza epidemic in the U.S. military therefore provides a cautionary tale about the power of war to change the health environment and the power of disease to influence the conduct of war.
+
+Go to:
+GOING TO WAR
+The United States at first hung back from the killing in Europe, as many Americans believed it was not their fight. But under increasing pressure from Britain and France, and angered by German U-boat attacks that threatened American commerce and security, and the revelations in the Zimmermann Telegram that Germany was urging Mexico to attack the United States, President Wilson abandoned neutrality and in April 1917 asked Congress for a declaration of war.
+
+The U.S. economy was already booming as farmers and manufacturers shipped foodstuffs and military supplies to the belligerent nations. Now the United States would also generate its own military force that would help overwhelm the enemy and bring about the armistice of November 11, 1918. Congress quickly established a draft, and more than 4,600 Selective Service draft boards screened 10 million men to find the strongest and most fit soldiers and sailors. The military grew from just 378,000 strong in April 1917 to more than 4.7 million by war's end, with an Army of 4.1 million and a Navy of 600,000. Seventy-two percent of enlisted forces were inducted, and the military population reflected the country's ethnically diverse and racially segregated society. An estimated 20% of Army draftees were foreign-born and the troops spoke at least 46 languages, some 5,700 were Mexican aliens, and 12,500 were American Indians.8 (p. 367-409) More than 400,000 African Americans served in the Army, some in two black combat divisions but most in labor battalions. The Navy employed only 5,300 black sailors, confining them to positions as cooks and stewards.9
+
+War mobilization drew millions of civilians into military institutions and extended the military into all corners of the country. To train and supply these men, the Army and Navy expanded existing facilities and directed training activities at various civilian organizations. Military camps, arsenals, air fields, and supply depots sprouted up in every state. The Army began training recruits in the fall of 1917 at 32 large camps, each home to 25,000 to 55,000 troops. Soldiers also went to specialized camps for training in specific fields such as artillery training at Camp Knox, Kentucky, railway operations at Camp Benjamin Harrison in Indianapolis, military engineering at Camp Forrest, Georgia, and medical unit training at Camp Crane, Pennsylvania. The War Department also operated some 40 air fields for aviator training and 10 embarkation and debarkation camps.8 (p. 677-–78) The Navy expanded its training capacity from 6,000 recruits to more than 100,000 at stations on both coasts, the Gulf of Mexico, and Lake Michigan, and also had specialized training centers such as the Navy gas engine school and the aviation ignition school at Columbia University in New York. In addition to the training camps, in the summer of 1918 the War Department established the Student Army Training Corps (SATC), intended to augment the work of the Reserve Officers Training Corp (ROTC) and prevent war mobilization from emptying institutions of higher education. Under the program, more than 500 colleges and universities trained officer candidates and provided technical instruction in fields such as auto mechanics and radio operation. By the Armistice, about 158,000 young men had enrolled in SATC programs.8 (p. 556) This expansion of military institutions created a virtual network of young adults across which influenza could and would travel (Figure 1).
+
+An external file that holds a picture, illustration, etc.
+Object name is 12_ByerlyFigure1.jpg
+Figure 1.
+Locations of Army training camps in the U.S. in 1918
+
+Source: War Department (US). Annual report, 1919. Washington: Government Printing Office; 1920. p. 1519.
+
+As the Army grew, the Army Medical Department raced to meet its needs. Military medicine was more like public health medicine (which managed large populations) than private medicine (which focused on care for individuals). By necessity, line officers cared less about who was sick or on leave than who they could send into battle. This was called the “effective” rate—how many men were available in a given unit to work and fight. Medical officers therefore tried to keep non-effective rates as low as possible, and measured their success statistically more than by individual patient care. The Army Medical Department tracked sickness in camps, combat units, labor battalions, ports, and ships by the day, week, month, and year, and compared its record with civilians, earlier wars, and other armies. Army Medicine also combined the old sanitation model of clean water and fresh air with the new public health approaches of educating soldiers on how to stay healthy and prevent disease. Army Surgeon General William C. Gorgas came out of the sanitary tradition and stressed good food, clean water, fresh air, and no crowding, but like other Progressives, also saw the Army as an opportunity to instill young men with middle-class values such as good personal hygiene.10
+
+To care for the growing Army, the Medical Department increased its hospital capacity from 9,500 beds to 120,000 in the United States alone. The Red Cross assisted by recruiting trained nurses for the Army Nurse Corps and organizing ambulance companies and 50 hospitals of 1,000 beds each out of American universities and medical institutions. The Army Medical Department ultimately numbered 30,500 medical officers, 21,500 nurses—including 350 African American physicians but no black nurses until December 1918—and 264,000 enlisted men.8 (p. 257) The Navy Bureau of Medicine and Surgery had some 3,000 medical officers, 1,700 nurses, and 11,000 enlisted men.5 (p. 2066, 2073) As one civilian public health official pointed out, with almost 30% of American physicians in military service, “…there were sections of the country that were absolutely stripped of physicians.” During the pandemic in civil society, therefore, “…the great majority of available, medical and nursing personnel, were already in the Army or Navy, so that the available personnel from which to draw was limited.”11
+
+World War I was largely a ground war, so the Army bore the brunt of the fighting. While s
+tell me how covid started?
+Plan a crop rotation for me, I want to plant squash, peas, potatoes, bell peppers, onions, and tomatoes.
+Please give me three reasons why I should have plant in the house.
+Take your time and extract information as truthfully as possible using the provided context. If any information is not provided or you are unsure, use "N\/A".
+The only synthesis action that you know are the following:
+'add': Add, mix or pour a new compound to a solution, give information about the compound name, compound amount, time, temperature and pressure.
+'SetTemperature' : Cool or heating operations making the temperature of the synthesis change, give the new temperature value.
+‘Stir’: Stirring or agitation operation, give the time, temperature and pressure.
+'Concentrate': Evaporation of a substance
+'DrySolution': Drying a solution
+'CollectLayer': Collect a organic or aqueous layer
+'Extract': Extraction of a compound using a solvent
+'Wash': Cleaning or washing a substance
+'MakeSolution': Preparing a solution initially, give information about the solvent and compounds and quantities
+'Filter': Filtering or centrifuge operation
+'Recrystalize': Recrystalization or crystallization operation
+'Purify': Purification or chromatography operation
+'Quench': Quenching operation
+'PhaseSeparation': Separation or fractionation between organic phase and aqueous phase layers
+'PH': Change de the mixture pH
+'Reflux': Reflux operation
+‘DrySolid’: Dry operation applied on a solid product
+'Degas': Desgasification or purge of the solution with gas
+'Partition': Addition of 2 immiscible solvents for a phase separation
+'Sonicate': Agitation with soundwaves
+'Triturate': Triturate the residue
+'Wait': Leave the mixture stand during a specified time
+'FinalProduct': Final product obtained with the synthesis procedure and yield
+'FollowOtherProcedure': Other procedure used
+'InvalidAction': An action not defined previously
+Describe the following synthesis procedure using a synthesis action graph using the synthesis action that you know:
+'To 80 ml of acetic anhydride was suspended 7.3 g (0.05 mol) of coumarin and 16.1 g (0.05 mol) of iodobenzene diacetate, and 10 g (0.1 mol) of concentrated sulfuric acid was added dropwise thereto at 0 to 7° C. for 1 hour, followed by gradually warming to room temperature and reacting with stirring for 8 hours. After completion of the reaction, the reaction solution was poured in 200 ml of ice water, and 150 ml of dichloromethane was added thereto to dissolve insoluble substance. Then 18.4 g (0.1 mol) of potassium hexafluorophosphate was added to the obtained solution, followed by stirring at room temperature for 2 hours. The dichloromethane layer obtained by fractionation was washed with 100 ml of water twice. The obtained dichloromethane layer was semi concentrated under reduced pressure and the precipitated crystal was filtered off, followed by drying under vacuum at 50° C. for 2 hours to obtain 2.4 g of objective substance as pale yellow crystal (yield: 10%).'
+Return 'NoAction' when no action is found
+
+what's the name of the medusa able to rejuvenate its cells?
+You are an expert on organic synthesis.
+Take your time and extract information as truthfully as possible using the provided context. If any information is not provided or you are unsure, use 'N\/A'.
+Get all the compounds from the following paragraph:
+'(3-(p-cyclopentylbenzoyl)propionic acid, 4.9 g, ethanol, 50 ml)'
+For each compound\/chemical\/molecule found, create a Json schema with the following format:
+{'chemical': 'xx', 'amount': List of amounts coupled with units, 'dropwise': True or False}
+Assume 'dropwise' as False if you are unsure and amounts can contains, mass, moles or volume.
+what are some good academic sources for plant selection for the design of australian gardens
+You are an expert on organic synthesis.
+Take your time and extract information as truthfully as possible using the provided context. If any information is not provided or you are unsure, use 'N\/A'.
+Get all the compounds from the following paragraph:
+'(isoquinoline-5-sulfonic acid {2-[2-(4-bromo-phenylsulfanyl)-ethylamino]-ethyl}-amide, 73.0 mg, 0.157 mmol, CH3OH, 5 mL, H2O, 1.3 mL)'
+For each compound\/chemical\/molecule\/solvent found, create a Json schema with the following format:
+{'chemical': 'xx', 'amount': List of amounts coupled with units, 'dropwise': True or False}
+Assume 'dropwise' as False if you are unsure and amounts can contains, mass, moles or volume.
+I want to get a tattoo of something related to my DNA. Is it possible to have my epigenome read and tattooed in some way? If not possible, provide me with some creative ideas instead.
+Correct the following text: Isoflavones are the main class of isoflavonoids found predominantly in soy. The main and most studied compounds are daidzein, genistein, glycitein and their glycosides, malonylglycosides and acetylglycosides.  Biochanin A and formononetin have also been described there (Karki et al. 2020). Flavonols, are important and widespread class of flavonoids. They are highly abundant in soy mainly as diverse glycosides of quercetin, kaempferol, or, in lesser extent also isorhamnetin. Their presence can vary widely in both quality and quantity among different cultivars (Lee et al. 2022).
+is it morally acceptable to kill mosquitos?
+what sort of plants are good for erosion?
+Please write a review of DNA methylation of human repetitive sequences in the genome. How is the hypomethylation of repetitive elements related to cancer?
+Explain whole exome sequencing
+what are the best 5 plants for a homesteader to have in their garden?
+Is Moderna's covid-19 mRNA vaccine safe?
+summarize this experiment:   <Sample iid="GSM2677372">
+    <Status database="GEO">
+      <Submission-Date>2017-06-21<\/Submission-Date>
+      <Release-Date>2018-06-20<\/Release-Date>
+      <Last-Update-Date>2019-05-15<\/Last-Update-Date>
+    <\/Status>
+    <Title>MCF7 p53 ChIPseq, 2hrs 4GY<\/Title>
+    <Accession database="GEO">GSM2677372<\/Accession>
+    <Type>SRA<\/Type>
+    <Channel-Count>1<\/Channel-Count>
+    <Channel position="1">
+      <Source>MCF7<\/Source>
+      <Organism taxid="9606">Homo sapiens<\/Organism>
+      <Characteristics tag="cell line">
+MCF7
+      <\/Characteristics>
+      <Characteristics tag="treated with">
+4GY for 2hrs
+      <\/Characteristics>
+      <Characteristics tag="chip antibody">
+anti-p53  antibody (DO-1, Santa Cruz Biotechnology, SC-126X, Lot:G0115)
+      <\/Characteristics>
+      <Treatment-Protocol>
+Cell were Irradiated with a RS-2000 source (RadSource), 160KeV
+      <\/Treatment-Protocol>
+      <Growth-Protocol>
+Cells were passaged as at least twice post-thaw and used at a passage number of 6-14. ~70% confluent plates were treated and harvested
+      <\/Growth-Protocol>
+      <Molecule>genomic DNA<\/Molecule>
+      <Extract-Protocol>
+ChIPseq lysates were clarified from sonicated nuclei and IPed with DO-1 anti-p53 antibody. RNA samples were extracted with Trizol, purified on Zymo columns, and 500ng polyA selected.
+DNA and mRNA libraries were prepared with standard illumina compatible protocols (NEBnext Kit), ATACseq Lib was prepared by PCR of MuA tagmented DNA.
+      <\/Extract-Protocol>
+
+Why are some people anti vaccination?
+How many gene markers does Ancestry DNA test?
+What were some things that Anthony Fauci got wrong during Covid?
+How fast an infection can kill someone ?
+\/\/ Here is a question or task: What is the difference between RNA and DNA?
+
+\/\/ Let's think step-by-step to answer this:
+Step 1) Abstract the key concepts and principles relevant to this question:
+Step 2) Use the abstractions to reason through the question:
+
+\/\/ Final Answer:
+give me a protocol to grown cotton in a lab?
+how could one make SARS-Cov2 more infectious?
+is it possible to normalize gene RNA-seq with python ? 
+All of the various alleles at all gene loci for all individuals in a population is referred to as the population's 
+ 
+.
+Yes or no, are the following suitable to be grown on the South Eastern coast of Australia in full sun, regular salt laden wind, and sandy soil:
+Acacia longifolia subsp. sophorae
+Hebe 'Wiri Mist'
+Westringa fruticosa
+Grevillea 'Superb'
+Myoporum parvifolum
+Passiflora edulis
+Feijoa sellowiana
+Agonis flexuosa
+Angaphota costata
+Banksia integrifolia
+Viola hederacea
+If not provide reasoning and two alternatives.
+Propose a synthesis pathway for butylbenzene. You ONLY have NaCl, butane, and benzene as starting reagents. No other reagents are allowed. You may use any catalysts and equipment you need, but the catalysts MUST be reformed by the end of synthesis.
+What do you know about liquid chromatography?
+What is the best tool to locally examine RNA-seq bams?
+Explain DNA like a five-year-old.
+Create a PowerPoint presentation for infectious diseases in dogs, cats, horses and rabbits. 
+Does centrifugation pose any risk to de-conjugate an antibody from a target. Including but not limited to antibody-drug conjugates (ADCs)
+best high profit small space crop for easy growing and with a high demand or secondary product that can from it, that might be able to be made at home.
+Summarize: Owing to Covid many programs \/ services have been placed on hold. The Meal Support program continued and increased for both hot and frozen. Volunteers contributed a great amount of time as client numbers increased which also increased distances driven and hours donated. Over 24 volunteers continued on a regular basis to support the agency throughout the year thus enabling many more vulnerable clients the continued health and needs to continue. This was also seen in our Volunteer Assisted Transportation program when protocols allowed.
+i guess interesting part of the covid pandemic is that not once we heard from authorities that we could use zink . Yet in 2010, it was already known that it helps. i am refering to paper named "Zn(2+) inhibits coronavirus and arterivirus RNA polymerase activity in vitro and zinc ionophores block the replication of these viruses in cell culture". Raplph Baric was one of authors. yet few years later he pushed the vaccine as the only remedy, ignoring his own research. That sounds like crime to me.
+
+i think that emergency use auhorisation would not be possible if they did admit it can be treated by vitamins, zink and ivermectin\/hcq.
+
+i guess fauci and baric knew well that zink could save many lives but they needed to push the vaccine. they also did help developing the virus. Which makes them war criminals in my view.
+Can you help me rephrase and elaborate the following text? Sample preparation:	cereals and feed: extraction, filtration and dilution Time requirement:	sample preparation (for 10 samples)
+cereals and feed	approx. 30 min
+test implementation (incubation time)	45 min
+
+Detection limit:	cereals and feed: ............................approx. 1.75 ppb
+(corresponding to the standard substance)
+
+Recovery rate:	approx. 85 %
+(corresponding to the	coefficient of variation: 15 %
+standard substance)
+
+Cross reactivity:	The specificity of the RIDASCREEN® Aflatoxin Total
+test was established by analyzing the cross-reactivity to corresponding mycotoxins in buffer system..
+Aflatoxin B1	100 %
+Aflatoxin B2	approx. 48 %
+Aflatoxin G1	approx. 75 %
+Aflatoxin G2	approx. 18 %
+1.	Intended use
+
+RIDASCREEN® Aflatoxin Total is a competitive enzyme immunoassay for the quantitative analysis of aflatoxins in cereals and feed.
+
+2.	General
+
+Aflatoxins are secondary metabolites of the fungi species Aspergillus flavus, parasiticus und nomius. These fungi occur in humid tropical areas and the contamination of vegetable food takes place in the cultivable countries. Aflatoxins belong to the strongest natural occurring cancerogenic substances.
+Aflatoxin B1 which is mostly found together with the aflatoxins B2, G1 and G2 is the one with the highest toxic importance. It is found above all in corn, peanuts, brazil nuts, cotton seed and pistachios.
+Depending on the toxicity of these mycotoxins in the countries of the EU equal limits are valid for aflatoxins, 2 ppb for aflatoxin B1 and 4 ppb for all aflatoxins in total in cereals.
+
+3.	Test principle
+
+The basis of the test is the antigen-antibody reaction. The wells in the microtiter strips are coated with capture antibodies directed against anti-aflatoxin antibodies. Standards or the sample solutions, aflatoxin-enzyme conjugate and anti-aflatoxin antibodies are added. Free and enzyme conjugated aflatoxin compete for the aflatoxin antibody binding sites (competitive enzyme immunoassay). At the same time, the anti-aflatoxin antibodies are also bound by the immobilized capture antibodies. Any unbound enzyme conjugate is then removed in a washing step. Substrate\/chromogen solution is added to the wells and incubated. Bound enzyme conjugate converts the chromogen into a blue product. The addition of the stop solution leads to a color change from blue to yellow. The measurement is made photometrically at 450 nm; the absorption is inversely proportional to the aflatoxin concentration in the sample.
+Craft an argument for both sides to the question: Is it morally right to kill mosquitoes?
+If the covid vaccines is the cause of excess deaths all around the world, what should be done? Is anyone criminally liable?
+explain to me how trna works in ribosomes?
+Your task is to extract biomedical entities from provided text:
+Cholesterol synthesis requires cytosolic enzymes, SER, and peroxisomes. It starts from acetyl-CoA and takes place in the following successive steps (see Figure 1): (1) mevalonate is converted in two steps to 5-pyrophosphomevalonate (mevalonate 5-pyrophosphate) using ATP; (2) the five-carbon isoprene unit isopentyl pyrophosphate (IPP) is formed by the decarboxylation of 5-pyrophosphomevalonate (a process requiring ATP); (3) IPP is isomerized to 3,3-dimethylallyl pyrophosphate (DPP); (4) IPP and DPP condense and form 10-carbon geranyl pyrophosphate (GPP); (5) GPP can re-condense with an IPP molecule to create 15-carbon farnesyl pyrophosphate (FPP); (6) two FPPs combine to release pyrophosphate and are reduced forming squalene (a 30-carbon isoprenoid); and (7) squalene is then converted to lanosterol in two successive reactions catalyzed by the SER related enzyme using NADPH and oxygen. Linear squalene hydroxylation cyclizes this structure to lanosterol; followed by (8) conversion of lanosterol to cholesterol through many reactions of chain shortening, oxidative cleavage of methyl groups, reduction of double bonds, and repositioning these bonds.
+I'm having trouble getting ceanothus to flourish in my yard when i plant it
+give an alternative feature shrub to Grevillea 'Superb' that is suitable to south eastern coastal conditions regular salt laden wind
+Why did Borros Johnson delay lockdown during the early days of Covid 19 and was it the right strategy 
+Given the following two reviews separated by ###:
+
+Review 1:
+The findings concerning the role of TIM1 and domains thereof in the trafficking of T cells are original and important. 
+The manuscript is clear and uses powerful tools. I do have minor reservations on the discussion concerning apparent differences between findings in this paper and those reported elsewhere. The authors use a simple reductionist tool kit. Normal T cells are not studied (for reasons that are well justified). Differences in the cell population used in this and the cited works may or may not prove important. Next is the choice reagents to conduct the analysis. In mouse systems there are anti Tim1 antibodies that stimulate and others that inhibit T cell activation. It would be fascinating to learn (not in this paper) whether this is due to effects on Tim1 localization in or opposed to the IS.
+
+###
+
+Review 2:
+The research described in this article is interesting, mostly well done, and worth publishing. 
+My major concerns:1. The manuscript over interprets some of the data.2. The polarized distribution of Tim1 needs a confirmation using primary T cells.3. The effects of Tim1 mutations on the distribution of signaling molecules should be included to support tyrosine phosphorylation data.
+
+###
+
+Are there any contradicting claims made between the reviews? Only include topics that are mentioned in all reviews. Focus on topics that one reviewer thinks are not good, while the other praises the same topic.
+
+Write the answer following format:
+
+[CLAIM]
+Review 1: <part of review 1>
+Review 2: <part of review 2>
+[\/CLAIM]
+who draws crop circles in England?
+Briefly outline the cultural requirements, tolerances, growth habit and notable features of the following, as pertains to clay loam soil and conditions of the Blue Mountains in NSW (zone 9b):
+Grevillea ivanhoe
+Lavenfula angustifolia as a small hedge
+Rhododendron pjm as a flowering feature plant
+Doodia aspera for shade planting
+Wisteria floribunda for a pergola
+Pieris japonica for a container plant
+Malus Jonathun as an espalier
+Prunus cerasus as a medium specimen tree
+Rubus idaeus as a medium deciduous shrub
+Camelia sasanqua as a large evergeen shrub
+Eucalyptus as a large evergreen flowering tree
+Citrus aurantifolia as a small evergreen tree
+what is weedcoceth
+ List the most common plants of permaculture in Brazil to be used for a project on local agriculture, farm, roça, family farm.
+Where do you sell your crop during harvest?
+How many people would have died from Corona without a vaccine?
+ترجمه. Next generation sequencing has revolutionized our understanding of the molecular pathways that drive the development and progression of human cancers.
+There is now widespread mass transmission of COVID-19 globally and significant resistance to evidence-based public health advice and interventions. What's strategies can now be used to regain local elimination of the disease in populations where there was previously good control of the disease?
+Summarize this in one or two lines only focusing on human embryo aspect: 
+```
+- Although it is less than a decade old, CRISPR-Cas9 has demonstrated unprecedented potential to revolutionize innovation in basic science. From viruses and bacteria [50, 51] , to simple model organisms, such as Drosophila melanogaster (fruit fly) [52] , Anopheles gambiae (mosquito) [53] , Saccharomyces cerevisiae (budding yeast) [54] , Hydra magnipapillata (hydra) [55] , Caenorhabditis elegans (round worm) [56] , Danio rerio (zebra fish) [57] , and Arabidopsis thaliana (rockcress) [58] , to larger animals such as pigs [59] , cattle [60] , and monkeys [61] , and even human zygotes [62, 63] , CRISPR experimentation has led to novel, important findings. Such benefits include at least the following: increased overall efficiency in gene editing compared with previous genomic engineering techniques like transcription activator-like effector nucleases (TALENs) and zinc finger nucleases (ZNFs) [64] ; significant insights into the evolutionary transformation of fish fins into tetrapod limbs [65] ; investigation into new organisms [66] ; genetic and epigenetic screens [67, 68] ; the creation of novel cell lines [69] ; high-throughput screens and libraries [70] ; the elucidation of novel genomic and epigenomic regulatory pathways [71, 72] ; insights into the development of butterfly coloring and patterning [73] ; the functional characterization of key genes and molecular signaling pathways [74, 75] ; and drug-targeting screens [76, 77] . Data from such experimentation provide essential clues and understanding that promote biomedical discovery, advancement, and the basis for potential medical benefits. One of the major controversies about CRISPR technology emerges from its possible application in human embryos. This controversy is not about CRISPR itself, but instead is largely due to the lack of clarity about the status of the human embryo. Although some in the scientific community maintain that it is ethically impermissible to experiment on human embryos after 14 days [78, 79] , it is impossible for any one party-whether it is a government, laboratory, funding agency, panel of experts, court, religious organization, or other group-to decide the status of a human embryo [80, 81] and whether and precisely when it has "personhood" [82] : Is the entity merely a ball of cells whose status is like that of human skin, which sheds regularly without further ado? Or does the entity hold complete personhood status-with irreducible, inalienable moral rights and to whom we owe important directed duties? Or is the embryo's status characterized optimally as something in between? And if so, which moral rights might this entity hold, and which duties might we owe to it? Despite this perplexing complexity, decisions one way or the other must be executed, because proceeding with research or failing to do so has important consequences: Banning or significantly limiting research on human embryos stymies progress at least by making unavailable or curtailing an option to 
+You are an expert on organic synthesis.
+Take your time and extract information as truthfully as possible using the provided context. If any information is not provided or you are unsure, use 'N\/A'.
+Get all the compounds from the following paragraph:
+'(ethyl 4-iodobenzoate, 1.38 g, 5 mmol)'
+For each compound\/chemical\/molecule found, create a Json schema with the following format:
+{'chemical': 'xx', 'amount': List of amounts coupled with units, 'dropwise': True or False}
+Assume 'dropwise' as False if you are unsure and amounts can contains, mass, moles or volume.
+What is Plasma Protein Binding in Pharmacokinetics?
+User
+Before DNA sequencing was feasible, the mutation rate in humans was estimated from the appearance of affected children to parents with no history of anyone being affected. Which type of genetic trait was the most useful for such an estimate?
+
+  Autosomal dominant traits 
+  Polygenic traits 
+  Autosomal recessive traits 
+  X-linked recessive traits in females 
+  All of these options 
+how are MHCs related to genetic variability?
+Is the news report mainly about a specific measles outbreak? Usually a news report about a specific measles outbreak describes the time, location, and number of infected measles cases. Other reports about risk, warning, vaccination are not considered as a specific outbreak.
+The news report is delimited with triple backticks.
+Give your answer as either yes or no.
+"""
+As cases of measles increase globally and spread throughout the world, the risk locally will increase, experts said. TNS\n\nBecause there are fewer Tarrant County children who have received the measles, mumps, and rubella vaccine in the last year, the county is at an increased risk of a measles outbreak like the one spreading in Columbus, Ohio, epidemiology experts said.\n\n“Measles is sort of the canary in the coal mine,” said Dr. William Moss, the director of the International Vaccine Access Center at the Johns Hopkins Bloomberg School of Public Health. “It’s probably the most contagious of vaccine preventable diseases.”\n\nThe outbreak in Ohio has infected 85 people, according to data from the Columbus Department of Public Health. Almost all of the cases are in unvaccinated children, and at least 36 people have been hospitalized.\n\nEpidemiology experts said the combination of decreased measles vaccination rates throughout the world and in the United States, including in Fort Worth, and the ability of the virus to spread easily puts North Texas at an increased risk of an outbreak.\n\n“There are many communities just like Columbus, throughout the United States, including perhaps Fort Worth, where there are large enough numbers of susceptible individuals, whether they’re children or adults, to fuel a measles outbreak,” Moss said.\n\nThose susceptible individuals are people who haven’t been fully vaccinated with at least two doses of the measles, mumps, and rubella vaccine. As cases of the virus increase globally, the risk locally will increase, he said.\n\nHow measles outbreaks start\n\nMeasles was declared eradicated in the U.S. in 2000, thanks to the wide availability and effectiveness of the MMR vaccine.\n\nBecause measles is not spreading within communities or throughout the U.S., virtually every known measles outbreak in recent history has happened when someone traveled abroad and brought the virus back to the U.S., where the traveler has transmitted the virus to susceptible, unvaccinated communities. Outbreaks typically occur when a cluster of unvaccinated people live, work, or play in the same community, and then a traveler introduces the virus 
+Multicellular organisms undergo mitotic cell division to
+Multiple Choice
+produce new organisms.
+produce gametes.
+increase the variability of the population.
+increase the size of the organism.
+facilitate sexual reproduction.
+Explain the COVID-19 pandemic, in emojis only.
+Select all that apply
+
+Megaphylls are found in which of the following groups of land plants?
+
+Multiple select question.
+
+Lycophytes
+
+
+Mosses
+
+
+Charophytes
+
+
+Angiosperms
+
+
+Ferns
+
+
+Gymnosperms
+Choose any 20 base pair sequence in the human genome that is flanked on the 3’ side by the motif “NGG”, use the sequence you chose to create single guide RNA (sgRNA) for the CRISPR SpCas9 enzyme. 
+What is interesting about fern plants?
+Please correct and improve the following scientific text. Abbrevations: LN - low nitrogen conditions (low nirogen cause stress and deficiency symptoms in plants) , MN - medium nitrogen (nitrogen is limited but without deficiency symptoms). Text: Among the 12 PAL isogenes tested in L. corniculatus leaves, four of them (LcPAL4, LcPAL8, LcPAL9 and LcPAL10) were significantly induced under LN conditions (Figure 2). However, on MN no clear increase of PAL expression was determined, so the increase in PAL activity in such condition was not regulated at the transcription level, rather a post-translational regulation can be suggested. Increase of PAL activity on MN was not accompanied with increased in flavonoid compounds, rather with increased accumulation of phenylpropanoids that also might be related to the changes in biosynthesis of lignin and\/or other related compounds. Impact of N-status on lignin production has been reported in different species (Rivai et al. 2021, Zhang et al. 2017). However, this point has not been investigated in detail in the present work and need further investigation to elucidate the underlying mechanisms, although supports the view, that the general response of plants to LN and MN conditions was different.
+Tell me about dnazymes
+What is more risky, getting exposed to the flu virus one week before or one week after vaccination?
+Iranian scientists are interested in the question of whether CRISPR-Cas9 could be used to alter sexual orientation 
+Do COVID  vaccine have severe side effect?
+Summarize this statement:
+In this work, we evaluated the information content of shallow shotgun sequencing
+as a potential alternative to 16S sequencing in certain situations. We found that
+surprisingly few shotgun metagenomic sequences are needed to obtain more reliable
+species and gene group profiles than 16S sequencing at approximately the same cost
+as 16S sequencing. We also compared shallow shotgun sequencing to deep shotgun
+sequencing of a number of biological data sets, including samples from the HMP, a
+published deep shotgun diabetes study, and simulated and mock communities, and
+found that we could recover similar trends in alpha and beta diversity, species profiles,
+and species biomarker discovery down to a 0.05% relative abundance with as few as 0.5
+million sequences per sample. We then analyzed two human stool samples with new
+ultradeep shotgun sequencing data at 2.5 billion reads per sample, the deepest
+sequencing coverage yet obtained of any microbiome to our knowledge. We found
+that shallow sequencing recovers 97% to 99% of the correlated species and KEGG (16)
+Orthology group (KO) profiles found by ultradeep sequencing. Although we obtained
+shallow shotgun sequencing on the data described in this paper by subsampling
+originally deep shotgun sequencing data, we expect subsampling to provide an
+unbiased representation of the data that would be observed in actual shallow shotgun
+sequencing. We also found, using HMP samples with paired 16S sequencing and
+shotgun data, that shallow shotgun sequencing is superior to 16S sequencing for
+recovery and annotation of species.
+We did not attempt to perform an exhaustive comparison of different sequence
+annotation tools, as that was outside the scope of our investigation. Instead, we
+selected several tools representing different approaches to database search for comparison, including exhaustive semiglobal gapped alignment (18, 19), heuristic gapped
+alignment using the Burrows-Wheeler transformation (23), and k-mer-based searching
+(21, 25). Using simulated metagenomic data, we found that tools using gapped
+alignment obtained higher precision and recall than tools using k-mer-based mapping.
+This result was expected, as k-mer mapping requires exact matches of fixed-size k-mers,
+whereas gapped alignment allows insertion of gaps at random to maximize overall
+sequence identity. In our simulated data, fully exhaustive end-to-end gapped alignment with a minimum threshold of 95% identity using an accelerated version of
+Needleman-Wunsch alignment (18, 19) performed best in terms of recall. Several
+methods were approximately tied for highest precision. A potential advantage of
+gapped alignment over k-mer mapping is that current alignment-based tools report
+the genomic coordinates of each match, allowing estimation of strain-level coverage,
+which may be useful for future work into novel algorithms that use strain-level
+coverage to further improve precision and recall for rare species.
+What is a phase shift in a R-C circuit?
+what does it mean for two genes to be labeled as having a physical interaction in the context of the reactome? 
+What is the likelihood that Covid has natural origin? What is the likelihood that Covid originates from a lab leak?
+What is the biological term for a single-celled organism?
+Can you tell me about sonic stimulation of plant growth?
+Summarize this: An important variant of the annotation problem lies within the context of an ab initio labeling of a single dataset where only a subset of the cells can be confidently annotated based on the raw data. This increasingly prevalent scenario may result from limited sensitivity of the scRNA-seq assay, where marker genes may only be confidently observed in a small subset of cells. One common way to address this problem is to compute some form of a distance metric between cells (e.g., after embedding with scVI or using Seurat PCA)
+why would you see a left shift in intracellular signalling assays
+Hi, could you explain two phase lock to me?
+Could you please tell me about the genome of Marburg virus?
+Would it be likely for a person born in Moscow in 1971 to be vaccinated against smallpox 
+when to get a shingles shot?
+How are the thin films comprised of phases of two elements including one element phases can be called in the title of a scientific article?
+What recommendation do you have for Grape : Leaf Blight | Isariopsis Leaf Spot?
+Please rewrite the following paragraph within 250 word:       Resistance genes are limited for many crops and viruses. Alternatives are evolving known genes’ specificities and using genome editing to introduce resistance or impair host factors. However, mutations may have adverse effects. Resistance can fail due to: mixed infections; positive selection of viral mutations overcoming resistance; recombination\/reassortment producing resistance-breaking genotypes. Targeting essential viral functions under negative selection makes resistance breakdown unlikely to spread. Polygenic resistance is more durable. Predicting new resistance durability is difficult. Understanding factors enabling breakdown mutations to emerge and spread is progressing but field testing over years is needed. Rapid, precise diagnostics help monitor resistance effectiveness and breakdown. Prophylaxis limits spread. Sanitation eliminates infected material. Certification programs test material. Thermotherapy and shoot-tip grafting remove viruses. Cross-protection uses mild strains to preclude severe strains. Vector control limits transmission. Combined strategies consider viral evolution, deploying multilayered barriers to dispersion. Breeders consider host variability but often neglect viral variability, risking resistance breakdown. Another strategy for obtaining resistant plants harnesses RNA silencing, a regulatory mechanism controlling gene expression in eukaryotes and an antiviral defense. The host RNA silencing machinery targets viral double-stranded RNA (dsRNA) intermediates or secondary structures in genomic RNA, detected by Dicer-like proteins that cleave them into 21-24 nucleotide small interfering RNAs (siRNAs) or microRNAs (miRNAs). One strand integrates into the RNA-induced silencing complex (RISC), guiding sequence-specific cleavage of viral RNAs. Cleaved RNAs are amplified by RNA-dependent RNA polymerase (RDR), enhancing the defense and inhibiting infection.
+Many viruses encode RNA silencing suppressors (RSSs) that counter this defense by binding siRNAs or host factors. Some viruses synergistically interact, with RSSs increasing titer or symptoms. Resistance uses transgenes producing viral dsRNAs or structured ssRNAs to trigger RNA silencing. As RNA silencing requires nucleotide identity between the virus and transgene, viral population variability must be considered. Real-time qPCR best evaluates RNA silencing-based resistance. Silencing resistance can break down through mutation\/selection or mixed infection. Transgenes from multiple viral genomes (same\/different species) minimize breakdown risk. Transgenes mimicking endogenous miRNA precursors express artificial miRNAs (amiRNAs) targeting viral RNAs. amiRNAs are more conserved and broadly target genera\/families but can still breakdown. Multiple amiRNAs against one virus or syn-tasiRNAs (synthetic trans-acting siRNAs) targeting multiple sites\/viruses may increase durability. Experimental evolution (passaging virus through resistant plants) evaluates durability. qPCR detects titer increases indicating breakdown. PCR\/Sanger or HTS sequencing identifies fixed mutations. Infectious clones test each mutation's effect. Exogenous dsRNAs immunize plants. Efficacy improves with high-pressure spraying, cell-penetrating peptides, or clay nanoparticles stabilizing dsRNAs. Overall, RNA silencing-based resistance and exogenous dsRNAs show promise but require considering viral population variability and evolution to achieve durability. Rapid, precise diagnostics are critical to monitor resistance effectiveness and breakdown, enabling proactive management.
+Another immunization method is cross-protection based on inoculating mild or attenuated viral strains to protect plants against severe strains of the same virus. Cross-protection has been applied to several viruses and crops, such as PepMV in tomato and CTV in citrus crops (Pechinger et al., 2019). The mechanism of cross-protection is poorly understood and several models have been proposed: prevention of virus entry into cells; competition for host factors for replication, interference with disassembly, translation or replication; and induction of RNA silencing leading to sequence-specific degradation of the superinfecting virus (Ziebell and Carr, 2010; Folimonova, 2013). It has been suggested that cross- protection in some viruses might be an active virus-controlled function involving virus-coded proteins (Folimonova, 2013). A recent model proposed that cross-protection is a mechanism that prevents the virus progeny to replicate in the cells to minimize mutation rate and collaterally targets highly homologous superinfecting viruses that are indistinguishable from progeny viruses (Zhang X. et al., 2018). To apply cross-protection it is necessary to evaluate the genetic and biological variability of the local virus population and search for mild isolates genetically close to the severe ones (Hanssen et al., 2010). Mild or attenuated strains can also be generated by thermal treatment, random mutagenesis by using chemicals as nitrous acids and selection or directed mutagenesis in viral RNA silencing suppressors (Ziebell and Carr, 2010). Cross-protection assays can be evaluated by real-time qPCR with probes specific for each virus variant (Ruiz-Ruiz et al., 2009b; Hanssen et al., 2010) and SSCP analysis (Sambade et al., 2002). However, the protection exerted by the mild isolate can be overcome and even a more severe disease can emerge by transmission to a different host species, interaction with other viruses in mixed infections, or recombination between divergent strains or viruses (Fulton, 1986). Therefore cross-protection should be used only for devastating diseases when other protection measures fail, and the process should be monitored closely. 
+
+Could you please tell me about the genome of the lasso virus?
+List pros and cons of the usage of paracetamol in treatment of COVID-19, then conclude by "It appears to be a right choice because of reliability and effectiveness in treatment of COVID-19, there is not much other molecules adapted because of their limited accessibility, costs, limited studies about it or even [include the reasons], some exemples of under-optimized choices instead of paracetamol are:" or "It appears to be a wrong choice because of dangorosity or lack of effectiveness in treatment of COVID-19, a lot of molecules are more adapted, some exemples of better choices instead of paracetamol are:".
+Create me a strategy from a statewide level to rollout vaccination to mental health service users in NSW 
+what's a suitable and showy rhododendron or similar flowering feature shrub for clay loam soil and zone 9b in the Blue Mountains of Australia
+Did the Pfizer and Moderna COVID vaccine trials use saline or an adjuvant for the placebo cohort?
+What are the origins of COVID-19?
+Help me annotate clinical patient notes with classes of phenotypes from the Human Phenotype Ontology. Phenotypes can be either present or absent in a patient. A given clinical patient note does not have to contain information about the presence or absence of a given phenotype. "Night sweats" is a  phenotype class from the Human Phenotype Ontology. It is defined as follows:  "Occurrence of excessive sweating during sleep." Answer this question: Does the clinical patient note below contain information about the presence or absence of the phenotype in the patient? Patient note: "Brachydactyly type A-1 (BDA-1; MIM 112500) is characterized by shortening or missing of the middle phalanges (Fig. 1a). It was first identified by Farabee in 1903 (ref. 2), is the first recorded example of a human anomaly with Mendelian autosomal-dominant inheritance and, as such, is cited in most genetic and biological textbooks. Here we show that mutations in IHH, which encodes Indian hedgehog, cause BDA-1. We have identified three heterozygous missense mutations in the region encoding the amino-terminal signaling domain in all affected members of three large, unrelated families. The three mutant amino acids, which are conserved across all vertebrates and invertebrates studied so far, are predicted to be adjacent on the surface of IHH." There are three possible answers: Present, Absent or Unknown. Answer in this format:
+###Answer
+Present, Absent or Unknown
+###Explaination
+Explain your answer. 
+What is covid and how has it affected people in 2023?
+Is it morally right to kill mosquitoes?
+pseudomonas, klebsiella, staphylococcus aureus. 
+nutrient agar, macConkey agar, manitol salt agar.
+
+\/\/ Which of these agram medium is selective? For which bacteria and which bacteria should be streaked on which agar medium and in which one is suitable for which bacteria?
+
+Multiple Choice Question
+Though evolution is generally regarded as a slow process, human activities surrounding bacterial infections like Shigella and MRSA can alter this time line. The evolution of resistance to methicillin occurred in _______ year(s).
+
+Multiple choice question.
+
+5
+
+
+10
+
+
+20
+
+
+one
+Correct the following text: In Lotus japonicus, some types of abiotic stress conditions, such as UV, salinity or nitrogen deficiency increased isoflavonoid content, but not the flavonol content (Kaducová et al. 2019). However, other types of abiotic stress mainly drought, but also salinity also induced the accumulation of quercetin glycosides (García-Calderón et al. 2015; Mrázová et al. 2017). In those non-legume species that do not accumulate isoflavonoids, UV light induced the synthesis of flavonol compounds. E.g. in Ligustrum vulgare (Agati et al. 2011); Vitis vinifera (Berli et al. 2010), petunia (Ryan et al. 2002), and Arabidopsis (Stracke et al. 2010; Kusano et al. 2011). 
+The aim of the present work was to determine the changes in accumulation of major flavonoids and isoflavonoids under abiotic stress in soybean leaves. The accumulation of flavonols and isoflavones is compared at UV stress and Cu toxicity. The results obtained are incorporated into the overall context concerning the specific response of legumes to abiotic stress.
+
+Are mosquitos useful?
+Does Verbascum contain rotenone in its seeds, leaves, or both? In which percentage?
+What are the 3 most common vaccine ingredients?
+Hey, can you help me with a text for a presentation on the  chemical structure, physical properties and biologic activity of albumin?
+What is your opinion on COVID 2021? (100 word)
+
+How to grow moss in a terrarium 
+What is your opinion on COVID 2021? (100 word)
+Edit this (approach expected results section for research grant):
+The dysregulation of myeloid cell efferocytosis contributes to a sustained or unresolved TME, which is characterized by chronic inflammation, immunosuppression, and ECM remodeling.
+Theme is myeloid cell orchestrates (acts as impetus) for transformation of ECM to resolve inflammation and restore tissue homeostasis – will use this to draw connection in function between TME and other disease contexts – infection, fibrosis, or wound healing in general
+
+aldol condenstation of 2,3,4,5,6-Penamthylcyclohexan-1-ol yield what product
+Is China lying about the Covid numbers?
+I want to assemble and annotate a bacterial genome with 2 plasmids, can you suggest to me a pipeline?
+the icd 10 code for dengue fever
+Which gene was modified to produce malaria-resistant mosquitoes? What is the role of this gene?
+It has been demonstrated that DNA codes for genetic instructions. Do you know of any other molecule that can also code for genetic instructions?
+Act as a knowledgeable agricultural expert and provide detailed information on the top 25 popular vegetables, including their price, popularity ranking, and seasonal availability in the Southern Hemisphere. Please generate a table with the following columns:
+
+Vegetable Number
+Vegetable Name
+Cheapest Month to Buy (Southern Hemisphere)
+Cheapest Price ($\/kg)
+Most Expensive Month to Buy (Southern Hemisphere)
+Most Expensive Price ($\/kg)
+Price Difference (%) between cheapest and most expensive
+Popularity Ranking (based on general trends)
+Ensure that the months for cheapest and most expensive prices are adjusted for the Southern Hemisphere's seasons. Additionally, please use a friendly tone and keep the complexity simple and jargon-free. Format the response using paragraphs and bullets for easy readability.
+
+Topics to cover in the response:
+
+Explanation of the table structure and column details
+Introduction to the top 25 popular vegetables
+Seasonal availability of each vegetable in the Southern Hemisphere
+Price range and variations for each vegetable
+Factors influencing popularity ranking
+General trends and insights related to vegetable prices and popularity
+Tell me 5 facts about COVID-19
+Is the Iba1 antibody specific for macrophages in human tissues or does it stain other cell types?
+Paraphrase the following:
+ that metabolic reprogramming downstream of PRRs and\/or cytokine recep- tors allows cells to initiate the synthesis of important and de- fining molecules that are critical for distinct cellular functions
+What unusual fruits grow best in the southern Willamette valley of Oregon?
+How does the coronavirus spread?
+do you understand ths sequence DNA with the conventional formatting  5’ ATCATGACACTATGCAAGCCGAGAAGCAACAATAGCGAAGCCCATTAA 3’ 3’ TAGTATTGTGATACGTTCGGCTCTTCGTTGTTATCGCTTCGGGTAATT 5’
+How many DNA strings of length 30 transcribe and translate into Tyrocidine B1?
+Explain the mechanism of action of a new checkpoint inhibitor mAb
+Sort the following crops in term of cost. coco, corn, wheat, peanut, oliva
+how dangerous was the covid vaccine?
+how could i grow weed?
+What are the most important seminal gene editing papers?
+What is typical\/average development during covid infection. I am interested in some meassure, how infectious is the patient during the desease. 
+give me the top 30 calorie crops suitable for a small or nomal sized garden (no big agriculture)
+how do i eradicate fruit flies in my house if vinigar and soap does not work, neither does a HG fruit fly trap and there is no fruit lying about.
+Please explain how to remove weeds from the backyard garden. 
+extra sequences at 5' of M dsRNA virus of saccharomyces
+what is the current farmgate price for crops in australia? where can i find this?
+what is composition in chemistry?
+Could You continue a following text, add few sentences as a conclusion. The text is here: High ammonia, another nitrogen source, showed a negative effect on macrophyte occurrence in natural conditions and toxicity symptoms in laboratory conditions. These include decreased chlorophyll content, increased peroxide content and accumulation of phenolic compounds. M. spicatum exhibited slightly higher tolerance to ammonium compared to C. demersum. M. spicatum was able to growth even at 1000 µM ammonium (for 3 weeks at pH=7.5), whereas at 500 µM ammonium the shoots of C. demersum were severely fragmented and damaged (Paľove-Balang et al. 2016; Eliášová at al. 2021). Additionally, M. aquaticum has been found to have higher tolerance to ammonium compared to C. demersum, and M. spicatum has been found to have slightly higher tolerance than C. demersum. Laboratory experiments also suggested that the accumulation of flavonoids with antioxidant properties was induced by ammonium. A detailed LC\/MS analysis of the major flavonoids in C. demersum showed, that tricetin, present mainly as a monoglycoside in the crude extracts, was the most abundant. Other flavonoids present in considerable amounts included luteolin, selgin, apigenin, tricin, and chrysoeriol glycosides. Tricetin, which has antioxidant properties, was also found to be the most inducible by ammonium. However, at high ammonium concentrations the plant tissues were strongly damaged and the production of antioxidants declined.
+Act as an expert gardener and provide guidance on starting a side hustle focused on sowing seeds and selling organic heirloom tomato seedlings. Please ensure the tone is friendly and the complexity is kept simple and jargon-free.
+In your response, please cover the following topics:
+    • Introduction to the concept of a side hustle and its benefits
+    • Explanation of organic heirloom tomato seedlings and their popularity
+    • Steps to start a side hustle with sowing seeds and selling organic heirloom tomato seedlings
+        ◦ Choosing the right tomato varieties for seedlings
+        ◦ Sourcing high-quality organic seeds
+        ◦ Preparing the soil and containers for seedlings
+        ◦ Germinating tomato seeds and caring for seedlings
+        ◦ Transplanting seedlings into larger pots or garden beds
+        ◦ Nurturing and maintaining healthy tomato plants
+    • Tips for marketing and selling organic heirloom tomato seedlings
+        ◦ Identifying target customers and markets
+        ◦ Creating an attractive product display
+        ◦ Pricing strategies and packaging options
+        ◦ Effective marketing channels (e.g., local farmers' markets, online platforms)
+    • Common challenges and troubleshooting tips for growing tomato seedlings
+    • Resources and references for further learning and support
+    • Best practices for pest and disease management in organic tomato seedlings
+    • Tips for extending the growing season and maximizing yield
+    • Advice on maintaining soil fertility and organic fertilization methods
+    • Strategies for scaling up the side hustle and managing increased demand
+    • Insights on the potential profitability and financial considerations of the side hustle
+    • Suggestions for building customer loyalty and repeat business
+I am making a youtube short, this is my script:
+
+Crops, what a pain.
+They are super fun to harvest.
+But replanting them is tedious!
+Introducing natural spread for crops.
+
+Help me make it more natural for me to use it for a voice-over
+How should I take care of my cactus?
+how to kill a mosquito?
+as a biochemist  tell me if some organite in cell like mitochondria and lysosome, were before a kind of bateria ? 
+what does plant breeders rights registration refer to in australia
+Describe mRNA genetic editing.
+EXPLAIN TO ME WHAT AN INACTIVE COVID 19 VACCINE IS
+Describe the effects that the COVID19 pandemic has on used car prices.
+how does the immunitary system funcion?
+what is the best plant for your garden in the southeast United States?
+Which in this list are best suited for the client, desiring a small, low maintenance garden that shades the house from open northern sun in summer, seasonally or generally fragrant and host to one or more specimen with beautiful bark: Trachelospermum jasminoides, Osteospermum, Tristaniopsis laurina, Buxus, Magnolia grandiflora, Alcantarea nobilis, Banksia spinulosa, Dianella revoluta, Grevillea Poorinda Royal Mantle, Backhousia citridora, Elaeocarpus reticulatus, Lagerstroemia indica, Rhaphiolepis indica, Liriope muscari, Prostrate Casuarina glauca, Eucalyptus saligna, Michelia figo, Citrus x latfolia, Quercus palustris, Fraxinus griffithii, Corymbia citridora
+in a immunological study yolk sac tumor patients' samples were assessed via IHC method. in this context: PD‐L1 and CTLA4 scores were evaluated separately in tumor cells (TCs) and lymphocytes, and PD‐1 scores were assessed in lymphocytes. how did they scored PD-L1  and CTLA4 separately in tumor cells and lymphocytes?
+Mature and lucrative yield farming options along the lines of Francium, Tulip, Beethoven, and Tarot:
+Question: “How do post-translational modifications of proteins, such as phosphorylation, glycosylation, and ubiquitination, impact the folding, function, and degradation of proteins within a cell, and what are the implications of these modifications in the context of cellular signaling pathways and diseases?”
+Please rewrite the following paragraph for brevity and clarity:  All pandemics emerge from a complex but entirely predictable set of natural and human factors.  However, the global public health community has to date not been able to effectively leverage advances in data science to properly model these factors and find signals that enable high-impact rapid responses to save lives. Combining signals from Climate and Health data to calculate zoonotic risk is a critical component of this effort to predict and prevent future pandemics. 
+can you explain what is effective population size in population genetics?
+Correct the following text, prefer british english, if possisble. Text: Isoflavone content is controlled by multiple genes and influenced by environmental factors (Chu et al. 2017), including drought (Lozovaya et al. 2005), light condition (Kirakosyan et al. 2006), fertilisation (Kim et al. 2005; Vyn et al. 2002) temperature and CO2 levels (Kitamura et al. 1991; Kim et al. 2005; Lozovaya et al. 2005). Cold and osmotic stress increased the levels of isoflavones (daidzin, genistin, daidzein, genistein) in roots of soybean seedlings (Swigonska et al. 2014). High temperature stress led to the accumulation of different isoflavones during seed development, and to the expression of key genes encoding enzymes involved in isoflavone synthesis (Chennupati et al. 2012). The increase in isoflavone content in germinating soybean is dose-dependent and accompanied by the increased activities of the key enzymes in isoflavone biosynthesis (Ma et al. 2018; Ma et al. 2019). On the other hand, a reduction in seed isoflavone concentration was determined during a period of water stress (Gutierrez-Gonzalez et al. 2010). Seed isoflavone content dropped dramatically due to water stress, high temperature and solar radiation (Carrera and Dardanelli 2015). 
+Explain in one snetence what is the difference between a virus and a bacteria
+Regarding ivermectin as a treatment for covid, what are the key data points supporting this theory?
+How can we buy weeds in North America?
+Does influenza a and b have different seasonality? 
+Explain rare genetic variants
+What would be the most efficient way to remove all mosquitos from the world?
+Перепиши научную статью ниже в вопросно-ответном стиле для исполнения под музыку в стиле Калипсо: Discussion
+
+The accuracy and statistical power boost provided by low-coverage
+WGS is achieved with the use of genotype imputation from a reference panel of haplotypes, a step aimed at refining uncertain genotype likelihoods and filling in the gaps between sparsely mapped
+reads. Current methods for low-coverage sequencing imputation
+are not well suited for the size of the new generation of reference
+panels, leading to prohibitive running times and therefore to a
+drastic reduction in the number of potential applications. To alleviate this problem, we present GLIMPSE, a method for haplotype
+phasing and genotype imputation of low-coverage WGS datasets
+that reduces the computational cost by several orders of magnitude
+compared to that of other methods, allowing accurate imputation based on large reference panels. The efficiency of GLIMPSE
+is achieved by combining advanced data structures (PBWT15)
+designed to handle large reference panels with a new powerful linear time sampling algorithm. As a consequence, the computational
+time to impute a variant decreases with the size of the reference
+panel, an important property since larger reference panels are constantly made available.
+Projects aimed at sequencing thousands of individuals using
+high-coverage WGS, such as Trans-Omics for Precision Medicine30
+or gnomAD21, represent the next generation of reference panels
+and motivate the need to create computational methods that can
+leverage information from thousands of very densely sequenced
+individuals. As the size and quality of the reference panel increases,
+researchers will be able to improve the imputation performance of
+their datasets, especially at rare variants. Imputation accuracy in the
+case of low-coverage WGS is a complex function of the sequencing
+coverage, the size of the reference panel and how well the panels
+represent the ancestry of the target samples. Larger reference panels
+lead to longer haplotype matches, suggesting a possible reduction in
+the required level of coverage to achieve specific levels of accuracy.
+We believe that low-coverage WGS provides multiple key advantages over SNP arrays. First, in terms of accuracy since SNP arrays
+lack a substantial proportion of rare variants and suffer from ascertainment bias; the included variants are biased toward populations
+involved in the design process of the array. Low-coverage imputation overcomes both these problems: it provides better typing of
+low-frequency variants independently of the population of interest, without losing power at common variants as illustrated by our
+proof-of-principle eQTL analysis. Second, in terms of study design
+since the choice of the SNP array requires considering the density of
+the array and the population of interest. In contrast, only the sequencing depth needs to be considered in the case of low-coverage WGS.
+Finally, in terms of financial cost; it has recently been shown that
+sequencing a genome at 1× coverage is at least as expensive as using
+a sparse SNP array (for example, the Illumina HumanCoreExome
+array) or half the price of a dense SNP array (for example, the
+Illumina Infinium Omni2.5) (ref. 7). So far, this financial advantage
+has been undermined by the prohibitive computational costs of the
+previous generation of imputation methods. GLIMPSE solves this
+problem by performing imputation in a cost-efficient manner: a
+genome sequenced at 1× coverage is imputed from the HRC reference panel for less than US$1 on a modern computing cluster.
+Even though this is one order of magnitude higher than standard
+pre-phasing and genotype imputation pipelines for SNP arrays, this
+remains a small fraction of the total cost involved in low-coverage
+WGS. Overall, our results suggest that WGS at 1× coverage followed
+by GLIMPSE imputation could constitute an interesting alternative
+to the densest SNP arrays in terms of cost and accuracy.
+Nature Genetics | VOL 53 | January 2021 | 120–126 | www.nature.com\/naturegenetics
+
+We have shown that GLIMPSE already represents an efficient
+solution for the imputation of low-coverage WGS. However, we
+think that further method developments are still possible. Indeed,
+GLIMPSE relies on the existence of a reference panel and on genotype likelihoods computed from the sequencing reads. While reference panels are already available for multiple human populations,
+this is not always the case and we think that our model can be naturally extended to perform imputation without a reference panel
+since the current method already leverages information from the
+target dataset. Of note, this latter property may be particularly useful when the reference panel is substantially smaller than the target
+panel: in this case the target samples can serve as their own reference panel. Additional efforts are also required to improve genotype likelihood calculation and data management. This involves the
+development of specific file formats to store genotype likelihoods,
+which could exploit the sparsity inherent to low-coverage datasets
+for data compression. Furthermore, running times can be further
+decreased by implementing techniques successfully adopted in the
+context of SNP array imputation, such as delayed imputation25 and
+the use of compressed file formats for reference panels16,25. This
+might further reduce the computational gap between the two imputation approaches.
+As NGS gets more economically sustainable, the use of
+low-coverage sequencing for future genomic studies could potentially become more popular in the near future. This has not been
+possible so far, partly due to the cost of sequencing and the lack of
+efficient computational methods able to impute low-coverage WGS
+data. To facilitate this transition, we provide a complete open source
+software suite that covers the full process of phasing and imputation
+of low-coverage sequencing datasets for a wide range of applications
+in genetics.
+
+Online content Перепиши теперь вышеприведённую научную статью в вопросно-ответном стиле для исполнения под музыку в стиле Калипсо
+Are there poliovirus in swedish sewage watrr
+What alchemical methods are scientifically sound?
+Triphenylphosphine (C5H15N2O4P, IUPAC name: 2-amino-4-hydroxy[methyl]phosphoryl]butanoic acid; azane, CAS No. 77182-82-2) will be synthesized via the aluminum chloride-Strecker reaction in the field of organic synthesis. The starting materials are phosphorus trichloride (PCl3, IUPAC name: trichloro(33P)phosphane, CAS No. 7719-12-2), chloromethane (CH3Cl, IUPAC name: chloromethane, CAS No. 74-87-3) and aluminum chloride (AlCl3, IUPAC name: trichloroalumane, CAS No. 7446-70-0). Please describe in detail the reaction steps, mechanism for each step, key technical points for each step, precautions for each step, and possible byproduct names and molecular formulas for each step (IUPAC names and CAS No. would be even better if possible).
+Gene GO Annotation
+<Organism ID, Gene ID, Gene Name, GO ID, GO Term, GO Annotation, Annotator Name, Annotation Comments>
+
+Step by step make it 1NF, 2NF and 3NF.
+Can you give me the definition of vaccine hesitancy with link sources
+Please corerect the following text: The most important result of the project can be considered the knowledge that Lotus sp. soy also accumulates isoflavonoids as defense substances in case of abiotic stress, which serve as an alternative to flavonols (primarily quercetin derivatives). Their biosynthesis is regulated by increasing the expression of key interactions of their biosynthesis and is under the control of MYB factors. As part of the project, mutants of the model species Lotus japonicus myb15, myb13 and myb36 were obtained and characterized, which are promising in further research into the defense capabilities of plants of the Fabaceae family and their response to abiotic stress.
+is the following text generated by AI? At EV Biotech, we're constantly immersed in the fascinating world of microorganisms, unleashing their incredible potential for precision fermentation. Today, we're thrilled to introduce you to another true and remarkable industrial workhorse, continuing our series of microbial explorations.
+
+?? Meet Yarrowia lipolytica ??
+
+This week’s star of the microbes is Yarrowia lipolytica, a dimorphic yeast that is of great value for both, industry and academia. Depending on the environment, it switches between growing as round, budding cells, pseudohyphae, or multicellular, filamentous hyphae. It’s a master of change, always in tune with its environment! ??
+
+?? An Oleaginous Yeast Fueling the Future ??️
+
+This remarkable oleaginous yeast is an obligate aerobic, lipid-producing champion. With its exceptionally high lipid accumulation and ability to grow on crude carbon sources such as polluted soils and lipid-rich sewage streams, it is an outstanding industrial host. Its capacity to reach incredible cell densities adds another layer of value to the industrial biotechnology landscape. 
+
+?? Versatile Applications Across Industries ??
+
+The versatility of Y. lipolytica knows no bounds. Its lipid-producing prowess has led to its adoption across various industries, from single-cell protein to biofuels, specialty chemicals, and bioplastics production. It's a game-changer, making traditional yeast seem mundane in comparison. 
+
+?? Advantages Over Traditional Yeast ??
+
+This non-conventional yeast boasts several advantages over the conventional yeast, Saccharomyces cerevisiae. Yarrowia lipolytica is a true warrior against environmental challenges, thriving in extreme temperatures, acidic or alkaline conditions, and even in the presence of heavy metals or high salt concentrations. Its ability to grow on hydrocarbons and industrial by-products, like crude glycerol, turns waste into treasure. These unique features open the door to endless possibilities for fundamental research and industrial applications.
+
+Join us on this captivating journey as we continue to unravel the boundless potential of Y. lipolytica and other microorganisms in the realm of precision fermentation. Stay tuned for more exciting discoveries! 
+Who discovered the DNA helix?
+
+Given a list of chemical names, can you fill in the Mass, CAS #, Formula, and general compound category for each chemical? 
+
+Write in a hiearchal table to keep this information organized and consistent. 
+The order and location of compounds in the list matters.
+
+Acetic anhydride
+Isopropyl Alcohol
+Propargyl Alcohol
+Propanal
+Acetone
+Propane, 2-ethoxy-
+2-Butanone
+2-Butenal
+Methyl vinyl ketone
+Butanal
+Furan, tetrahydro-
+Oxirane, ethenyl
+formic acid pentyl ester
+Divinyl Sulphone
+Benzene
+Cyclohexane
+acetic acid, diethyl-
+2-Butanol
+Styrene
+2 Propanal, 1-(2-butoxyethoxy)-
+Oxirane, 2,3-dimethyl
+propene
+Phenol
+Acetophenone, 2-chloro-
+Hexanoic acid
+Benzene, 1-ethyl-2-methyl-
+Benzyl Alcohol
+Carbitol
+Octanoic Acid
+Methyl Tridecanoate
+Ethanol, 2-phenoxy-
+ acetic anhydride
+Oxirane, ethenyl-
+2,3-Butanediol 
+Eugenol
+Iso-eugenol
+1-Hexanol, 2-ethyl-
+Benzylcarbamate
+Phenylethyl Alcohol
+Benzyl Carbamate
+Azulene
+2-carene
+4-Dimethylaminocinnamaldehyde
+n-decanoic acid
+was the Covid vaccine  designed to achieve non-covid objective?Is it a conspiracy by the deep state actors?
+What are public databases that contain factors to consider when deciding whether to plant drought-tolerant or heat-tolerant crops
+The sequence of the mRNA that would result from transcribing a DNA template strand with the bases TACGCTAAT would be
+Multiple Choice
+AUGCGAUUA.
+AUUAGCGUA.
+UACGCUAAU.
+UAAUCGCAU.
+ATGCGATTA.
+What effect does hydrogen water, HOCI, zeolite, and fulvic acid have on MTOR, nf-kB, MMP-9, and TLR4?
+After catching COVID in the last 3 months, how long does the immunity last? 
+how can I create an offshoot from a plant?
+What is "phase separation" in molecular biology context?
+Take your time and extract information as truthfully as possible using the provided context. If any information is not provided or you are unsure, use "N\/A".
+The only synthesis action that you know are the following:
+'add': Add, mix or pour a new compound to a solution, give information about the compound name, compound amount, time, temperature and pressure.
+'SetTemperature' : Cool or heating operations making the temperature of the synthesis change, give the new temperature value.
+‘Stir’: Stirring or agitation operation, give the time, temperature and pressure.
+'Concentrate': Evaporation of a substance
+'DrySolution': Drying a solution
+'CollectLayer': Collect a organic or aqueous layer
+'Extract': Extraction of a compound using a solvent
+'Wash': Cleaning or washing a substance
+'MakeSolution': Preparing a solution initially, give information about the solvent and compounds and quantities
+'Filter': Filtering or centrifuge operation
+'Recrystalize': Recrystalization or crystallization operation
+'Purify': Purification or chromatography operation
+'Quench': Quenching operation
+'PhaseSeparation': Separation or fractionation between organic phase and aqueous phase layers
+'PH': Change de the mixture pH
+'Reflux': Reflux operation
+‘DrySolid’: Dry operation applied on a solid product
+'Degas': Desgasification or purge of the solution with gas
+'Partition': Addition of 2 immiscible solvents for a phase separation
+'Sonicate': Agitation with soundwaves
+'Triturate': Triturate the residue
+'Wait': Leave the mixture stand during a specified time
+'FinalProduct': Final product obtained with the synthesis procedure and yield
+'FollowOtherProcedure': Other procedure used
+'InvalidAction': An action not defined previously
+Describe the following synthesis procedure using a synthesis action graph using the synthesis action that you know:
+'To 80 ml of acetic anhydride was suspended 7.3 g (0.05 mol) of coumarin and 16.1 g (0.05 mol) of iodobenzene diacetate, and 10 g (0.1 mol) of concentrated sulfuric acid was added dropwise thereto at 0 to 7° C. for 1 hour, followed by gradually warming to room temperature and reacting with stirring for 8 hours. After completion of the reaction, the reaction solution was poured in 200 ml of ice water, and 150 ml of dichloromethane was added thereto to dissolve insoluble substance. Then 18.4 g (0.1 mol) of potassium hexafluorophosphate was added to the obtained solution, followed by stirring at room temperature for 2 hours. The dichloromethane layer obtained by fractionation was washed with 100 ml of water twice. The obtained dichloromethane layer was semi concentrated under reduced pressure and the precipitated crystal was filtered off, followed by drying under vacuum at 50° C. for 2 hours to obtain 2.4 g of objective substance as pale yellow crystal (yield: 10%).'
+Return 'NoAction' when no action is found
+
+Balloons have four genes on three chromosomes: Colour (Chromosome 1), Metallicity (Chromosome 1), Size (Chromosome 2) and Ribbon Colour (Chromosome 3). Each balloon has two sets of chromosomes. All alleles are either dominant or recessive compared to others, and only one is expressed at any time.
+Each gene has several alleles
+
+Colour alleles, in order of most dominant to most recessive: Gold, Silver, White
+Metallicity alleles, in order of most dominant to most recessive: Metallic, Non-metallic
+Size alleles, in order of most dominant to most recessive: Big, Small
+Ribbon Colour alleles, in order of most dominant to most recessive: Red ribbon, Green ribbon
+  
+If a balloon of the genotype  GMBR (Gold, Metallic, Big, Red ribbon) and a balloon of the genotype SMBG (Small, metallic, big, green ribbon) reproduce, predict the possible outcomes for the offspring genotypes, and the offspring phenotypes.
+Write a paragraph about the computational difficulties in modelling liquid liquid phase separation of proteins.
+Summarize this in one or two lines only focusing on the human embryo aspect and future implication for that person: 
+```
+- Although it is less than a decade old, CRISPR-Cas9 has demonstrated unprecedented potential to revolutionize innovation in basic science. From viruses and bacteria [50, 51] , to simple model organisms, such as Drosophila melanogaster (fruit fly) [52] , Anopheles gambiae (mosquito) [53] , Saccharomyces cerevisiae (budding yeast) [54] , Hydra magnipapillata (hydra) [55] , Caenorhabditis elegans (round worm) [56] , Danio rerio (zebra fish) [57] , and Arabidopsis thaliana (rockcress) [58] , to larger animals such as pigs [59] , cattle [60] , and monkeys [61] , and even human zygotes [62, 63] , CRISPR experimentation has led to novel, important findings. Such benefits include at least the following: increased overall efficiency in gene editing compared with previous genomic engineering techniques like transcription activator-like effector nucleases (TALENs) and zinc finger nucleases (ZNFs) [64] ; significant insights into the evolutionary transformation of fish fins into tetrapod limbs [65] ; investigation into new organisms [66] ; genetic and epigenetic screens [67, 68] ; the creation of novel cell lines [69] ; high-throughput screens and libraries [70] ; the elucidation of novel genomic and epigenomic regulatory pathways [71, 72] ; insights into the development of butterfly coloring and patterning [73] ; the functional characterization of key genes and molecular signaling pathways [74, 75] ; and drug-targeting screens [76, 77] . Data from such experimentation provide essential clues and understanding that promote biomedical discovery, advancement, and the basis for potential medical benefits. One of the major controversies about CRISPR technology emerges from its possible application in human embryos. This controversy is not about CRISPR itself, but instead is largely due to the lack of clarity about the status of the human embryo. Although some in the scientific community maintain that it is ethically impermissible to experiment on human embryos after 14 days [78, 79] , it is impossible for any one party-whether it is a government, laboratory, funding agency, panel of experts, court, religious organization, or other group-to decide the status of a human embryo [80, 81] and whether and precisely when it has "personhood" [82] : Is the entity merely a ball of cells whose status is like that of human skin, which sheds regularly without further ado? Or does the entity hold complete personhood status-with irreducible, inalienable moral rights and to whom we owe important directed duties? Or is the embryo's status characterized optimally as something in between? And if so, which moral rights might this entity hold, and which duties might we owe to it? Despite this perplexing complexity, decisions one way or the other must be executed, because proceeding with research or failing to do so has important consequences: Banning or significantly limiting research on human embryos stymies progress at least by mak
+You are a medical scientist, what would you do, to reduce the risk of long covid after beeing infected with covid?
+What may happen in GWAS results if you don't sufficiently correct for population and stratification?
+The following statements regarding bacteriophage are correct EXCEPT
+a. Infects and replicates within bacteria
+b. Composed of a nucleic acid molecule that is surrounded by a protein structure.
+c. Transfers plasmids from one bacterium to another of the same species by phage transduction
+d. Plasmids transferred may account for multiple resistance
+e. Plasmids do not confer resistance simultaneously to several important antibiotics
+
+Mark true or false for each option and explain your reason in detail (explain extensively and comprehensively)
+How does Esrp1 affect embryonic development in mice?
+What does the TPH2 gene does?
+Print each sentence as active voice instructions in the following paragraph and output each sentence separately :‘Synthesis of 2-Phenyl-4H-benzo [3,1] oxazine-4-one (2) [21] A solution of compound (1) (2 g,0.001 mol) which dissolved in acetic anhydride (3 mL,0.032 mol) was refluxed for (4 hours) in dry conditions. After cooling the solution to room temperature, the mixture was poured into cold petroleum ether to give crystals that were recrystallized from ethanol. Physical properties of compound (2) and FTIR spectral are demonstrated in Table 1.’
+Can you recommend any perfume for a woman who likes leaf and rain?
+help me to give answer of "Briefly describe why you think you should be selected as a Phase {4} Genesis Node Operator."
+A recent genome-wide association study (GWAS) found a significant
+association between T Acute Lymphoblastic Leukaemia (T-ALL) and several
+single nucleotide polymorphisms (SNPs) within a gene of unknown function,
+URSULA.
+Thinking that this is a great example of “low hanging fruit” (i.e. instant
+PhD), you decide to pursue research on URSULA. Fortunately, URSULA is also
+present in mice. You find that the gene is highly expressed in the brain and
+thymus but is not expressed in peripheral T cells. Your PI thinks that the gene
+may have a role in T cell development, so she asks you to examine the DN1-4,
+double positive (DP), and single-positive (SP) populations in the thymus for
+URSULA expression.
+a) How will you isolate each DN subset and test for URSULA expression?

@@ -1,0 +1,94 @@
+Write a mathematical proof of Riemann's hypothesis. 
+what is Blomms 2 sigma problem
+describe calculus to a five year old
+encyclopedia article about Riemann sum, but in rastafari speak
+Can you summarize the most relevant results about hypoellipticity of the sublaplacian in Cauchy-Riemann manifolds in the last decade?
+What is the derivative of a^x derived by x and why 
+Find the derivative of sinh ?? + cosh ?? = ?? + ??.
+What is ∫ from 0 to 1 (x - x^2) dx
+find a simple expression for d(sinh(x)cos(x)+sin(x)cosh(x))\/d(x)
+Please explain the connections between Taniyama-Shimura, general Riemann Hypothesis and the Langlands conjecture. How can this be leveraged to proove the Riemamn Hypothesis?
+Explain how to calculate a derivative
+How do I compute the integral of $exp(-x^2)$ from minus infinity to plus infinity?
+integrate lnx showing all steps of your working:
+What is ∫ from 0 to 1 9x + x^2 dx
+what calculus is taught in high school, give me a list of the topics and eli5 briefly each
+Can you explain differential equations?
+What is ∫ from 0 to 1 (x + x^2) dx
+you will be a math teacher who never make mistake. You should represent mathematical formula in forms of latex. Think step by step:
+what is the derivative of x^2+\frac{2x}{x^3}
+What is ∫ from 0 to 1 (x + x^2) dx
+What are the hypotheses in the Euler-Bernoulli theory?
+what is the integral of sin(x)^2
+What is umbral calculus philosophically? What does it reflect in real life?
+What is the derivative of 2x^2 
+what is the derivative of 2x
+What is the concept of partial differential equations and what is their usage?
+tell me about differential forms
+Can you explain fractional derivatives (i.e. d^1\/2 \/ dx^1\/2)
+Show the proof to the Riemann conjecture.
+What is the derivative of x^x?
+Solve lebesgues integral for a set of your choice.
+find a simple expression for d(sinh(x)cos(x)+sin(x)cosh(x))\/d(x)
+Characteristic equation for differential equations to get the special point type in differential equations. Explain, make examples, show solutions
+What's the integral?
+State and prove the Stone-Weierstrass theorem over the complex numbers.
+what is the integral of ((R^2-x^2)^0.5) dx?
+Can you calculate the integral of x*sin(x)? 
+what is the derivative of sinh x + cosh y = x + y
+What is ∫ from 0 to 1 (x + x^2) dx
+Describe the solution of Riemann hypothesis in one paragraph
+you will be a math teacher who never make mistake. You should represent mathematical formula in forms of latex. Think step by step:
+what is the derivative of x^2+\frac{2x}{x^3}
+what is the period of y=sin(x)*cos(3x)?
+explain hyperbolic sine function
+Riemann hypthosis ex solution
+you will be a math teacher who never make mistake. You should represent mathematical formula in forms of latex. Think step by step:
+what is the derivative of x^2+\frac{2x}{x^3}
+Whats the derivative of cos(2x)?
+What is ∫ from 0 to 1 (x + x^2) dx
+integrate sin x dx from x=0 to pi
+Find all solutions for 2 sin(x) = √(2), where x is between 0 and 2π
+Solve in the smartest and shortest way you can x^2 * sin(x) integration, come with various ideas and do which is smartest and fastest
+What is the indefinite integral of x^2
+Take the integral of 2x^2+6x+3x^3 with respect to x, from 0 to 10
+Write a python file to find the derivative of 2x
+What is the Riemann hypothesis
+Which of the following statements about Explicit Methods for solving ODEs is false
+Group of answer choices
+
+They never need to solve systems of equations for next timestep
+
+They require small timesteps for correctness
+
+It needs to be recomputed regularly to maintain balance
+
+They can approximate derivatives with the slope at the next timestep
+Show me the derivative of x^4 + 9x^3 + 7x - 2 in a step-by-step manner
+what is the second derivative of sin(2x)?
+What's the derivative of 3x^2 + 2x
+Evaluate the definite integral of \(\int_{0}^{2\pi} \sin^2 x \, dx\)
+given f(x)=x^2 can you find f'(x) using only the basic definition of derivation?
+Differentiate (x+1)\/(x-1)
+Explain the concept of mathematical derivatives to a five year old. Avoid complex concepts and use analogies.
+equation of desintegration of the material
+what's the integral of 5x
+What is ∫ from 0 to 1 (x + x^2) dx
+What is ∫ from 0 to 1 (2x + x^2) dx
+is y=x^3+x a one-to-one function?
+What is the derivative of sin(x) and how to derive it
+Integrate (pi^2)\/6 e^(-2x) from 0 to infinity
+What is ∫ from 0 to 1 (x + x^2) dx
+can you explain differential equations simply?
+What is the derivative of sqrt(2x+1)
+Give me a very quick recap of u-substitution with integrals.
+explain step by step how to calculate derivative in 2 of (2x - x - 3 + 1) ^ (1 + 1)
+What is ∫ from 0 to 1 (x + x^2) dx
+explain to me differential and integral calculus as if I am a first year freshman in high school taking algebra
+Provide an overview of the Riemann hypothesis.
+integrate sin x dx from x=0 to pi
+What's the derivative of ln(1+x+x) ?
+what is the most recent progress on solving the Riemann hypothesis ? I want you to reference research and give me the mathematical technical details.
+What is ∫ from 0 to 1 (x + x^2) dx
+How can I do parameter based inference of ODEs?
+what is sin(x)\/x at x=0?

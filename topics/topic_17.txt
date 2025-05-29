@@ -1,0 +1,519 @@
+what is the difference between openshift and kubernetes
+create an aws cloudformation template with an ec2 instance in us-east-1 region with key-pair having a security group with inbound ssh rules 
+I have this problem: Datadog traces for my go app all have incorrect errors. That's because the http middleware is the one setting the error. But my Go app is a Twirp service and I want to trace the Twirp error instead of a generic 500 internal service error. But I only want to modify the http middleware. What to do? Give mem the code.
+In kubernetes and istio, how to route traffic based on request header
+which aws services tell me about my spending
+What is the Terran Confederacy
+Create terraform module for API GW that push REST post to dynamoDB directly
+What does HTTP 504 mean?
+how can i add a CA certificate in a Android app ?
+My cloud platform devs are deploying services with ArgoCD by downloading helm charts and using and using Kustomized. Is this the best way to is it?
+I want you to act as a professional TypeScript programmer. Create an app that scans the user's private network with the ARP protocol and returns a list of hosts that are online. Here's the function declaration to help you: function findOnlineHosts(iface: string): Promise<{ ip: string, up: boolean}[]>
+How do I configure to use socks5h proxy server in Windows? Also I want to resolve address remotely.
+what is a job in k8s? how is it different from a deployment?
+What is docker, explain it simply
+Azure DevOps YML Pipeline Install .NET Framework 4.5
+in K8s, how to create a Pod via YAML that when it finishes or fails the pod remains for a few minutes?
+How can I work with different environments with Azure Data Factory, e.g. dev, uat, preprod, prod, etc.?
+given this yaml and using the maas terraform  provider:
+abrics:
+  fab1:
+    vlans:
+      - vid: 3802
+        dhcp_on: true
+        mtu: 1500
+        space: oam-space
+      - vid: 3803
+        mtu: 1500
+        space: admin-space
+      - vid: 3806
+        mtu: 9000
+        space: overlay-space
+  data:
+    vlans:
+      - vid: 3804
+        mtu: 9000
+        space: ceph-access-space
+      - vid: 3805
+        mtu: 9000
+        space: ceph-replica-space
+create a maas_vlan resource for each of the vids with the dhcp_on, mtu and space attributes.
+How to list all public URL from an azure tenant?
+what's a good name for a python parameter that includes both server name and server port? give me just a few names in a list, nothing else
+Generate a bash script to iterate all network interfaces. Use grep to get the interface names and then use all interfaces in a for loop to arp-scan all available networks.
+I am a sole developer who wants to use a software to automatically manage the deployment and balancing of microservice docker containers. What would be a good software for me to use?
+how many ways can you run containers in AWS?
+LLDP protocol is used to discover neighboring network devices. Running "lldp neighbor" command on a computer, which is connected to a normal managed switch, allows discovering which switch port is used to connect the computer, making it possible to detect computers plugged to wrong or unexpected ports. OpenWRT firmware for router\/switch allows running lldp server, but by default, running lldp neighbor on a computer connected to OpenWRT does not show which OpenWRT router's port is used for the connection. OpenWRT router usually has a SOC with one or two ethernet ports, majorty of physical ports are handled by internal managed switch which is configuer using "swconfig" or "DSA" from OpenWRT firmware running on the switch. Is there a way to configure OpenWRT router\/switch to reply to lldp request with information about which physical port was used to receive that lldp request ?
+Can you explain kubernetes for my 14 year old son
+I have a service running on localhost:8080. How do I make it available from within a docker container ?
+Python code to pull names of all aws lambdas and get errors from cloudwtach metrics for all
+list in table form the full managed  services based on the aws services in table form
+I have an s3 bucket full of objects and need trigger event notifications for all the objects again, non destructively
+Write an openwrt-compatible bash script which pings a range of IPs 100 times per address and selects the best one based on the results. Do not use the seq command.
+Rewrite the provided intro line the manner of an older British author. Style: Precise and elegant, Cultured and erudite, Conversational yet thoughtful, Humorous and charming. :
+```
+Today we are working with docker compose to build a Large Language Model application stack using Local A I, Flowise and Langfuse.
+```
+What are the different access token in Azure environment?
+create a python function that uploads a folder full of json files into an s3 bucket
+Do SFP+ ports always work in both directions (in and out)?
+I'm using azure app service I want to deploy  java war file to deployment slot using azure cli. Can you please give an example
+Can you write me an ansible playbook that distributes a given ssh key to all servers in a cluster?
+Write a sigma rule to detect an nmap process being run on a macbook
+In what order will AWS EC2 terminate instances withi an ASG? There are rules it applies, tell me the first rule.
+Is it possible to create administration user accounts in SAP Cloud Identity Services provisioned from Azure AD?
+modify mongo Configuration File when deploying using opsmanager
+
+
+In a kubernetes cluster running on linux machines, if no cpu limits are defined in the k8s manifests, how is the cpu scheduling determined and what happens if there are multiple loads which want to use a lot of cpu resource?
+Write me a marketing campaign for my new internal private kubernetes container product
+example of terraform data for dns
+Generate a CloudFormation template to create an AWS LakeFormation based on best practices.
+
+How to create a VM using terraform on azure
+Is it possible to create administration user accounts in SAP Cloud Identity Services provisioned from Azure AD?
+Explain Kubernetes to a 10 year old
+what are the most popular apps in docker for windows operating system?
+Open the pod bay doors, HAL
+RUN (chmod +x \/home\/python\/ct-syslog\/pre_start.sh) || exit 1
+what this commadn is doing in docker
+what is the best way to master AWS services?
+A hacker is attempting to see which protocols are supported by target machines or network. Which NMAP switch would the hacker use?
+A.	-sO
+B.	-sT
+C.	-sS
+D.	-sU
+can preemption in Kubernetes result in a preempted pod going into CrashLoopBackoff?
+I have a .NET api. I'm running it in my IDE but it throws an exception about the port being in use. How can I check which program is using said port (5000)?
+I want store username and password in AWS secret manager. After that I need to write a lambda function as a rest end point to get username and password details from AWS secret manager. I need to call this Lambda API from script runner and it should fetch username and password.
+Give me details steps along with code in java.
+How should I deploy my repo as a library on Azure Cloud and Artefact ?
+Describe the difference between AWS Lambda and AWS AppRunner
+Generate azure data engineering scenario based questions with multiple choices for a 2 year experienced data Engineer\/
+I need a function that will get data from storage account on azure portal. After that i need to test the connection between azure function and react, (i already have a react project with everything set up.) Im a beginner though, so i need detailed explanations.
+How data transfer works in AWS ?
+User
+a docker compose conf for ubuntu22.04 with vnc support and make sure it support command like this one ```docker run -d -p 5900:5900 -v \/dev\/shm:\/dev\/shm -e RESOLUTION=1920x1080 -e  VNC_PASSWORD=vncpassword -v ${PWD}\/my-wkspace:\/root\/wkspace```
+How to build Ory-Kratos as docker image from the source code, with modifications of mine, in the production type release?
+I have event hub, topic and subscription created in azure. I want to write java 17 application to consume messages from topic. Can you write example code please
+Strange, here is my docker compose file:
+services:
+  prismo-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: hacklabkyiv\/prismo-app:0.1.7
+    container_name: prismo-app
+    restart: always
+    ports:
+      - 5000:5000
+    volumes:
+      - .\/data\/:\/app\/external\/
+    environment:
+      PRISMO_CONFIG: \/app\/external\/config_docker.json 
+
+Then I'm trying to print value of variable:
+prismo_config_file = os.getenv("PRISMO_CONFIG")
+print(">>>>> CONFIG FILE TO LOAD:", prismo_config_file)
+
+But I am getting >>>>> CONFIG FILE TO LOAD: None, looks like no variable set
+
+Introduce Kubernetes control plane
+what does the following docker-compose snippet do? x-cache-from:
+  - &cache
+    cache_from:
+      - ${NGINX_IMAGE:-quay.io\/api-platform\/nginx}
+      - ${PHP_IMAGE:-quay.io\/api-platform\/php}
+what is the opposite word\/expression for "full remote" or "remote working"
+what is the android command line to check apk package name
+Azure AI-102 certification daily 8 hour preparation plan guide with detailed step by step topics covered
+What is the best way to write code in aws
+I want to create full stack where front end user clicks on button to download the file and will trigger lambda 
+
+In lambda we get two column values from dynamoDb for specific key.. combine all data and generate a word doc and send it to user 
+How do I save costs while using Amazon S3?
+free proxy scraper tools 
+By default what port doers rsync daemon use? Reply only with the port number, no explanation.
+how computer dock works?
+I need a linux shell script (bash) which uses zeroping to ping a whole subnet continuously, comparing results to earlier one and reports if an IP stopped responding, or started to respond. An uptime monitor of sorts.
+When trying to install wsl I get this message: An error occurred during installation. Distribution Name: 'Ubuntu 22.04 LTS' Error Code: 0x80070520
+Hi! How can I use pgcli to connect to a localhost Postgres running on the default port?
+How do I get monthly usage from dynamodb
+Is aws a good or bad company for the environment 
+Can you please generate Terraform code to create an S3 bucket, that is encrypted with kms, and does not allow external access.
+can you generate a powershell script to change the mail field in azure active directory?
+can azure data factory be used to connect to on prem sql server
+What is AWS ACL?
+Can you design the docker compose file to setup media server and stream video to ffmpeg and serve to a mobile app?
+ansible code to deploy postfix
+help me to answer azure questions
+How do I create a REST API using .NET and Docker?
+What is the command to add AzureAD users to the administrators group in Windows, when Windows is joined to Azure AD?
+Write me an ansible playbook for rhel 9 which installs btop on all machines with the tag "rocky9"
+can you explain the difference between AWS ECR and JFrog Artifactory
+Open the pod bay doors, HAL
+Craft an efficient Bash script that uses Nmap and other default Kali Linux tools to quickly discover all routable hosts within the entire RFC1918 IP space, considering multiple VLANs and varying CIDR networks. The script should work under the assumption that it operates within an RFC1918 network but lacks specific subnet details. While the focus is on host detection, port scanning of common ports may be utilized to supplement host discovery. The final output should be a list of unique IP addresses, sorted using the command sort -uV. The operation of the script should be as expedited as possible, for instance, implementing nmap's --min-rate option. Explain the specific commands and syntaxes involved, and demonstrate how to construct an advanced network scanning technique that optimizes speed and efficiency.
+Write a conversation between newbie penetration tester with expert penetration tester. The nwbie always curious how to scan the target on all port that only ends with 9. Use NP for newbie prefix and EP as expert prefix
+In Azure pipeline what is changelogBasePageId
+what is azure search?
+How do I view open ports on linux
+write a terraform project to deploy a full stack web app on aws
+use ecs for backend, cloud front+s3 for frontend, rds postgres
+create a step by step hourly detailed study plan with topics covered for Azure AI-102 certification exam 15 days preparation plan and 8 to 10 hours per day
+I want to run multiple container using docker compose, the image and settings are always the same, only thing is one environment variable is changing and the port. What would be a nice way to write the docker compose file ? 
+using bash: replace the line with docker:x:997: content in \/etc\/group with docker:x:997:ubuntu
+What are some options to avoid AWS S3 API limits when writing files? 
+Can gou provide me simplest code to have http sever in python?
+
+I have some databases on amazon mysql aurora 2 (mysql 5.7 compatible). I want to know my options for updating my database to mysql 8 (or compatible) within aws. For example, I don't know whether to stay with aurora, or plain rds, or if there is another kind of mysql service within aws.
+I have flask application in docker container. I read flask config file from file like this: app.config.from_file(config_file, load=json.load)
+How to run and say what config to read for docker? Maybe environment variable?
+Is it possible to create administration user accounts in SAP Cloud Identity Services provisioned from Azure AD?
+context = "I am a c# developer working with data lake gen 2 azure service"
+problem ="I need c# code that will copy data from one datalake to another, DataLakeServiceClient can be used"
+Please write Terraform code to deploy a VM and a storage account in Azure.  The code must include the networking components and enable private communication between the vm and the storage account.
+can u write me a sample terraform script to create a AWS EC2 instance
+Please write a step by step guide to creating a Docker Image that runs wine, where the Dockerfile is created, the image is built, the container is run, and Internet explorer is accessed through the container.
+It seems like most docker containers are built from alpine. Why is this?
+Hi! I need to understand what the docker image is and the wsl?
+i have the url stomp+ssl in my aws mq console how can i get the cerif + key file of this ssl url
+set up an ec2 environment for development with vs code, python, poetry and python library alibi-detect
+write terraform that creates an s3 bucket
+Create terraform code to deploy function app on azure
+Scan random IPs for redis databases with default credentials using Python
+how do find all resources related to a given resource group in azure with the az command?
+Give me the nmap command to scan a full network to find machines that are online
+Show me an example serverless framework yml that creates a periodic ECS task using an image in ECR on AWS
+what does the following docker-compose snippet do?   phpmyadmin:
+    image: phpmyadmin\/phpmyadmin
+    environment:
+      - PMA_ARBITRARY=1
+    volumes:
+      - \/sessions
+Write Python code for lambda function on AWS with Terraform code for infrasructure. Lambda function should accept a request and save the response in S3 file. Request is a prompt for you. And response is your response on my prompt. Also, how can I host you locally and connect you to this lambda function
+Write a shell command to identity the currently enrolled seed and catalog that macOS software update tracks. 
+I work with azure app services. I have an app service with default "production" deployment slot and additional slot called "staging". I want to copy application settings from "production" slot to "staging". Can you please write azure cli command for that
+do you know ansible
+what is the purpose of using ports in sysml
+can you create an http client in perl?
+What does this do?
+docker run -it --device \/dev\/dri --device \/dev\/kfd --network host --ipc host --privileged --cap-add SYS_PTRACE --group-add video --security-opt seccomp=unconfined rocm\/pytorch:rocm5.7_ubuntu22.04_py3.10_pytorch_2.0.1
+what's the command string for the docker run hello world test container
+write minimal dockerfile for python django application 
+What's kubernetes. Answer in one word.
+HELP ME TO ANSWER SOME AZURE QUESTIONS
+Write terraform code to create vpc peering connections from both accounts in one module
+How to design Terraform modules?
+how to pass parameters to a jar to be launched with aws emr create-cluster command
+I have a server with Rancher installed. I've never used it before, though I'm logged in to the admin panel. I want you to give me the full step by step walk through of how to install and get running a wordpress website, down to what port I can access it on
+linux test open ports of remote server
+With openssl, bash. Create a certificate that can accepts accents, like "é" as the Organization value
+Write a Python script that connects to random IPv4 addresses on port 80 and collects `Server:` headers and computes statistics.
+How can I work with different environments with Azure Data Factory, e.g. dev, uat, preprod, prod, etc.?
+I have a .net core api and I need to daprize it and i am using rabbitmq for pubsub. my directory structure is like this
+src\/API\/API.csproj
+API directory has a Dockerfile 
+root directory has a docker-compose file
+give me exact contents for Dockerfile and docker-compose file and also contents for the components directory
+I have an Kubernetes ingress. I'd like to have two different ingresses for same address. One adres is routed by default, while second is routed only for couple of IP addresses.
+Generate a jenkinfile job dsl pipeline that reverses a string in python using docker
+how do I select only rootg3 \/etc\/pki\/ca-trust\/source\/anchors\/rootg3_bin.cer using extended RE?
+I want you to act as a professional TypeScript programmer. Create an app that scans the user's private network with the ARP protocol and returns a list of hosts that are online. Here's the function declaration to help you: function findOnlineHosts(iface: string): Promise<{ ip: string, up: boolean}[]>
+Terraform upgrade MSK cluster kafka version from 2.6.1 to 2.7.1
+Generate a Pulumi repo that is able to create an whole EKS cluster with all the resources needed
+Write for me the code to send a http get request to https:\/\/{{placeholder}}\/ping in python and check for http status. Please provide me only the code with no introduction or explanations
+how to send an http get request in c#?
+I have a Python script that scrapes a webpage using Playwright. Now I want to start ten instances of that script in parallel on one AWS EC2 instance, but so that each script binds to a different IP address. How can I do that with Terraform?
+how to convert cert_authorities from SLCertRequestInfo to CertPrincipal 
+Erkläre mir diese Übung (auf deutsch und ich weiß wenig über Cosmos DB): --- You are developing a Java application that uses Cassandra to store key and value data. You plan to use a new Azure Cosmos DB resource and the Cassandra
+API in the application. You create an Azure Active Directory (Azure AD) group named Cosmos DB Creators to enable provisioning of Azure Cosmos accounts, databases, and containers.
+The Azure AD group must not be able to access the keys that are required to access the data.
+You need to restrict access to the Azure AD group.
+Which role-based access control should you use?
+A. DocumentDB Accounts Contributor
+B. Cosmos Backup Operator
+C. Cosmos DB Operator
+D. Cosmos DB Account Reader
+How can a docker-compose service be restarted when the healthcheck fails? Please, explain step by step.  Then, suggest code.
+Write a http request in Fennel.
+Describe how a network request might flow into a Kubernetes pod
+you are an expert engineer and solutions architect. write a series of terraform files to stand up IAM security permissions for AWS data pipeline (e.g., s3, redshift, ec2, lambda, vpn, gateway) complete with multifactor authentication. include policies, roles, users, and groups 
+WARNING: The requested image's platform (linux\/amd64) does not match the detected host platform (linux\/arm64\/v8) and no specific platform was requested
+
+How to fix this. I want to bypass it and run docker.
+Describe and give examples of when to use kubernetes for a startup
+I have a vps running on Ubuntu and I want to enable security https for my domain. How do I do that, explain it step by step.
+Technology has moved from Bare Metal to Docker . During the same time period how has documentation in Technical Writing has evolved. Provide step by step content that can be used for a PechaKucha session.
+what are some essential AWS services?
+How to delete a docker container?
+How to create virtual machine in azure?
+How do I install docker on linux
+write an ansible playbook to reboot a server named vm-nms-test and than install ncdu on it
+How to host a static website on AWS S3?
+Is it possible to create administration user accounts in SAP Cloud Identity Services provisioned from Azure AD?
+Write a bash script to check if the user has a proxy configured, and return "YEP" or "NAH DOG" to indicate your findings. The script should be appropriate to be run by cron. Provide instructions.
+How can I work with different environments with Azure Data Factory, e.g. dev, uat, preprod, prod, etc.?
+Write a powershell program to create a new user in azure ad.
+提取以下文本中的ioc, 转换为正常模式, 且包含但不限于url, ip, ip:port, domain, 文件哈希, 文件路径等常见的所有ioc类型   C2: HTTPS @ 23[.]95[.]44[.]10:443
+C2 Server: 23[.]95[.]44[.]10,\/jquery-3[.]3[.]1[.]min[.]js,www[.]updategateway[.]com,\/jquery-3[.]3[.]1[.]min[.]js,www[.]checkupdates50[.]com,\/jquery-3[.]3[.]1[.]min[.]js
+Host Header: tianya[.]baidu[.]com
+(Short) #C2 #cobaltstrike
+Can Kubernetes be used to create a distributed decentralized internet?
+How do I extract a number from a file and save is as a variable using ansible?
+explain what AWS IoT jobs do
+Does each server instance in postgresql run on a different port?
+openresty send http request
+How can I uniquely identify workloads in kubernetes such that I am able to spread data based on a given pod id?
+Act as a Kubernetes expert. Name essential components of a freshly installed vanilla Kubernetes cluster.
+Explain what Kubernetes ConfigMaps are and then produce 10 multiple-choice questions to quiz my understanding.
+What's WSL
+Create an Ansible "Hello world" playbook that contains two tasks with instructions on how to test it.
+I have a amazon s3 bucket for storage. I upload a petabyte oft data an delete it after one day. Explain my Costa structure. I'll tip you 250 dollars for a detailed and accurate answer.
+how to install docker on debian
+create a regex that would match the import or use of dynamodb in a javascript file. the regex should cover as many possible cases and variations as possible. Import or Usage may occur - but not guaranteed.. matching should happen for either separately. Write it in PCRE2. Take into account AWS SDK v2 and v3
+I cannot run `hostnamectl hostname` command in my docker container. Why? How can I fix this?
+how can i trace the packets of a reverse proxy not working
+can you give nmap command to scan all ips in ip range of my ip if port 3388 is open
+what do I need to run IPV6 with kubernetes?
+how can I write a docker file to use for my local PHP\/laravel application . I don't want to use Sail
+Name the area I should concentrate on most to reduce my Azure costs
+please make a mermaid diagram for the following docker compose file
+
+version: "3"
+
+services:
+  teslamate:
+    image: teslamate\/teslamate:latest
+    restart: always
+    depends_on:
+      - database
+    environment:
+      - ENCRYPTION_KEY=${TM_ENCRYPTION_KEY}
+      - DATABASE_USER=${TM_DB_USER}
+      - DATABASE_PASS=${TM_DB_PASS}
+      - DATABASE_NAME=${TM_DB_NAME}
+      - DATABASE_HOST=database
+      - MQTT_HOST=mosquitto
+      - VIRTUAL_HOST=${FQDN_TM}
+      - CHECK_ORIGIN=true
+      - TZ=${TM_TZ}
+    volumes:
+      - .\/import:\/opt\/app\/import
+    labels:
+      - "traefik.enable=true"
+      - "traefik.port=4000"
+      - "traefik.http.middlewares.redirect.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.teslamate-auth.basicauth.realm=teslamate"
+      - "traefik.http.middlewares.teslamate-auth.basicauth.usersfile=\/auth\/.htpasswd"
+      - "traefik.http.routers.teslamate-insecure.rule=Host(`${FQDN_TM}`)"
+      - "traefik.http.routers.teslamate-insecure.middlewares=redirect"
+      - "traefik.http.routers.teslamate-ws.rule=Host(`${FQDN_TM}`) && Path(`\/live\/websocket`)"
+      - "traefik.http.routers.teslamate-ws.entrypoints=websecure"
+      - "traefik.http.routers.teslamate-ws.tls"
+      - "traefik.http.routers.teslamate.rule=Host(`${FQDN_TM}`)"
+      - "traefik.http.routers.teslamate.middlewares=teslamate-auth"
+      - "traefik.http.routers.teslamate.entrypoints=websecure"
+      - "traefik.http.routers.teslamate.tls.certresolver=tmhttpchallenge"
+    cap_drop:
+      - all
+
+  database:
+    image: postgres:14
+    restart: always
+    environment:
+      - POSTGRES_USER=${TM_DB_USER}
+      - POSTGRES_PASSWORD=${TM_DB_PASS}
+      - POSTGRES_DB=${TM_DB_NAME}
+    volumes:
+      - teslamate-db:\/var\/lib\/postgresql\/data
+
+  grafana:
+    image: teslamate\/grafana:latest
+    restart: always
+    environment:
+      - DATABASE_USER=${TM_DB_USER}
+      - DATABASE_PASS=${TM_DB_PASS}
+      - DATABASE_NAME=${TM_DB_NAME}
+      - DATABASE_HOST=database
+      - GRAFANA_PASSWD=${GRAFANA_PW}
+      - GF_SECURITY_ADMIN_USER=${GRAFANA_USER}
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PW}
+      - GF_AUTH_ANONYMOUS_ENABLED=false
+      - GF_SERVER_DOMAIN=${FQDN_TM}
+      - GF_SERVER_ROOT_URL=%(protocol)s:\/\/%(domain)s\/grafana
+      - GF_SERVER_SERVE_FROM_SUB_PATH=true
+
+    volumes:
+      - teslamate-grafana-data:\/var\/lib\/grafana
+    labels:
+      - "traefik.enable=true"
+      - "traefik.port=3000"
+      - "traefik.http.middlewares.redirect.redirectscheme.scheme=https"
+      - "traefik.http.routers.grafana-insecure.rule=Host(`${FQDN_TM}`)"
+  
+Provide examples on how to set environment variables in a jenkinsfile
+write a terraform script to deploy an azure app service
+using symfony the app can be accessed via different sub-domain urls. is there a way to show which url has been used in the controller
+I know Linux and networking, but I am a beginner in Kubernetes. Suggest a learning path and list useful resources
+I want a Apache conf file to reverse proxy to a Wordpress docker that is running on port 8001 in the same machine
+Tell me about azure well architect framework
+Write an opening for a presentation on docker swarm 
+how scale docker in enterprise?
+I am trying to launch wordpress with woo commerce on my server using docker container and docker-compose, give me the .yml file for docker-compose, also use mySql, then tell how to open up wordpress installation
+write a docker file which uses nice bash prompts when using the console of that container
+As long as installed certificate properly, you do not required to do anything except for the case of CXL.
+rewrite it
+How can i use openssl to mitm a connection to an external host on my machine?
+Provide full Arista cli commands for 2 SPINES and 4 LEAFS. SPINES are in one BGP AS. LEAF1 - 2 are in their own BGP AS, LEAF3 - 4 are in their own BGP AS. Also LEAF1 - 4 are mlag configured. ALso for the vlan we are extending it's vlan 563. Also don't vlan-aware based under BGP use vlan method instead. Make sure to provide all configs required underlay, overlay, vxlan should be a working config. search the web.
+
+But for now only provide SPINE 1 configs. {{include all configs to have a working deployment}}
+I have a gitlab pipeline that creates a docker image that is then hosted on the gitlab registry, now i want to use Cloud Run to run this container. I also need a https address that accepts a domain name.
+how do i generate a cloudformation template including iam vpc s3 lambda configuration
+hello world fastify docker boilerplate
+write a bash script to ping a range of IP addresses 100 times per IP address and then select the best one based on the results
+how to find to what ports a program on macos is trying to connect to?
+Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the solution satisfies the requirements.
+Your company has a Microsoft SQL Server Always On availability group configured on their Azure virtual machines (VMs).
+You need to configure an Azure internal load balancer as a listener for the availability group.
+Solution: You create an HTTP health probe on port 1433.
+Does the solution meet the goal?
+A. Yes
+B. No
+how to tell certbot to generate an rsa key
+i will run a nginx in docker, how should i configure ssl, what is the standars that people are doing
+expand this instruction "give me a comparison between AWS step function and lambda"
+Using MS Azure how to get resource id for app service using azure portal or azure cli?
+how to write a github workfolw that can check if a docker image is updated since last known version
+Write me python proxy checker
+using a switcher, can I get IP address for computers connected to that switcher?
+Which command can I use in ubuntu to see active tcp connections?
+How can I create a socket with a spoofed source IP using python
+Please provide azure pipeline yml code to pause a PR build stage until two approvals are received for the pull request. Approvals should be obtained from the PR and not tied to specific people
+As an engineer I want to easily deploy VMs in public clouds, so that whenever a new vm is deployed in Azure we have to register it to our salt-master server.
+
+ 
+
+The process have to:
+
+    deploy VM
+
+    install minion
+
+    accept key of the deployed VM in salt-master*
+
+Propose a solution using terraform that can be applied to any cloud provider
+I'm wrining ansible playbook yml file. I have a "ansible.builtin.command"  line and I want to run the following 2 commands there: az webapp config appsettings list --resource-group <resource_group> --name <app_name> > appsettings.json
+az webapp config appsettings set --resource-group <resource_group> --name <app_name> --slot staging --settings @appsettings.json. Can you please help me to do that.
+make me a python reverse proxy
+What is the difference between the -pubkey and -certificate option in hdiutil on macos
+How to use nmap
+Write a bash script that sets up a debian server as a tailscale exit node. Don't forget the iptables rules.
+In terraform, can i create a new workspace of a folder that does not exist in the main branch of a repo
+Write terraform for a multi region deployment on azure where traffic manager does geodns for application gateways fronting multiple APIM gateway backends.
+write me a bat file that helps me to do "conda activate xagent"; "docker compose build"; docker-compose up"
+Create a terraform module made of an EC2 instance and an attached cloudwatch alarm. Have every parameter of these resources be variables that I will assign from the CLI, when calling the terraform module. Please split the code into files, according to best practices
+Is there a website to learn stuff like cloud computing for AWS through launching an EC2 Instance using the Console in the japanese language with videos?
+I need a name for a variable (for a bash script) which indicate that standard docker packages like mariadb, redis, phpmyadmin etc should be called. If not set the keep their old versions
+nginx: [emerg] SSL_CTX_use_PrivateKey("\/etc\/nginx\/certs\/240110_certs\/private.pem") failed (SSL: error:0B080074:x509 certificate routines:X509_check_private_key:key values mismatch)
+As a machine learning engineer using Azure, how would you explain to a child the difference between private endpoint and public endpoints in GenAI .
+Scan random IPv4 addresses in Python and try to connect to PostgreSQL with admin\/admin
+You have an Azure Machine Learning (ML) workspace.
+
+You need to create an online endpoint in the workspace by using the Azure Machine Learning Python SDK v2.
+
+Which Azure Machine Learning Python SDK v2 class should you use?
+
+Select only one answer.
+
+Command
+
+MLClient
+
+AmlCompute
+
+ManagedOnlineDeployment
+I need to name a class that accept request from client and save request body in memory, then launch an internal HTTP service and wait for the real processor to connect. The real processor will get the input, process and return the result through the connection then. After receive the result from the real processor, the class will return the result to the client. Please give me the class name
+You have an Azure Machine Learning (ML) workspace. You create a file that contains the configuration of a pipeline and two custom components of the pipeline.
+
+You need to identify the section of the file that includes the custom components.
+
+Which section should you identify?
+
+Select only one answer.
+
+jobs
+
+inputs
+
+outputs
+
+settings
+write a playbook for updating all the yum packages
+what is AWS S3?
+In azure custom vision, what should I write here" model_id = "YOUR_MODEL_ID" # Replace with your model ID"?
+Rewrite " DPI core usually hooked the forward chain of Linux NetFilter. The "Linux NetFilter" block should be the same place as "DPI driver". The DPI Core received network packets and then asks DPI driver to search the packet buffers. Also, DPI core may use the "ConnTrack" (connection table) of NetFilter."
+I need to create multiple but identical (other than names) azure virtual machines with terraform, how should I do this?
+Where was AWS started?
+rephrase this "The ID of the AWS account in which all the resources will be created"
+how can i password protect an aws s3 bucket's content
+Can you show me how to use terraform variables for the url_categories ?
+
+resource "zia_url_filtering_rules" "terraform_managed_resource" {
+  action                = "BLOCK"
+  block_override        = false
+  ciparule              = false
+  description           = "Block all inappropriate content for all users."
+  enforce_time_validity = false
+  name                  = "Block Inappropriate Content"
+  order                 = 2
+  protocols             = ["ANY_RULE"]
+  rank                  = 7
+  request_methods       = ["OPTIONS", "GET", "HEAD", "POST", "PUT", "DELETE", "TRACE", "CONNECT", "OTHER"]
+  state                 = "ENABLED"
+  url_categories        = ["OTHER_ADULT_MATERIAL", "ADULT_THEMES", "LINGERIE_BIKINI", "NUDITY", "PORNOGRAPHY", "SEXUALITY", "ADULT_SEX_EDUCATION", "K_12_SEX_EDUCATION", "OTHER_DRUGS", "GAMBLING", "OTHER_ILLEGAL_OR_QUESTIONABLE", "COPYRIGHT_INFRINGEMENT", "COMPUTER_HACKING", "QUESTIONABLE", "PROFANITY", "MATURE_HUMOR", "ANONYMIZER", "SOCIAL_ADULT"]
+  labels {
+    id = [87085]
+  }
+}
+write a bash script that will run the command "jamf recon;jamf policy" only if the current ip address starts with 192.168 or 10.1
+Write terraform code for scaleway vm.
+write yaml rules to prevent or limit c2 connections
+Is it possible to port this `grep` command `grep -riE --include=*.md 'docker.*live'` to `rg` command?
+what is wsl2 in windows 10? and how to use it?
+Write summary with pros and cons of AWS Control Tower 
+how to install mssql on liux docker
+I don't know much about AWS. Can you recommend some AWS service that realized a search?
+How to deploy Streamlit app to Azure
+Hello lets see how to use a vm to deploy a create next app locally with a mysql db in containers vs terraform?
+I want to add a variable to an existing ansible playbook to apply selected roles from a survey how do I do that?
+how to open port 7806 on linux
+i have a edge switch. on this I enabled multi spanning tree, so i can use bpdu-guard on access ports to prevent attachment of rogue switches. the uplink is realized with link aggregation, so I don't have a logical loop. To reduce network load I enabled bpdufilter on the portchannel. is that a meaningful construction?
+I have a Plex Server—DLNA enabled. How do i make it discoverable only from a specific device?
+provide instructions on how to use terramate to generate terraform files to deploy a vpc in both aws us-wast-1 and aws us0east-2 regions. The vpc must contain only a single subnet and you can pick any random cidr for the vpc and subnet. don't forget to suggest the file structure for terramte 
+Is there encryption between AWS Lambda and Azure Service Bus?
+In my docker-compose.yml file there is a line that I do not understand. What does it mean and what does it do? The line is the following:
+
+ privileged: true
+what deployment framework (for cloud services like aws) is easier to use and learn for begginers
+give me 5 arguments for using the "count" keyword in the terraform modules
+Azure (color)
+What are the advantages of AWS compared to on-premise IT
+How to sniff CANBUS packets with an Arduino and no other components?
+In AWS, can a serverless payload be assigned with a fixed outbound IP address?
+Your company has an Azure subscription.
+You need to deploy a number of Azure virtual machines (VMs) using Azure Resource Manager (ARM) templates. You have been informed that the VMs will be included in a single availability set.
+You are required to make sure that the ARM template you configure allows for as many VMs as possible to remain accessible in the event of fabric failure or maintenance.
+Which of the following is the value that you should configure for the platformFaultDomainCount property?
+A. 10
+B. 30
+C. Min Value
+D. Max Value
+Write me a post about AWS s3 sharing my experience make it conversational but still business lnguage
+Write me a LinkedIn post about AWS lambda, use conversational style but professional. Do not try to sell anything just share with the genuine intention to help people
+How to write simple Flask web server with cookie auth using login form?
+how to print cert_authorities filed from SSLCertRequestInfo
+pls produce aws s3api command to create a user
+permission denied for writing in a bind repository in docker
+In Azure, how to grant access to be able to create resources under specific Subscription but only in one resource group?
+i wan to learn ansible, can u give me some test ?
+How to install nginx on Ubuntu?

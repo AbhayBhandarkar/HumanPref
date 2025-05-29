@@ -1,0 +1,154 @@
+can you combined 2 different storages into one vvol
+in vulkan when recreating the swapchain. do i also need to free the command buffers or can i reuse them?
+given a linux environnement, given the \/data is 100% use , how can i dertermine what is the biggest file, what fill the space of \/data
+I want to add more disks to my NAS, but I don't have any space inside the case to add disks. However, I have a lot of spare computers. Here is what I have available:
+
+* 5x i.MX6Q based computers. These have 1x SATA, PCIe Gen2 x1 and 1x GbE. The internal GbE on these is rather slow.
+
+* 1x Jetson TK1. This has 1x SATA, PCIe Gen2 x1 and 1x GbE (Realtek RTL8111).
+
+* 1x Pico ITX board with AMD GX420. It has 2x SATA, 2x PCIe Gen2 x1 (one SATA and one PCIe are multiplexed) and 2x GbE, also RTL8111.
+
+* 1x Intel Xeon E3 1275 v2 system with 6x SATA (2 are 6 Gbps and 4 are 3 Gbps), 2x GbE (Intel 82574 and 82576), 1x PCIe Gen3 x16, 1x PCIe Gen2 x4 and 2x PCI.
+
+* 1x Intel Xeon E5 2670 v2 system with 2x PCIe Gen3 x16 slots and 3x PCIe Gen3 x8 slots, 6x SATA (2 are 6 Gbps and 4 are 3 Gbps), 2x GbE (Intel 82579 and I210).
+
+* 1x APQ8064 board with 1x SATA (1.5 Gbps) and 1x GbE (Attansic L1).
+
+* 1x APQ8084 board with 1x SATA and 1x GbE (Attansic L1).
+
+* 1x Intel Core i3 3217U system with 1x SATA and 1x GbE (Intel 82579).
+
+* 3x Jetson TX1 with 1x PCIe Gen2 x4, 1x PCIe Gen2 x1, 1x GbE (Realtek RTL8153, so USB 3.0), 1x SATA.
+
+* 1x Jetson TX2 with 1x PCIe Gen3 x4, 1x PCIe Gen3 x1, 1x GbE (Realtek RTL8153, also USB 3.0), 1x SATA.
+
+* 1x AMD Ryzen 2400G with 1x PCIe Gen3 x8, 1x PCIe Gen2 x1, 1x PCIe Gen2 x4, 1x PCIe Gen3 x4 (M.2), 4x SATA.
+
+* The network switch has 2x 40 GbE ports, 4x 10 GbE ports, and 24x 1 GbE ports. One of the 10 GbE ports is used by a client.
+
+* The NAS has a 40 GbE connection to the network, and there is a second 40 GbE port available on the card. This spare port can be used as an Infiniband port. There is not enough space inside the NAS to add any more disks.
+
+What should I do to add more disks to my NAS while making the most out of these resources? I don't mind buying external HDD enclosures, HBAs or network cards, but I would strongly prefer to use as much existing hardware as possible, while maximizing the amount of disks that can be hooked up to the NAS. The NAS is a very powerful computer with a Ryzen 5700G and I would prefer not to replace it if at all possible. Remember that PCIe Gen2 x1 is too slow for 10 GbE.
+why does vulkan make it so hard to use stuff like renderpasses. all pipelines i ever use in my app basically have to exist twice, when i want to allow them to be used in my app, in case i want to render passes
+in my vulkan app i want to switch between two renderpasses that i use to add blur effect, which requires the current framebuffer to be used. however i want to do multiple blurs at different times 
+How do I check how much space each subdirectory uses in ubuntu
+Hi, I have a problem for you to solve today. I have a NAS built inside a small case, and I want to add more HDDs to it, however, the case no longer has any space for internal HDDs, it's physically full, and I don't want to buy a larger case, though I am open to adding external disk enclosures. I have two expansion slots, both are PCIe Gen3 x8, one of which is filled with a 40 GbE dual port network card. I have a switch with: 1x free 40 GbE port, 3x free 10 GbE ports, and 24x GbE ports. The NAS also has USB 3.0 ports. I also have a lot of spare computers, which have the following features: one or two SATA ports, PCIe Gen2 x1 to x4 slots, and one or two integrated GbE network ports. Some of the computers have poor performing network ports that can't actually reach GbE wire speed. What solutions should I consider to add more HDDs to my NAS?
+in vulkan when recreating the swapchain. do i also need to free the command buffers or can i reuse them?
+my lubuntu 23.04 machine is trying to do an upgrade to 23.10, but there is not enough free disk space on \/boot. It says I need a total of 297 M free. how can i either free up the disk space or expand the disk?  \/ has 101 gigs free, so can i make that smaller and put the freed up space on \/boot?  there is one physical disk in this machine.
+there's a windows program that visually shows the disk usage
+i have a vulkan program where i have a renderpass that has two subpasses
+
+the first writes into a offscreen framebuffer
+the second reads this framebuffer as input attachment
+
+in the dependencies of the second subpass, if i don't add MEMORY_WRITE to the dst_access_mask. i get validation errors. but why would MEMORY_WRITE be needed?
+on Linux, i have free disk space, yet I can't write to the disk, it says disk is full. the disk is not read only and df -i shows free inodes too. 
+
+what is the cause of this situation, how would you find details and remediate it?
+Generate a python function that print the current system resources usage in a pretty output.
+Be consice. When updating a texture in vulkan, what are the steps to make sure the texture is fully initialized?
+You are an experienced linux sysadmin and tasked to write an rsyslog config that filters out log4j aka jndi requests and puts them in a separate file.
+Hi, I have a problem for you to solve today. I have a NAS built inside a small case, and I want to add more HDDs to it, however, the case no longer has any space for internal HDDs, it's physically full, and I don't want to buy a larger case, though I am open to adding external disk enclosures. I have two expansion slots, both are PCIe Gen3 x8, one of which is filled with a 40 GbE dual port network card. I have a switch with: 1x free 40 GbE port, 3x free 10 GbE ports, and 24x GbE ports. The NAS also has USB 3.0 ports. I also have a lot of spare computers, which have the following features: one or two SATA ports, PCIe Gen2 x1 to x4 slots, and one or two integrated GbE network ports. Some of the computers have poor performing network ports that can't actually reach GbE wire speed. What solutions should I consider to add more HDDs to my NAS?
+I want to add more disks to my NAS, but I don't have any space inside the case to add disks. However, I have a lot of spare computers. Here is what I have available:
+* 5x i.MX6Q based computers. These have 1x SATA, PCIe Gen2 x1 and 1x GbE. The internal GbE on these is very slow (470 Mbps maximum).
+* 1x Jetson TK1. This has 1x SATA, PCIe Gen2 x1 and 1x GbE (Realtek RTL8111).
+* 1x Pico ITX board with AMD GX420. It has 2x SATA, 2x PCIe Gen2 x1 (one SATA and one PCIe are multiplexed) and 2x GbE, also RTL8111.
+* 1x Intel Xeon E3 1275 v2 system with 6x SATA (2 are 6 Gbps and 4 are 3 Gbps), 2x GbE (Intel 82574 and 82576), 1x PCIe Gen3 x16, 1x PCIe Gen2 x4 and 2x PCI.
+* 1x Intel Xeon E5 2670 v2 system with 2x PCIe Gen3 x16 slots and 3x PCIe Gen3 x8 slots, 6x SATA (2 are 6 Gbps and 4 are 3 Gbps), 2x GbE (Intel 82579 and I210).
+* 1x APQ8064 board with 1x SATA (1.5 Gbps) and 1x GbE (Attansic L1).
+* 1x APQ8084 board with 1x SATA and 1x GbE (Attansic L1).
+* 1x Intel Core i3 3217U system with 1x SATA and 1x GbE (Intel 82579).
+* 3x Jetson TX1 with 1x PCIe Gen2 x4, 1x PCIe Gen2 x1, 1x GbE (Realtek RTL8153, so USB 3.0), 1x SATA.
+* 1x Jetson TX2 with 1x PCIe Gen3 x4, 1x PCIe Gen3 x1, 1x GbE (Realtek RTL8153, also USB 3.0), 1x SATA.
+* 1x AMD Ryzen 2400G with 1x PCIe Gen3 x8, 1x PCIe Gen2 x1, 1x PCIe Gen2 x4, 1x PCIe Gen3 x4 (M.2), 4x SATA.
+* The network switch has 2x 40 GbE ports, 4x 10 GbE ports, and 24x 1 GbE ports. One of the 10 GbE ports is used by a client.
+* The NAS has a 40 GbE connection to the network, and there is a second 40 GbE port available on the card. This spare port can be used as an Infiniband port. There is not enough space inside the NAS to add any more disks.
+What should I do to add more disks to my NAS while making the most out of these resources? I don't mind buying external HDD enclosures, HBAs or network cards, but I would strongly prefer to use as much existing hardware as possible, while maximizing the amount of disks that can be hooked up to the NAS, and minimizing the amount of HBAs needed. I would prefer to use the low power spare computers, while avoiding the high powered ones. The NAS is a very powerful computer with a Ryzen 5700G and I would prefer not to replace it if at all possible. Remember that PCIe Gen2 x1 is too slow for 10 GbE, but it's still good enough for 2.5 or even 5 GbE. The disks are rarely accessed, so low idle power draw is very important. Performance is also important.
+I have two 10TB drives and two 16TB drives. Calculate RAID 5 usable capacity 
+
+
+how can I truncate a log file in linux?
+make this more simple and easier to read:
+disk_info=$(df -h | awk '\/^\/dev\/\/ {print "Total: "$2" Used: "$3" Free: "$4}' | head -n 1)
+echo "This computer's hard drive usage is: $disk_info"
+;;
+lvextend \/var with new free space. lsblk shows expanded space. df-h shows only origin space.
+i have a vulkan program where i have a renderpass that has two subpasses
+
+the first writes into a offscreen framebuffer
+the second reads this framebuffer as input attachment
+
+in the dependencies of the second subpass, if i don't add MEMORY_WRITE to the dst_access_mask. i get validation errors. but why would MEMORY_WRITE be needed?
+resize oracle db_recovery_file_dest_size to 100G
+How can i desing a datacenter network that can provide 65 thousand 400 gbit\/s ports
+
+I have the following "obsolete" storage devices: MO drive, optical drive, floppy disk drive. I want to directly access these devices over the network. What should I use to accomplish my goal?
+virtmanager\/kvm was supposed to install windows11 on my home partition, i believe it has. unfortunately, during the install, my \/ partition has been filled completely
+in vulkan when recreating the swapchain. do i also need to free the command buffers or can i reuse them?
+how much space do i allocate for var? i am creating partitions for a xubuntu install.
+What is the best way to clear space on my windows 10 computer?
+in vulkan when recreating the swapchain. do i also need to free the command buffers or can i reuse them?
+I have two 10TB drives and two 16TB drives. Calculate RAID 5 usable capacity 
+
+
+How do I find which files are taking up storage space on Zorin OS?
+I want to add more disks to my NAS, but I don't have any space inside the case to add disks. However, I have a lot of spare computers. Here is what I have available:
+
+* 5x i.MX6Q based computers. These have 1x SATA, PCIe Gen2 x1 and 1x GbE. The internal GbE on these is rather slow.
+
+* 1x Jetson TK1. This has 1x SATA, PCIe Gen2 x1 and 1x GbE (Realtek RTL8111).
+
+* 1x Pico ITX board with AMD GX420. It has 2x SATA, 2x PCIe Gen2 x1 (one SATA and one PCIe are multiplexed) and 2x GbE, also RTL8111.
+
+* 1x Intel Xeon E3 1275 v2 system with 6x SATA (2 are 6 Gbps and 4 are 3 Gbps), 2x GbE (Intel 82574 and 82576), 1x PCIe Gen3 x16, 1x PCIe Gen2 x4 and 2x PCI.
+
+* 1x Intel Xeon E5 2670 v2 system with 2x PCIe Gen3 x16 slots and 3x PCIe Gen3 x8 slots, 6x SATA (2 are 6 Gbps and 4 are 3 Gbps), 2x GbE (Intel 82579 and I210).
+
+* 1x APQ8064 board with 1x SATA (1.5 Gbps) and 1x GbE (Attansic L1).
+
+* 1x APQ8084 board with 1x SATA and 1x GbE (Attansic L1).
+
+* 1x Intel Core i3 3217U system with 1x SATA and 1x GbE (Intel 82579).
+
+* 3x Jetson TX1 with 1x PCIe Gen2 x4, 1x PCIe Gen2 x1, 1x GbE (Realtek RTL8153, so USB 3.0), 1x SATA.
+
+* 1x Jetson TX2 with 1x PCIe Gen3 x4, 1x PCIe Gen3 x1, 1x GbE (Realtek RTL8153, also USB 3.0), 1x SATA.
+
+* 1x AMD Ryzen 2400G with 1x PCIe Gen3 x8, 1x PCIe Gen2 x1, 1x PCIe Gen2 x4, 1x PCIe Gen3 x4 (M.2), 4x SATA.
+
+* The network switch has 2x 40 GbE ports, 4x 10 GbE ports, and 24x 1 GbE ports. One of the 10 GbE ports is used by a client.
+
+* The NAS has a 40 GbE connection to the network, and there is a second 40 GbE port available on the card. This spare port can be used as an Infiniband port. There is not enough space inside the NAS to add any more disks.
+
+What should I do to add more disks to my NAS while making the most out of these resources? I don't mind buying external HDD enclosures, HBAs or network cards, but I would strongly prefer to use as much existing hardware as possible, while maximizing the amount of disks that can be hooked up to the NAS. The NAS is a very powerful computer with a Ryzen 5700G and I would prefer not to replace it if at all possible. Remember that PCIe Gen2 x1 is too slow for 10 GbE.
+Remind me how to get the disk usage of a directory in linux
+in vulkan i use a image as color attachment in subpass 0. in subpass 1 i use this image as input attachment. after the renderpass ended i don't care about the layout of that image.
+So apparently i have a write write hazard. how would you make the dependencies in order for this to work
+in vulkan i use a image as color attachment in subpass 0. in subpass 1 i use this image as input attachment. after the renderpass ended i don't care about the layout of that image.
+So apparently i have a write write hazard. how would you make the dependencies in order for this to work
+what can I do with an old PC when I already have a NAS\/media server, hypervisor and a backup server?
+
+\
+in vulkan, i want to use the output of a renderpass in another renderpass as input. it's important to make clear i don't want to use sub passeses. i have to use two seperate render passes.
+
+How can i make sure synchronization is correct?
+
+in my vulkan app i have a renderpass with 2 subpasses.
+the first writes into a color attachment, which is used as input attachment in the second subpass.
+my dependencies are all fine, except when i don't do any draw call after cmd_next_subpass.
+So basically as soon as i don't have a draw call, i get a write after write hazard because of the transition of the attachment that is shared by both subpasses
+How to find total download count in HuggingFace?
+Hi, I have a problem for you to solve today. I have a NAS built inside a small case, and I want to add more HDDs to it, however, the case no longer has any space for internal HDDs, it's physically full, and I don't want to buy a larger case, though I am open to adding external disk enclosures. I have two expansion slots, both are PCIe Gen3 x8, one of which is filled with a 40 GbE dual port network card. I have a switch with: 1x free 40 GbE port, 3x free 10 GbE ports, and 24x GbE ports. The NAS also has USB 3.0 ports. I also have a lot of spare computers, which have the following features: one or two SATA ports, PCIe Gen2 x1 to x4 slots, and one or two integrated GbE network ports. Some of the computers have poor performing network ports that can't actually reach GbE wire speed. What solutions should I consider to add more HDDs to my NAS?
+i have a vulkan program where i have a renderpass that has two subpasses
+
+the first writes into a offscreen framebuffer
+the second reads this framebuffer as input attachment
+
+in the dependencies of the second subpass, if i don't add MEMORY_WRITE to the dst_access_mask. i get validation errors. but why would MEMORY_WRITE be needed?
+make this line like it was written by a human:
+disk_info=$(df -h | awk '\/^\\/dev\\/\/ {print "Total: "$2" Used: "$3" Free: "$4}' | head -n 1)
+in vulkan, what does framebuffer-local actually mean. describe it in easy words
+in vulkan when recreating the swapchain. do i also need to free the command buffers or can i reuse them?
+﻿﻿how I can combine bandwidth of two ISP, for example each of them have 100Mbps, and I can download at speed of 200Mbps
+in vulkan when recreating the swapchain. do i also need to free the command buffers or can i reuse them?
