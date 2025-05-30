@@ -32,7 +32,7 @@ To ensure full reproducibility and facilitate further experimentation, we provid
 	    -  The original cleaned input dataset  
 	    -  The annotated result dataset with topic assignments and model metadata  
 	    - The trained BERTopic model (`.pkl`) for reuse and replication 
-	   ➤ [Access Repository](https://drive.google.com/drive/folders/1hK-FzeTYoyusk-VGc3mb_Ad4W3feYaur?usp=drive_link)
+	    - ➤ [Access Repository](https://drive.google.com/drive/folders/1hK-FzeTYoyusk-VGc3mb_Ad4W3feYaur?usp=drive_link)
     
 
 These resources allow readers to replicate the findings, test variations, or extend the analysis with alternative LLMs or topic modeling strategies.
@@ -263,7 +263,7 @@ All findings are grounded in real-world user preferences rather than synthetic b
 
 Future extensions of this work may explore the incorporation of multimodal data—such as visual inputs—and deeper investigations into topical consistency and adaptability in LLMs. These advancements could drive the development of more responsive, user-aligned conversational agents.
 
-### Acknowledgments
+### Acknowledgments 
 
 -   **BERTopic**: Used for transformer-based topic modeling, dimensionality reduction, clustering, and topic representation.
     
@@ -274,3 +274,4 @@ Future extensions of this work may explore the incorporation of multimodal data�
 -   **HDBSCAN**, **UMAP**, and **scikit-learn**: Key components for unsupervised clustering and dimensionality reduction.
     
 -   **Matplotlib**, **Seaborn**, and **Plotly**: Used for generating all visualizations and statistical plots.
+
