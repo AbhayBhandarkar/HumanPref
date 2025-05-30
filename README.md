@@ -1,330 +1,276 @@
-# Topic Modeling Insights on lmsys-chat-1m Dataset Using BERTopic
+#  Investigating Thematic Patterns and User Preferences in Large Language Model Interactions Using BERTopic
 
-[Notebook Link](https://colab.research.google.com/drive/1V_vJt-1qsvT-ZPgdl0_ll21ZrPrWR1oA?usp=sharing)
 
-## Model and Datasets link:
-[Model and Datasets](https://drive.google.com/drive/folders/1hK-FzeTYoyusk-VGc3mb_Ad4W3feYaur?usp=drive_link)
+![Architecture Diagram](https://i.ibb.co/Kz5KSdv2/Screenshot-2025-05-30-194345.png)
 
-## Task at hand and Why?
+##  Abstract
 
-- This Notebook provides a comprehensive analysis using **BERTopic**, a state-of-the-art topic modeling technique, applied to the [lmsys-chat-1m](https://huggingface.co/datasets/lmsys/lmsys-chat-1m) dataset on Hugging Face.
-- The primary goal of this analysis is to delve into the dataset to **uncover and understand the prevalent topics** discussed in user interactions.
-- This insight is **crucial for training new models and finetuning older models** on most sought after topics.
+This study applies **BERTopic**, a transformer-based topic modeling technique, to the **lmsys-chat-1m** dataset—a multilingual conversational corpus built from head-to-head evaluations of large language models (LLMs). Each user prompt is paired with two anonymized LLM responses and a human preference label, enabling analysis of how users evaluate competing model outputs.
 
-## Dataset Overview
+The primary objective is to **uncover thematic patterns** in these conversations and examine their relationship to user preferences—particularly whether certain LLMs are consistently preferred within specific topics. To handle the complexities of multilingual variation, imbalanced dialogue turns, and redacted or noisy content, a robust preprocessing pipeline was developed.
 
-- The [**lmsys-chat-1m**](https://huggingface.co/datasets/lmsys/lmsys-chat-1m) dataset comprises over one million user interaction entries, making it a rich source for understanding natural language processing in **conversational AI**.
-- As the dataset is **request access** and not completely open, The notebook needs to have a basic authentication token, It can be done using **Google Colab Secrets** for safety reasons.
-![Notebook Image](https://i.imgur.com/DW7Okuq.jpeg)
-- Following are the columns of the dataset ->
-**Columns/Dataset Features:** **`conversation_id, model, conversation, turn, language, openai_moderation, redacted`**
-**Rows/Number of Datapoints:** **`1,000,000`**
+Using BERTopic, the system extracted over **29 coherent topics**, covering areas such as artificial intelligence, programming, ethics, and cloud infrastructure. We then analyzed how user preferences mapped to these topics to identify patterns in **model-topic alignment**.
 
-![Dataset Image](https://i.imgur.com/qscD8vB.png)
+A range of visualizations supported the analysis, including:
+- **Inter-topic distance maps**
+- **Topic probability distributions**
+- **Model-vs-topic preference matrices**
 
-- Each entry in the "conversation" represents an **array of dictionaries** of both user prompts and assistant responses.
-- General structure of the conversation looks like ->
+These insights have practical implications for **domain-specific LLM fine-tuning**, helping optimize performance and improve real-world user satisfaction.
 
-$$\begin{array}{l}
-\text{[} \\
-\quad \{ \text{"content": "User Prompt 1", "role": "user"} \}, \\
-\quad \{ \text{"content": "Chatbot Response 1", "role": "assistant"} \}, \\
-\quad \{ \text{"content": "User Prompt 2", "role": "user"} \}, \\
-\quad \{ \text{"content": "Chatbot Response 2", "role": "assistant"} \}, \\
-\quad \ldots, \\
-\quad \{ \text{"content": "User Prompt n", "role": "user"} \}, \\
-\quad \{ \text{"content": "Chatbot Response n", "role": "assistant"} \} \\
-\text{]}
-\end{array}$$
+> **Keywords:** Topic Modeling · BERTopic · Large Language Models · LMSYS-Chat-1M · Natural Language Processing
+## Reproducibility & Resources
 
-- Although due to resource constraints of Google Colab, I have used only ***10%*** subset of the original dataset.
+To ensure full reproducibility and facilitate further experimentation, we provide open access to both the implementation and all relevant data artifacts:
 
-**Loading the Data ->**
+-    **Colab Notebook**  
+	   - A complete, executable notebook containing the entire BERTopic-based topic modeling pipeline, from data preprocessing to evaluation.  
+    ➤ [Open in Google Colab](https://colab.research.google.com/drive/1V_vJt-1qsvT-ZPgdl0_ll21ZrPrWR1oA?usp=sharing)
+    
+-    **Model and Dataset Repository**  
+    Hosted on Google Drive, this includes:  
+	    -  The original cleaned input dataset  
+	    -  The annotated result dataset with topic assignments and model metadata  
+	    - The trained BERTopic model (`.pkl`) for reuse and replication 
+	   ➤ [Access Repository](https://drive.google.com/drive/folders/1hK-FzeTYoyusk-VGc3mb_Ad4W3feYaur?usp=drive_link)
+    
 
-**1. Conversion of Hugging Face Dataset to Pandas DataFrame**
+These resources allow readers to replicate the findings, test variations, or extend the analysis with alternative LLMs or topic modeling strategies.
+## Methodology
 
-**Why?:**
+This section outlines the end-to-end methodology adopted to extract interpretable and semantically coherent topics from the LMSYS-Chat-1M dataset using the BERTopic framework. The overall architecture is summarized below.
 
-[Pandas](https://pandas.pydata.org/) DataFrames offer a more intuitive interface for data manipulation and are generally faster due to the optimized nature of the library.
+###  Dataset Acquisition and Characterization
 
-**Challenge:**
+We used the **LMSYS-Chat-1M** dataset, a large-scale collection of head-to-head conversations between various large language models (LLMs) and users. Each entry contains:
 
-The dataset in question was substantial in size, leading to **excessive RAM consumption** when attempting to load the entire dataset into memory for conversion at once. This issue was causing the computational **notebook to crash**.
+-   A user prompt
+    
+-   Two anonymized LLM responses
+    
+-   A user preference label (`A`, `B`, or `Tie`)
+    
 
-**Implementation Solution:**
+### Preliminary Data Exploration
 
-To mitigate the memory overload issue, a **batching system was implemented**. The process involves:
+Exploratory analysis included:
 
-1. Extracting segments of the dataset of smaller size.
-1. Sequentially appending each batch to a Pandas DataFrame.
-1. Iterating over 1 & 2 until n% of the data is loaded.
+-   **Model Appearance Frequency:** To examine dataset balance.
+    
+-   **Win/Loss/Tie Distribution:** To assess comparative performance of LLMs.
+    
+-   **Response Length Preference:** To determine user tendencies toward longer or shorter answers.
+    
 
-**Data Preprocessing**
+Visualizations supporting these insights are presented in Section 5.
 
-***1. Handling Multilingual Data in the Dataset***
+###  Data Preprocessing
 
-**Challenge: Multilingual Data**
+A robust preprocessing pipeline was implemented with the following steps:
 
-The dataset contains **multilingual data**, which can lead to inconsistencies and inaccuracies in the analysis, as it complicates the linguistic processing and may skew the interpretation of topics.
+-   **Language Filtration:** Only English prompts and responses were retained using the `fasttext` language detection library.
+    
+-   **Text Normalization:** Non-ASCII characters, emojis, URLs, and noisy tokens were removed using regular expressions.
+    
+-   **Stop Prompt Removal Consideration:** We evaluated removing templated or nonsensical prompts but found no measurable impact on topic quality, so this step was not adopted.
+    
 
-**Implementation Solution:**
+### Topic Modeling with BERTopic
 
-A **language based filtering** step was implemented to retain **only English** language texts.
+We employed the BERTopic framework, which integrates transformer-based embeddings with density-based clustering and a topic representation layer.
 
-This approach ensures that the dataset is **homogenized**, reducing complexity and improving the predictability of the model outcomes.
 
-The language based filtered out data is stored in df\_english.
 
-***2. Handling Multiple Interaction Turns in Conversations & Extraction of Text from the Complex Structure***
+#### Document Embedding
 
-**First Challenge : Multiple Interaction Turns**
+We used the `all-MiniLM-L6-v2` model to embed each user prompt into a 384-dimensional vector space:
 
-The dataset includes conversations that feature **multiple interaction turns** between a user and an assistant within a single conversation entry. For effective topic modeling, it is essential to **capture the essence of all user prompts** throughout the conversation, not just the initial ones.
+$$
+\mathbf{E} \in \mathbb{R}^{n \times 384}
+$$
 
-**Second Challenge: Complex Dataset Structure and Targeted Content Extraction**
+---
 
-The dataset exhibits a **complex nested structure** and for effective implementation of [BERTopic](https://maartengr.github.io/BERTopic/index.html), which requires a **simplified array of strings format**, it is crucial to perform selective content extraction.
+#### Dimensionality Reduction with UMAP
 
-The challenge lies in efficiently **isolating and extracting only the user prompts** from this intricate conversation structure, as these prompts contain the primary content necessary for our topic modeling analysis.
+UMAP was used to reduce the embedding space to two dimensions while preserving local and global relationships. The objective is to minimize the weighted sum of squared distances between projected points:
 
-**Data Format:**
+$$
+\underset{Y}{\mathrm{argmin}} \sum_{(i, j)} w_{ij} \| Y_i - Y_j \|^2
+$$
 
-Each conversation row is structured as follows:
+where:
 
-["content": "User Prompt 1", "role": "user","content": "Chatbot Response 1", "role": "assistant","content": "User Prompt 2", "role": "user","content": "Chatbot Response 2", "role": "assistant",…,"content": "User Prompt n", "role": "user","content": "Chatbot Response n", "role": "assistant"]
+$$
+w_{ij} \text{ are edge weights in the nearest-neighbor graph constructed in high-dimensional space.}
+$$
 
-**Implementation Solution:**
+---
 
-To address this challenge, the concatenate\_user\_messages() function was developed.
+#### Clustering with HDBSCAN
 
-This function **extracts all user prompts** from a conversation by matching the "role" of each dictionary with "user" in the array and then **concatenates these messages into a single continuous string**.
+The reduced vectors were clustered using HDBSCAN (Hierarchical Density-Based Spatial Clustering of Applications with Noise), a density-based algorithm capable of identifying clusters of varying densities and separating noise.
 
-This method ensures that every part of the user's input is considered, providing a comprehensive basis for subsequent topic modeling and analysis.
+HDBSCAN builds a hierarchy of clusters and extracts the most stable ones using the following:
 
-The function concatenate\_user\_messages is applied to each conversation within the df\_english['conversation'] column **iteratively** and stored in a **new column** named combined\_user\_prompts.
+- Let:
 
-***3. General text cleaning using REGEX***
+  $$
+  \text{min\_cluster\_size} = k
+  $$
 
-**Challenge : Unwanted Characters, Emoji, Icons, non ASCII**
+- Define the **mutual reachability distance** between points \(x\) and \(y\) as:
 
-The dataset includes many unwanted characters, emojis, icons, non ASCII
+  $$
+  d_{\text{mreach-k}}(x, y) = \max \left\{ \text{core}_k(x), \text{core}_k(y), d(x, y) \right\}
+  $$
 
-**Implementation Solution:**
+- Construct a weighted graph using mutual reachability distances.
+- Build a minimum spanning tree and extract clusters based on **density stability**.
 
-To address this challenge, we used regex to further text cleanup
+Clusters are selected by maximizing the cluster's **persistence** in the dendrogram, resulting in:
 
-**Topic Modeling for Processed Data using BERTopic**
+$$
+\text{Cluster stability} = \int_{\lambda_{\text{birth}}}^{\lambda_{\text{death}}} \left|C(\lambda)\right| \, d\lambda
+$$
 
-**What is BERTopic?**
+where:
 
-BERTopic is a cutting-edge topic modeling technique that uses transformer-based embeddings, such as BERT, combined with clustering and dimensionality reduction techniques to uncover hidden topics in textual data. Unlike traditional models like Latent Dirichlet Allocation (LDA), BERTopic leverages contextual embeddings, enabling it to produce more semantically meaningful topics.
+$$
+C(\lambda) \text{ is the cluster at threshold } \lambda, \quad \left|C(\lambda)\right| \text{ is its size.}
+$$
 
------
-**Key Components of BERTopic**
 
-**1. BERT Embeddings**
 
-- **What it does:** Utilizes transformer models (e.g., paraphrase-mpnet-base-v2) to generate contextual embeddings that represent text in a high-dimensional space.
-- **Advantage:** Captures semantic nuances of text, outperforming traditional bag-of-words models.
+> **Figure: HDBSCAN Architecture**  
+> ![HDBSCAN ARCHITECTURE](https://i.ibb.co/5gdnVDSX/image.png)
 
-**2. Dimensionality Reduction**
 
-- **Technique:** UMAP (Uniform Manifold Approximation and Projection)
-- **Purpose:** Reduces high-dimensional embeddings into a lower-dimensional space while preserving semantic relationships.
-- **Parameters:**
-  - n\_neighbors: Controls local vs. global structure preservation.
-  - n\_components: Number of dimensions in the reduced space.
-  - min\_dist: Controls clustering density.
-  - metric: Defines distance calculations (e.g., cosine).
+#### Topic Representation with c-TF-IDF
 
-**3. Clustering**
+For each cluster, the top terms were extracted using class-based TF–IDF (c-TF-IDF), which adapts traditional TF-IDF to group-level term importance:
 
-- **Technique:** HDBSCAN (Hierarchical Density-Based Spatial Clustering of Applications with Noise)
-- **Purpose:** Groups similar embeddings into clusters.
-- **Parameters:**
-  - min\_cluster\_size: Minimum documents per cluster.
-  - min\_samples: Controls outlier sensitivity.
-  - metric: Defines the clustering distance measure (e.g., euclidean).
+$$
+\text{c-TF-IDF}_{t,c} = \frac{f_{t,c}}{\sum_{t' \in c} f_{t',c}} \cdot \log \left( \frac{N}{n_t} \right)
+$$
 
-**4. Topic Representation**
+$$
+\begin{aligned}
+f_{t,c} \quad &\text{= frequency of term } t \text{ in class } c \\\\
+n_t \quad &\text{= number of classes containing term } t \\\\
+N \quad &\text{= total number of classes}
+\end{aligned}
+$$
 
-- **Technique:** c-TF-IDF (Class-based Term Frequency-Inverse Document Frequency)
-- **Purpose:** Identifies the most representative terms for each topic.
-- **Result:** Enhances interpretability of discovered topics.
------
-**Workflow Diagram**
-![gmisharch2](https://github.com/user-attachments/assets/ff956df9-953e-4356-8c2f-9a869c68ccfa)
+This yields interpretable keywords per topic using `CountVectorizer`.
 
 
-Below is a visual representation of BERTopic’s workflow:
+### Noise Handling
 
------
-**Configuration of Our BERTopic Model**
+Topic `-1`, generated by HDBSCAN to represent noise or outliers, was excluded from the primary analysis to preserve thematic clarity and statistical integrity.
 
-Below is a detailed explanation of the configurations used in our BERTopic model:
+###  Hyperparameter Optimization
 
-|**Component**|**Parameter**|**Value**|**Effect**|
-| :- | :- | :- | :- |
-|**Embedding Model**|embedding\_model|paraphrase-mpnet-base-v2|Provides contextual embeddings with high semantic accuracy.|
-|**UMAP**|n\_neighbors|20|Balances local and global structure preservation.|
-||n\_components|8|Sets the dimensionality of the reduced space.|
-||min\_dist|0\.1|Lower values create denser clusters.|
-||metric|cosine|Measures similarity using cosine distance.|
-|**HDBSCAN**|min\_cluster\_size|50|Ensures meaningful cluster sizes.|
-||min\_samples|10|Balances sensitivity to outliers.|
-||metric|euclidean|Defines clustering distance calculations.|
-|**Topic Representation**|top\_n\_words|20|Highlights the top 20 words for each topic.|
+Key parameters were iteratively tuned:
 
------
-**Results: Prevalent Topics**
+-   **UMAP:** `n_neighbors`, `min_dist`
+    
+-   **HDBSCAN:** `min_cluster_size` and `min_samples`
+    
 
-Below are some of the prominent topics discovered by our BERTopic model:
+Through qualitative validation and coherence assessment, the model converged on **29 meaningful topics**, excluding one outlier.
 
-|**Topic ID**|**Name**|**Count**|**Representative Terms**|
-| :- | :- | :- | :- |
-|0|Roleplay|3,987|story, girl, character, game, roleplay|
-|1|AI Assistant Queries|2,809|assistant, completion, repeat, system, instruction|
-|2|Programming|1,079|import, int, self, const, return, class|
-|3|Business and Industry|962|china, ltd, co, introduction, chemical|
-|4|Coding Assistance|721|code, function, loop, debug, variable|
-|5|Educational Resources|643|book, tutorial, explain, learn, teach|
-|6|Physics & Mathematics|489|equation, solve, gravity, acceleration, theorem|
+### Comparative Validation
 
------
-**Visualizations**
+For robustness, alternative modeling pipelines were considered:
 
-**LLM Interaction Analysis using BERTopic**
+-   **Latent Semantic Analysis (LSA)**
+    
+-   **Embedding variants (e.g., MPNet, BERT)**
+    
+-   **Clustering alternatives (e.g., KMeans, Agglomerative)**
+    
 
-**Overview**
+BERTopic with MiniLM + UMAP + HDBSCAN consistently offered the best balance between interpretability and granularity.
 
-Our approach uses BERTopic for unsupervised topic modeling on an LLM interaction dataset collected from human interactions with Large Language Models (LLMs). The dataset contains human preferences, allowing insights into topics effectively modeled by different LLM versions.
+### Conceptual Visualization of Clusters
 
-The dataset (January-April 2023 via the Vikuna Arena and Chatbot Arena) consists of 20K user preferences, involving over 31K unique IP addresses. Multilingual inputs include positive reinforcement (preferred LLM answers), negative reinforcement (less preferred answers), and neutral choices. Multilingual embedding, pre-trained via SentenceTransformers (paraphrase-multilingual-MiniLM-L12-v2), and UMAP dimensionality reduction, followed by HDBSCAN clustering, enhanced clustering performance.
+BERTopic enables visualizing topic clusters in 2D space using UMAP, where prompts are colored by topic. This allows intuitive assessment of topic separability, outlier density, and thematic coherence.
 
-**Methodology**
 
-To evaluate BERTopic's effectiveness, we compared it against traditional clustering approaches:
 
-- Traditional Methods: K-Means, LDA, and PCA.
-- BERTopic: Enhanced results with hierarchical clustering, providing better interpretability.
+##  Topic Analysis and Evaluation
 
-BERTopic clustering identified clear, intuitively understandable groups, such as:
+The final BERTopic model identified **29 distinct and semantically rich topics** from the LMSYS-Chat-1M dataset. These topics span a wide range of domains including programming, health, ethics, logic, entertainment, and advanced technologies. A few illustrative examples include:
 
-- **Technology & Science**
-- **Finance**
-- **Creativity and Arts**
+| Topic ID | Description                                |
+|----------|--------------------------------------------|
+| Topic 0  | Gaming and user-assistant interaction      |
+| Topic 4  | Programming, SQL, RDBMS, Database          |
+| Topic 6  | Machine Learning and Advanced AI Concepts  |
+| Topic 9  | Health Advice and Medical Concerns         |
+| Topic 16 | JavaScript, React, Web Development         |
 
-Hierarchical clustering provided meaningful insight into topic clusters with a dendrogram clearly illustrating topic relationships.
 
-**Identified Topics (Selection)**
+For a complete list of topics, refer to **Table 1** in the accompanying paper.
 
-- **Topic 0**: Games, Puzzles, Coding, and Logic
-- **Topic 2**: Problem Solving, Logic
-- **Topic 4**: Cooking, Recipes, Food
-- **Topic 8**: Science, Health, and Environment
-- **Topic 11**: Finance, Banking, Investments
-- **Topic 15**: Creative Writing and Storytelling
-- **Topic 18**: Lifestyle, Relationships, and Personal Well-being
+----------
 
-(See the original image/document for complete topic details.)
+###  Hierarchical Clustering of Topics
 
-**Visualization and Output Analysis**
+![Hierarchical Clustering of Topics](https://i.ibb.co/XZvLWwK1/dendo.png)
 
-**Topic Insights**
+This dendrogram visualizes the hierarchical structure among topics using cluster linkage. It highlights semantic relationships and overlaps between topic clusters—for example, programming topics tend to group closely, while medical and ethical concerns form a separate branch.
 
-- **Top Topics Cumulative Coverage**:
-  - Top 10 topics cover a significant proportion, validating their dominance in human preferences.
+----------
 
-- **Topic Distribution Analysis**:
-  - Indicates relative strengths of LLM versions across topics.
-  - Heatmap provides intuitive visualization of topic strengths per model.
+###  Coverage of Top 10 Topics
 
-**Model Performance Insights**
+![Top 10 Topic Coverage](https://i.ibb.co/99k8vGsk/top10.png)
 
-Top-performing models include:
+This bar chart displays the proportion of dataset entries belonging to the ten most dominant topics. It illustrates thematic concentration and helps determine which subject areas were most prevalent in user prompts.
 
-- gpt-4-1106-preview
-- gpt-3.5-turbo-0613
-- claude-2.1
-- gpt-4-0125
-- claude-3-haiku
+----------
 
-Notable findings:
+###  Normalized Topic Performance Heatmap
 
-- gpt-4-1106-preview excels significantly in Gaming, Logic, Cooking.
-- claude-2.1 performs notably in Problem-solving.
-- gpt-3.5-turbo-0613 demonstrates strong balanced performance across topics.
+![Heatmap of Topic Performance](https://i.ibb.co/BH7hvKjV/heatmap.png)
 
-**Balanced Model Performance**
+This heatmap evaluates how frequently each of the top-5 LLMs secured wins within the top 10 most populated topics (normalized by appearances). Darker shades indicate stronger model-topic alignment. This provides insight into domain-specific LLM strengths.
 
-One surprising insight: gpt-3.5-turbo-0314 showed the highest win rate (68.53%) relative to appearances, indicating exceptional balanced performance.
+----------
 
-**Visualizations Provided**
+###  Most Balanced Topics by Model Performance
 
-- **Dendrogram**: Clearly illustrates topic relationships. 
-![topic_hierarchy](https://github.com/user-attachments/assets/e0315ae8-84f9-42ed-b1ee-8d005ec4e2bc)
+![Balanced Topics](https://i.ibb.co/mr2yhM1w/balanced.png)
 
+This plot identifies topics where model win rates were closest, indicating competitive balance. These balanced domains often represent either ambiguous or well-mastered subject areas, making them useful for benchmarking model generality.
 
-- **Bar Graph**: Cumulative topic coverage. 
-![barchart](https://github.com/user-attachments/assets/e08889af-761b-45d2-9404-df6b3c58f846)
+----------
 
+###  Topic-wise Winning Percentage
 
-- **Heatmap**: Topic distribution and model strengths. 
-![heatmap](https://github.com/user-attachments/assets/c9d6057b-610d-47ce-9394-e13880051534)
+![Topic-wise Win Rate](https://i.ibb.co/N6Pm4h6X/g.png)
 
-- **Bar Chart**: Balanced model win rate per appearance.
-![balancedmodel](https://github.com/user-attachments/assets/6321533a-baa0-4f70-a803-81ac9d0472e9)
+This chart shows which models dominated which topics in terms of win rate. Certain models exhibit clear domain-specific advantages.  
+For a comprehensive breakdown of the **top-5 winning models per topic**, refer to **Table 2** in the accompanying paper.
 
+## Conclusion
 
-**Conclusions and Practical Implications**
+This project successfully leveraged the BERTopic framework to analyze the LMSYS-Chat-1M dataset, uncovering 29 semantically coherent topics across a diverse spectrum of conversational prompts. By aligning these topics with human preference labels from model comparisons, we demonstrated that certain Large Language Models (LLMs) consistently outperform others within specific thematic areas. However, no single model exhibited dominance across all topics, underscoring the importance of domain specialization alongside general versatility.
 
-- The BERTopic-based analysis delivers clear, interpretable insights into human preferences for LLM interactions.
-- Specialized models show strengths in domain-specific tasks, while balanced models excel broadly.
-- Insights guide targeted fine-tuning and highlight optimization opportunities for specialized use-cases.
------
-*This analysis informs practical applications, emphasizing effective model deployment strategies tailored to specific use-cases, optimizing both user satisfaction and model performance.*
+All findings are grounded in real-world user preferences rather than synthetic benchmarks, enhancing the practical relevance of the insights. Our methodology provides an interpretable, topic-centric framework to evaluate LLM performance that complements traditional aggregate metrics.
 
-**Additional Insights**
+Future extensions of this work may explore the incorporation of multimodal data—such as visual inputs—and deeper investigations into topical consistency and adaptability in LLMs. These advancements could drive the development of more responsive, user-aligned conversational agents.
 
-- **Topic Evolution:** The model enables dynamic topic modeling, making it possible to track changes in topics over time or across specific intervals in the dataset.
-- **Application Scope:**
-  - **Customer Feedback Analysis:** Extract recurring themes from user reviews or customer service logs.
-  - **Content Categorization:** Automatically classify documents, articles, or blogs into relevant categories.
-  - **Academic Research:** Reveal trends, methodologies, and key topics across scientific literature.
-  - **AI Training:** Provides a foundation for training and fine-tuning conversational AI models based on prevalent topics.
------
-**Conclusion**
+### Acknowledgments
 
-This Notebook provides a comprehensive analysis using **BERTopic**, a state-of-the-art topic modeling technique, applied to the [lmsys-chat-1m](https://huggingface.co/datasets/lmsys/lmsys-chat-1m) dataset on Hugging Face. The **primary goal** was to delve into the dataset to **uncover and understand the prevalent topics discussed in user interactions**. These insights are crucial for training new models and fine-tuning older models on the most sought-after topics.
-
-The task involved uncovering dominant themes and their distributions in a dataset with multilingual content and varying conversational structures. The robust preprocessing pipeline solved subproblems such as:
-
-- **Handling multilingual data** to ensure consistent insights.
-- **Resolving conversational imbalances** due to varying turn lengths.
-- **Managing redacted or noisy information** and addressing numerical anomalies in the data.
-- **Streamlining text** using lemmatization and stop word elimination through spaCy.
-
-The sequential processing workflow enabled a clean, consistent dataset that could be effectively modeled.
-
-**Key Achievements**
-
-1. **Topic Insights:** Dominant themes such as **AI Assistant Queries, Programming Concepts, Educational Resources**, and others were identified and visualized using inter-topic distance maps and probability distributions.
-1. **Advanced Preprocessing:** Successfully addressed multilingual challenges, redacted data issues, and conversational imbalances.
-1. **Versatile Applications:** The model's insights are applicable across domains like content categorization, conversational AI training, and customer feedback analysis.
-1. **Visualization Mastery:** Interactive visualizations provided deep insights into topic relationships, term significance, and dataset structure.
-
-**Future Scope**
-
-- **Real-time Evolution Tracking:** Enhance the pipeline to dynamically track topic changes across time.
-- **Multilingual Integration:** Extend support for diverse datasets with varied linguistic and structural patterns.
-- **Customized Applications:** Tailor the workflow to meet specific industry needs, such as domain-specific categorization or customer experience optimization.
-- **Robust Training for Robust Performance** : Training the model more robustly covering 100% of the dataset and handle the outlier cases better for better insights.
-
-The methodologies demonstrated here highlight the power of modern NLP techniques in managing and interpreting complex datasets, paving the way for innovative, actionable applications in both research and industry.
-
-**Acknowledgments**
-
-- [lmsys-chat-1m](https://huggingface.co/datasets/lmsys/lmsys-chat-1m) - A dataset of user interactions with an AI chatbots.
-- [BERTopic](https://github.com/MaartenGr/BERTopic) - A state-of-the-art topic modeling technique.
-
-
+-   **BERTopic**: Used for transformer-based topic modeling, dimensionality reduction, clustering, and topic representation.
+    
+-   **LMSYS-Chat-1M**: The dataset used in this study, comprising head-to-head LLM comparisons with human preference labels.
+    
+-   **fastText**: Employed for language identification during preprocessing.
+    
+-   **HDBSCAN**, **UMAP**, and **scikit-learn**: Key components for unsupervised clustering and dimensionality reduction.
+    
+-   **Matplotlib**, **Seaborn**, and **Plotly**: Used for generating all visualizations and statistical plots.
