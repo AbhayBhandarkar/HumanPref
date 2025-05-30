@@ -1,6 +1,5 @@
 #  Investigating Thematic Patterns and User Preferences in Large Language Model Interactions Using BERTopic
 
-
 ![Architecture Diagram](https://i.ibb.co/Kz5KSdv2/Screenshot-2025-05-30-194345.png)
 
 ##  Abstract
@@ -21,21 +20,20 @@ These insights have practical implications for **domain-specific LLM fine-tuning
 > **Keywords:** Topic Modeling · BERTopic · Large Language Models · LMSYS-Chat-1M · Natural Language Processing
 ## Reproducibility & Resources
 
-To ensure full reproducibility and facilitate further experimentation, we provide open access to both the implementation and all relevant data artifacts:
+To ensure full reproducibility and enable further experimentation, we provide access to both the implementation and essential data artifacts:
 
--    **Colab Notebook**  
-	   - A complete, executable notebook containing the entire BERTopic-based topic modeling pipeline, from data preprocessing to evaluation.  
-    ➤ [Open in Google Colab](https://colab.research.google.com/drive/1V_vJt-1qsvT-ZPgdl0_ll21ZrPrWR1oA?usp=sharing)
-    
--    **Model and Dataset Repository**  
-    Hosted on Google Drive, this includes:  
-	    -  The original cleaned input dataset  
-	    -  The annotated result dataset with topic assignments and model metadata  
-	    - The trained BERTopic model (`.pkl`) for reuse and replication 
-	    - ➤ [Access Repository](https://drive.google.com/drive/folders/1hK-FzeTYoyusk-VGc3mb_Ad4W3feYaur?usp=drive_link)
-    
+- **Colab Notebook**  
+  - Executable end-to-end pipeline  
+  - Covers preprocessing, modeling, and evaluation  
+  - Fully compatible with the provided datasets and model  
+  - ➤ [Open in Google Colab](https://colab.research.google.com/drive/1V_vJt-1qsvT-ZPgdl0_ll21ZrPrWR1oA?usp=sharing)
 
-These resources allow readers to replicate the findings, test variations, or extend the analysis with alternative LLMs or topic modeling strategies.
+- **Model and Dataset Repository**  
+  - Original cleaned input dataset  
+  - Annotated result dataset with topics and metadata  
+  - Trained BERTopic model (`.pkl`)  
+  - ➤ [Access Repository](https://drive.google.com/drive/folders/1hK-FzeTYoyusk-VGc3mb_Ad4W3feYaur?usp=drive_link)
+
 ## Methodology
 
 This section outlines the end-to-end methodology adopted to extract interpretable and semantically coherent topics from the LMSYS-Chat-1M dataset using the BERTopic framework. The overall architecture is summarized below.
